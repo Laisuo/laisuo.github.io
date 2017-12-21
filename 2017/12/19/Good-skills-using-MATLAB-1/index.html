@@ -85,7 +85,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/12/19/Good-skills-using-MATLAB-1/index.html">
 <meta property="og:site_name" content="Laisuo Su">
 <meta property="og:description" content="LegendGenerate Multi-Column in Legend(1) Download the columnle​gend archive(2) Unzip, and put the columnlegend.m file into the same fold of your plot(3) Utilized the columnlenged function to manupilat">
-<meta property="og:updated_time" content="2017-12-20T11:53:37.969Z">
+<meta property="og:updated_time" content="2017-12-21T12:27:18.892Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Good skills using MATLAB (1)">
 <meta name="twitter:description" content="LegendGenerate Multi-Column in Legend(1) Download the columnle​gend archive(2) Unzip, and put the columnlegend.m file into the same fold of your plot(3) Utilized the columnlenged function to manupilat">
@@ -332,6 +332,14 @@
 <blockquote>
 <p>Here is an example<br>x=1:10;<br>y1=1:10;<br>y2=2:2:20;<br>y3=3:3:30;<br>y4=4:4:40;<br>hold on;<br>f1=plot(x,y1,’-‘,’LineWidth’,2,’Color’,’k’);<br>f2=plot(x,y2,’-‘,’LineWidth’,2,’Color’,’b’);<br>f3=plot(x,y3,’-‘,’LineWidth’,2,’Color’,’g’);<br>f4=plot(x,y4,’-‘,’LineWidth’,2,’Color’,’r’);<br>name={‘y1’,’y2’,’y3’,’y4’};<br>Leg=columnlegend(2,name);<br>set(Leg,’Fontsize’,16,’Fontname’, ‘Cambria’,’FontWeight’,’Bold’);  </p>
 </blockquote>
+<h2 id="Axis-setting"><a href="#Axis-setting" class="headerlink" title="Axis setting"></a>Axis setting</h2><p>Here are some setting I would like to use for Axis setting  </p>
+<blockquote>
+<p>Example<br>set(gca,’FontSize’,18,’Fontname’, ‘Cambria’,’FontWeight’,’Bold’);<br>xlabel(‘xlabel’,’Fontsize’,18,’Fontname’, ‘Cambria’,’FontWeight’,’Bold’);<br>ylabel(‘ylabel’,’Fontsize’,18,’Fontname’, ‘Cambria’,’FontWeight’,’Bold’);<br>axis([0 120 3.5 4.3]);<br>set(gca,’YTick’,[3.5 3.7 3.9 4.1 4.3]);</p>
+</blockquote>
+<h2 id="Plot-Color"><a href="#Plot-Color" class="headerlink" title="Plot Color"></a>Plot Color</h2><p>Besides k b g m r, we can also use RGB value to define a color.</p>
+<blockquote>
+<p>For example, grey can be defined as below<br>f01=plot(x,y,’-‘,’LineWidth’,2,’Color’,[96 96 96]/255);</p>
+</blockquote>
 
       
     </div>
@@ -506,7 +514,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Legend"><span class="nav-number">1.</span> <span class="nav-text"><a href="#Legend" class="headerlink" title="Legend"></a>Legend</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Legend"><span class="nav-number">1.</span> <span class="nav-text"><a href="#Legend" class="headerlink" title="Legend"></a>Legend</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Axis-setting"><span class="nav-number">2.</span> <span class="nav-text"><a href="#Axis-setting" class="headerlink" title="Axis setting"></a>Axis setting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Plot-Color"><span class="nav-number">3.</span> <span class="nav-text"><a href="#Plot-Color" class="headerlink" title="Plot Color"></a>Plot Color</span></a></li></ol></div>
             
 
           </div>

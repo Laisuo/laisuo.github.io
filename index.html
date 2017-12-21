@@ -336,6 +336,14 @@
 <blockquote>
 <p>Here is an example<br>x=1:10;<br>y1=1:10;<br>y2=2:2:20;<br>y3=3:3:30;<br>y4=4:4:40;<br>hold on;<br>f1=plot(x,y1,’-‘,’LineWidth’,2,’Color’,’k’);<br>f2=plot(x,y2,’-‘,’LineWidth’,2,’Color’,’b’);<br>f3=plot(x,y3,’-‘,’LineWidth’,2,’Color’,’g’);<br>f4=plot(x,y4,’-‘,’LineWidth’,2,’Color’,’r’);<br>name={‘y1’,’y2’,’y3’,’y4’};<br>Leg=columnlegend(2,name);<br>set(Leg,’Fontsize’,16,’Fontname’, ‘Cambria’,’FontWeight’,’Bold’);  </p>
 </blockquote>
+<h2 id="Axis-setting"><a href="#Axis-setting" class="headerlink" title="Axis setting"></a>Axis setting</h2><p>Here are some setting I would like to use for Axis setting  </p>
+<blockquote>
+<p>Example<br>set(gca,’FontSize’,18,’Fontname’, ‘Cambria’,’FontWeight’,’Bold’);<br>xlabel(‘xlabel’,’Fontsize’,18,’Fontname’, ‘Cambria’,’FontWeight’,’Bold’);<br>ylabel(‘ylabel’,’Fontsize’,18,’Fontname’, ‘Cambria’,’FontWeight’,’Bold’);<br>axis([0 120 3.5 4.3]);<br>set(gca,’YTick’,[3.5 3.7 3.9 4.1 4.3]);</p>
+</blockquote>
+<h2 id="Plot-Color"><a href="#Plot-Color" class="headerlink" title="Plot Color"></a>Plot Color</h2><p>Besides k b g m r, we can also use RGB value to define a color.</p>
+<blockquote>
+<p>For example, grey can be defined as below<br>f01=plot(x,y,’-‘,’LineWidth’,2,’Color’,[96 96 96]/255);</p>
+</blockquote>
 
           
         
