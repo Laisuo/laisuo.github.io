@@ -85,7 +85,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/12/22/Electrochemical-Impedance-Spectrascopy-Application-1-TiO2-semiconductor/index.html">
 <meta property="og:site_name" content="Laisuo Su">
 <meta property="og:description" content="IntroElectrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining wi">
-<meta property="og:updated_time" content="2017-12-23T16:50:50.825Z">
+<meta property="og:updated_time" content="2017-12-24T21:43:10.360Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Electrochemical Impedance Spectrascopy Application (1) TiO2 (semiconductor)">
 <meta name="twitter:description" content="IntroElectrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining wi">
@@ -333,7 +333,11 @@
 <h2 id="Big-names-in-this-field"><a href="#Big-names-in-this-field" class="headerlink" title="Big names in this field"></a>Big names in this field</h2><h3 id="Juan-Bisquert"><a href="#Juan-Bisquert" class="headerlink" title="Juan Bisquert"></a><a href="https://scholar.google.com/citations?user=-TTRG2kAAAAJ" target="_blank" rel="noopener">Juan Bisquert</a></h3><p><a href="https://scholar.google.com/citations?user=-TTRG2kAAAAJ" target="_blank" rel="noopener">Juan Bisquert</a> is well known in solar cells community since he has done many good contributions in this field. Applying and developing EIS technique is one of his favorites.<br>Here are some good articles in his group that help me understand this topic.<br><a href="http://pubs.acs.org/doi/full/10.1021/jp0119429" target="_blank" rel="noopener">Decoupling of Transport, Charge Storage, and Interfacial Charge Transfer in the Nanocrystalline TiO2/Electrolyte System by Impedance Methods</a><br>In this article, porous TiO2 thin film was coated onto transparent conducting substrate (TCS). Then, the substrate was immersed into solution (0.01 M H2SO4). Ag/AgCl was used as reference electrode, and Pt wire was utilized as working electrode. EIS was then conducted at various potential points.<br>The impedance signal comes from four parts:(1) the electron transport in the TiO2, which is influenced by the free carrier density and electron mobility, <strong>the latter being probably dependent on the carrier density, as the electron motion is a trap-limited process</strong> (<em>R<sub>ohm</sub></em>).(2) the transfer of electrons to redox species in the electrolyte (<em>R<sub>ct</sub></em>).(3) the charging of the contact of the TCS with the electrolyte (capacitor).(4) the charging of capacitive elements in the high surface area porous strcture, including the Helmholtz capacitance in the TiO2/electrolyte interface and <strong>the capacitances related to filling of the conduction band and surface states of the TiO2 in the porous strcture</strong>. (capacitor)  </p>
 <p><strong><em>Transmission line model was built and applied to simulate the above values. The difficult part to me is How to deal with the simulation and obtain the values!</em></strong> </p>
 <h2 id="Optimization-algorithm"><a href="#Optimization-algorithm" class="headerlink" title="Optimization algorithm"></a>Optimization algorithm</h2><p>To find the most reasonable value for each parameter, we need to define a target function first. Then, we try to minimize or maximize the target function so as to figure out the values of all parameters. During the searching process, different algorithms have been proposed. This is the reason we need to choose one of optimization algorithms here to find the values of parameters. </p>
-<h3 id="GlobalSearch"><a href="#GlobalSearch" class="headerlink" title="GlobalSearch"></a>GlobalSearch</h3>
+<h3 id="GlobalSearch"><a href="#GlobalSearch" class="headerlink" title="GlobalSearch"></a>GlobalSearch</h3><p>Some important syntax to use the GlobalSearch function:<br>(1) <a href="https://www.mathworks.com/help/gads/globalsearch.html" target="_blank" rel="noopener">gs = GlobalSearch</a><br>creates gs, a GlobalSearch solver with its properties set to the defaults.<br>(2) <a href="https://www.mathworks.com/help/gads/createoptimproblem.html" target="_blank" rel="noopener">problem = createOptimProblem(‘solverName’,’ParameterName’,ParameterValue,…)</a><br>creates an empty optimization problem structure for the solverName solver.<br>(3) <a href="https://www.mathworks.com/help/gads/globalsearch.run.html" target="_blank" rel="noopener">x = run(gs,problem)</a><br>runs GlobalSearch to find a solution or multiple local solutions to problem  </p>
+<blockquote>
+<p>Here is a quick example<br>rng default % For reproducibility<br>gs = GlobalSearch;<br>sixmin = @(x)(4<em>x(1)^2 - 2.1</em>x(1)^4 + x(1)^6/3 + x(1)<em>x(2) - 4</em>x(2)^2 + 4*x(2)^4);<br>problem = createOptimProblem(‘fmincon’,’x0’,[-1,2],’objective’,sixmin,’lb’,[-3,-3],’ub’,[3,3]);<br>x = run(gs,problem)  </p>
+</blockquote>
+
       
     </div>
     
@@ -527,7 +531,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
