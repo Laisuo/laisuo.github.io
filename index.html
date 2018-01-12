@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="en">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+  <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -124,7 +124,7 @@
 
 
 
-  <title>Laisuo Su</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Laisuo Su</title>
   
 
 
@@ -143,7 +143,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
+  <div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
@@ -495,8 +495,31 @@
       
         
           
-            <p>X-ray photoelectron spectroscopy (XPS) is based on the photoelectric effect that proposed by Einstein in 1905. When X-rays are projected to the surface of a sample, atomes in the sample are ionized and the kinetic energies of the emitted photoelectrons are measured. In this way, the binding energy of the electron can be calculated. $E<sub>binding</sub>=E<sub>photon</sub>-(E<sub>kinetic</sub>+\Theta-T_1+T^1)$ jj</p>
-<p><img src="/2018/01/11/Material-Characterization-Technique-XPS/XPS.png" alt="XPS"></p>
+            <h2 id="Principle-Ref-1"><a href="#Principle-Ref-1" class="headerlink" title="Principle (Ref: (1))"></a>Principle (Ref: (1))</h2><p>X-ray photoelectron spectroscopy (XPS) is based on the photoelectric effect that proposed by Einstein in 1905. When X-rays are projected to the surface of a sample, atomes in the sample are ionized and the kinetic energies of the emitted photoelectrons are measured. In this way, the binding energy of the electron can be calculated.<br>$$E_{binding}=E_{photon}-(E_{kinetic}+\theta)$$<br>where \(\theta\) is <a href="https://en.wikipedia.org/wiki/Work_function" target="_blank" rel="noopener">work function</a> of the studied element.<br>Due to the small mean free path of the emitted electrons in soli bodies (~ 10 nm), XPS is only surface sensitive. But combining with ion sputting, XPS can give depth profiles of a sample.<br><img src="/2018/01/11/Material-Characterization-Technique-XPS/XPS.png" alt="XPS"></p>
+<h2 id="Applications"><a href="#Applications" class="headerlink" title="Applications"></a>Applications</h2><h3 id="XPS-combined-with-ion-sputtering"><a href="#XPS-combined-with-ion-sputtering" class="headerlink" title="XPS combined with ion sputtering"></a>XPS combined with ion sputtering</h3><p><a href="http://pubs.acs.org/doi/pdf/10.1021/am200067d" target="_blank" rel="noopener">Understanding the Improved Stability of Hybrid Polymer Solar Cells Fabricated with Copper Electrodes</a>  </p>
+<ul>
+<li>The thickness of various layers obtained using cross-sectional SEM image in Figure S5 in the Supporting Information was used to calibrate the sputtering rate of the \(Ar^+\) gun to 2 Å/s in the metal electrode, 2-3 Å/s in the P3HT polymer, and &lt;1 Å/s in the TiO2 layer.  </li>
+<li>Figure 5: The S 2p peak is in 164.3 eV. The peak at 162.1 eV located at -2.2 eV relative to the pristine P3HT signal suggests the formation of copper sulﬁdes, which conﬁrms that Cu has bonded with S, thereby donating some electron density to the thiophene ring. </li>
+</ul>
+<p><img src="/2018/01/11/Material-Characterization-Technique-XPS/Solar-Cell.png" alt="XPS"></p>
+<p><a href="http://pubs.rsc.org/en/content/articlepdf/2014/CP/C4CP02075H" target="_blank" rel="noopener">Depth profile studies on nickel rich cathode material surfaces after cycling with an electrolyte containing vinylene carbonate at elevated temperature</a>  </p>
+<ul>
+<li>Etching: \(Ar^+\)(2 keV, 20 min)  </li>
+<li>XPS: k-alpha instrument employing monochromated Al K\(\alpha\) radiation as the X-ray source  </li>
+<li>The following figure displays atomic ratio profile of different elements consisting of surface layer of NCM622 Cathode.<br><img src="/2018/01/11/Material-Characterization-Technique-XPS/NCM622.png" alt="XPS"></li>
+</ul>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0378775313019654" target="_blank" rel="noopener">Analysis of the solid electrolyte interphase formed with an ionic liquid electrolyte for lithium-sulfur batteries</a>  </p>
+<ul>
+<li>Etching: An argonion beam (accelerating voltage 3 kV, emission current 10 mA) was employed to perform depth profiling (etching area, 1 mm * 1 mm)  </li>
+<li>XPS: XPS analysis was performed with Al-K\(\alpha\) radiation (200 W, 13 kV) as X-ray source at a pressure of \(10^{-9}\) Torr.  </li>
+<li>The following figure shows the XPS spectra of lithium electrodes in Li-S cell after 100 times of cycles.<br><img src="/2018/01/11/Material-Characterization-Technique-XPS/Li-S.png" alt="XPS"></li>
+</ul>
+<p><strong>My understanding: The above XPS + sputtering can be divided into two categories: (1) Sputtering and XPS at the same time; (2) Sputtering first, and then conduct XPS</strong></p>
+<h2 id="Limitations"><a href="#Limitations" class="headerlink" title="Limitations"></a>Limitations</h2><p>Here are some limitations of XPS when it is utilized to study SEI in LIBs. (Ref: (2))<br>(1) Damage sample: caused by high energetic photons<br>(2) Degradation of SEI components and may alter their nature<br>(3) Quantification becomes complicated when the substrate and the surface have the same elements<br>(4) Shift to low energy for insulting samples (charging)<br>(5) In ion sputtering, the etching rate is not the same for hard and soft components<br>(6) Etching may also lead to modification of the surface and reactions of the active species to form undersirable products</p>
+<p>Reference article</p>
+<blockquote>
+<p>(1) <a href="http://jes.ecsdl.org/content/163/10/A2149.full.pdf+html" target="_blank" rel="noopener">Review—Post-Mortem Analysis of Aged Lithium-Ion Batteries: Disassembly Methodology and Physico-Chemical Analysis Techniques</a><br>(2) <a href="http://www.sciencedirect.com/science/article/pii/S0013468610007747?via%3Dihub" target="_blank" rel="noopener">A review of the features and analyses of the solid electrolyte interphase in Li-ion batteries</a></p>
+</blockquote>
 
           
         
@@ -1162,13 +1185,18 @@
 <li>GitHub+Hexo 搭建个人网站详细教程: <a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">知乎</a>  </li>
 <li>从零开始制作 Hexo 主题: <a href="http://www.ahonn.me/2016/12/15/create-a-hexo-theme-from-scratch/" target="_blank" rel="noopener">Ahonn 博客</a>  </li>
 <li>添加分类和标签：<a href="https://linlif.github.io/2017/05/27/Hexo%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%8F%8A%E6%A0%87%E7%AD%BE/" target="_blank" rel="noopener">linlif-blog</a></li>
-<li>博客中如何插入图片：</li>
+<li><p>博客中如何插入图片：<br><a href="https://univer2012.github.io/2017/04/23/6how-to-insert-picture-in-hexo-blog/" target="_blank" rel="noopener">SengolnHuang’s blog</a><br><a href="https://steflerjiang.github.io/2016/12/20/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener">蒋士正的博客</a><br><a href="https://www.zhihu.com/question/23378396" target="_blank" rel="noopener">markdown中插入图片怎么定义图片的大小或比例？</a></p>
+</li>
+<li><p>MarkdownPad 2<br><a href="http://www.itwendao.com/article/detail/225825.html" target="_blank" rel="noopener">MarkDownPad2实用教程</a></p>
+</li>
+<li><p>插入公式<br>工具<a href="https://github.com/mathjax/MathJax/" target="_blank" rel="noopener">MathJax</a><br><a href="http://www.atjiang.com/markdown-present-math-formula-with-mathjax/" target="_blank" rel="noopener">Jekyll 博客中使用 Mathjax 写数学公式</a><br><a href="https://weilai5432.github.io/2017/01/11/MathJax-%E5%9C%A8MarkDown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" target="_blank" rel="noopener">MathJax-在网页或MarkDown中插入数学公式</a><br><a href="https://www.jianshu.com/p/117a3d7d0e72" target="_blank" rel="noopener">MarkdownPad2中如何输入公式？</a><br><a href="https://monkey0105.github.io/2017/09/21/hexo-mathjax/" target="_blank" rel="noopener">Hexo博客数学公式显示</a><br><strong><a href="http://daniellaah.github.io/2016/Mathmatical-Formula-within-Markdown.html" target="_blank" rel="noopener">如何在Hexo博客中插入数学公式</a></strong><br>After reading all these documents<br>(1) I download the Mathjax <a href="https://github.com/mathjax/MathJax-docs/blob/master/installation.rst" target="_blank" rel="noopener">latest version</a>, which is V2.6.<br>(2) Then, I unzip it into the fold (C:\Users\laisuo\Blog2\blog\MathJax).<br>(3) After that, I go to MarkdownPad2, and click Tools &gt; Options &gt; Advanced &gt; HTML Head Editor. Then, I input <a href="https://www.jianshu.com/p/117a3d7d0e72" target="_blank" rel="noopener">the code</a> with the correct site</p>
+<blockquote>
+<p>C:\Users\laisuo\Blog2\blog\MathJax\MathJax-2.6-latest\unpacked\MathJax.js?config=TeX-AMS-MML_HTMLorMML  </p>
+</blockquote>
+</li>
 </ol>
-<ul>
-<li><a href="https://univer2012.github.io/2017/04/23/6how-to-insert-picture-in-hexo-blog/" target="_blank" rel="noopener">SengolnHuang’s blog</a></li>
-<li><a href="https://steflerjiang.github.io/2016/12/20/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener">蒋士正的博客</a></li>
-<li><a href="https://www.zhihu.com/question/23378396" target="_blank" rel="noopener">markdown中插入图片怎么定义图片的大小或比例？</a></li>
-</ul>
+<p>(4) Then, I can use the Mathjax to edit math forms.<br>One thing need to mention here that I have to click F6 to see the effect. The live effect of MarkdownPad 2 is not good. </p>
+<h2 id="Skills"><a href="#Skills" class="headerlink" title="Skills"></a>Skills</h2><p>F6 preview, F4改变预览位置，F5是否显示预览， F6浏览器预览， F11全屏</p>
 
           
         
@@ -1644,28 +1672,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-  
-
 
   
 
