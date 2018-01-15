@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="¶Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining">
+<meta name="description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining w">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Electrochemical Impedance Spectrascopy Application (1) TiO2 (semiconductor)">
 <meta property="og:url" content="http://yoursite.com/2017/12/22/Electrochemical-Impedance-Spectrascopy-Application-1-TiO2-semiconductor/index.html">
 <meta property="og:site_name" content="Laisuo Su">
-<meta property="og:description" content="¶Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining">
+<meta property="og:description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining w">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2017-12-24T21:43:10.360Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Electrochemical Impedance Spectrascopy Application (1) TiO2 (semiconductor)">
-<meta name="twitter:description" content="¶Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining">
+<meta name="twitter:description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining w">
 
 
 
@@ -349,21 +349,21 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><h2 id="intro"><a class="header-anchor" href="#intro">¶</a>Intro</h2>
+        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><h2>Intro</h2>
 <p>Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining with reasonable model, EIS helps us understand an abstract reaction process into a easy and concrete way.<br>
 In this part, the application of EIS to understand electron movement in TiO2 will be studied.</p>
 <a id="more"></a>
-<h2 id="big-names-in-this-field"><a class="header-anchor" href="#big-names-in-this-field">¶</a>Big names in this field</h2>
-<h3 id="juan-bisquert"><a class="header-anchor" href="#juan-bisquert">¶</a><a href="https://scholar.google.com/citations?user=-TTRG2kAAAAJ" target="_blank" rel="noopener">Juan Bisquert</a></h3>
+<h2>Big names in this field</h2>
+<h3><a href="https://scholar.google.com/citations?user=-TTRG2kAAAAJ" target="_blank" rel="noopener">Juan Bisquert</a></h3>
 <p><a href="https://scholar.google.com/citations?user=-TTRG2kAAAAJ" target="_blank" rel="noopener">Juan Bisquert</a> is well known in solar cells community since he has done many good contributions in this field. Applying and developing EIS technique is one of his favorites.<br>
 Here are some good articles in his group that help me understand this topic.<br>
 <a href="http://pubs.acs.org/doi/full/10.1021/jp0119429" target="_blank" rel="noopener">Decoupling of Transport, Charge Storage, and Interfacial Charge Transfer in the Nanocrystalline TiO2/Electrolyte System by Impedance Methods</a><br>
 In this article, porous TiO2 thin film was coated onto transparent conducting substrate (TCS). Then, the substrate was immersed into solution (0.01 M H2SO4). Ag/AgCl was used as reference electrode, and Pt wire was utilized as working electrode. EIS was then conducted at various potential points.<br>
 The impedance signal comes from four parts:(1) the electron transport in the TiO2, which is influenced by the free carrier density and electron mobility, <strong>the latter being probably dependent on the carrier density, as the electron motion is a trap-limited process</strong> (<em>R<sub>ohm</sub></em>).(2) the transfer of electrons to redox species in the electrolyte (<em>R<sub>ct</sub></em>).(3) the charging of the contact of the TCS with the electrolyte (capacitor).(4) the charging of capacitive elements in the high surface area porous strcture, including the Helmholtz capacitance in the TiO2/electrolyte interface and <strong>the capacitances related to filling of the conduction band and surface states of the TiO2 in the porous strcture</strong>. (capacitor)</p>
 <p><strong><em>Transmission line model was built and applied to simulate the above values. The difficult part to me is How to deal with the simulation and obtain the values!</em></strong></p>
-<h2 id="optimization-algorithm"><a class="header-anchor" href="#optimization-algorithm">¶</a>Optimization algorithm</h2>
+<h2>Optimization algorithm</h2>
 <p>To find the most reasonable value for each parameter, we need to define a target function first. Then, we try to minimize or maximize the target function so as to figure out the values of all parameters. During the searching process, different algorithms have been proposed. This is the reason we need to choose one of optimization algorithms here to find the values of parameters.</p>
-<h3 id="globalsearch"><a class="header-anchor" href="#globalsearch">¶</a>GlobalSearch</h3>
+<h3>GlobalSearch</h3>
 <p>Some important syntax to use the GlobalSearch function:<br>
 (1) <a href="https://www.mathworks.com/help/gads/globalsearch.html" target="_blank" rel="noopener">gs = GlobalSearch</a><br>
 creates gs, a GlobalSearch solver with its properties set to the defaults.<br>
@@ -575,7 +575,7 @@ x = run(gs,problem)</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#intro"><span class="nav-number">1.</span> <span class="nav-text"><a class="header-anchor" href="#intro">&#xB6;</a>Intro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#big-names-in-this-field"><span class="nav-number">2.</span> <span class="nav-text"><a class="header-anchor" href="#big-names-in-this-field">&#xB6;</a>Big names in this field</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#juan-bisquert"><span class="nav-number">2.1.</span> <span class="nav-text"><a class="header-anchor" href="#juan-bisquert">&#xB6;</a><a href="https://scholar.google.com/citations?user=-TTRG2kAAAAJ" target="_blank" rel="noopener">Juan Bisquert</a></span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#optimization-algorithm"><span class="nav-number">3.</span> <span class="nav-text"><a class="header-anchor" href="#optimization-algorithm">&#xB6;</a>Optimization algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#globalsearch"><span class="nav-number">3.1.</span> <span class="nav-text"><a class="header-anchor" href="#globalsearch">&#xB6;</a>GlobalSearch</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Intro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Big names in this field</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="https://scholar.google.com/citations?user=-TTRG2kAAAAJ" target="_blank" rel="noopener">Juan Bisquert</a></span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Optimization algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">GlobalSearch</span></a></li></ol></li></ol></div>
             
 
           </div>
