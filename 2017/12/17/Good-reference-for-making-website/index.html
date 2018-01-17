@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Laisuo Su">
 <meta property="og:description" content="Reference to make website  GitHub+Hexo 搭建个人网站详细教程: 知乎  从零开始制作 Hexo 主题: Ahonn 博客  添加分类和标签：linlif-blog 博客中如何插入图片： SengolnHuang’s blog 蒋士正的博客 markdown中插入图片怎么定义图片的大小或比例？">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-17T20:08:06.166Z">
+<meta property="og:updated_time" content="2018-01-17T20:24:40.262Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Good reference to learn Hexo and making website">
 <meta name="twitter:description" content="Reference to make website  GitHub+Hexo 搭建个人网站详细教程: 知乎  从零开始制作 Hexo 主题: Ahonn 博客  添加分类和标签：linlif-blog 博客中如何插入图片： SengolnHuang’s blog 蒋士正的博客 markdown中插入图片怎么定义图片的大小或比例？">
@@ -416,7 +416,7 @@ npm WARN SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: 
 * 最终解决办法：根据以上探索，发现将图片备份到七牛云是更好的做法。（1）如果将图片在本地保持，在hexo g的过程中，在public文件夹中会复制相同的图片，同时在github上也会复制一份图片，相当于同样的图片会在三个不同的位置进行备份，极大的占据了不必要的空间。（2）当图片数量较大是，以后的博客上传可能会出现问题，速度问题和github免费容量问题。（3）通过阅读一些<a href="http://lanmiao.oschina.io/2017/03/22/hexo2/" target="_blank" rel="noopener">博客</a>，发现正确的图片引用方式是采用标签插件，而不是markdown语句。</p>
 <h2 id="公式">公式</h2>
 <p>问题描述：使用Mathjax工具来插入公式，在本地预览正常(F6)，但当布局到网站上时无法正常显示！<br>
-* 阅读了<a href="https://monkey0105.github.io/2017/09/21/hexo-mathjax/" target="_blank" rel="noopener">Dreamland 的博客</a>发现在站点配置文件上出了问题。需要布置math:等语句 * 进一步阅读<a href="http://daniellaah.github.io/2016/Mathmatical-Formula-within-Markdown.html" target="_blank" rel="noopener">DanielLaah 的博客</a>发现在博客书写上也出现了问题。尽管在MarkdownPad2编辑器中，添加了设置 (click Tools &gt; Options &gt; Advanced &gt; HTML Head Editor）,但是当将md文件布置成html文件时，上述的设置并没有起作用（也不知道为什么）。所以在md文档的开头添加一段命令即可。 * 下次撰写md文档，凡是需要调用mathjax，都需要再该文档的开头添加一段命令，这样在布置html文件时才可以避免出现公式无法正常显示。</p>
+* 阅读了<a href="https://monkey0105.github.io/2017/09/21/hexo-mathjax/" target="_blank" rel="noopener">Dreamland 的博客</a>发现在站点配置文件上出了问题。需要布置math:等语句 * 进一步阅读<a href="http://daniellaah.github.io/2016/Mathmatical-Formula-within-Markdown.html" target="_blank" rel="noopener">DanielLaah 的博客</a>发现在博客书写上也出现了问题。尽管在MarkdownPad2编辑器中，添加了设置 (click Tools &gt; Options &gt; Advanced &gt; HTML Head Editor）,但是当将md文件布置成html文件时，上述的设置并没有起作用（也不知道为什么）。所以在md文档的开头添加一段命令即可。 * 下次撰写md文档，凡是需要调用mathjax，都需要再该文档的开头添加一段命令，这样在布置html文件时才可以避免出现公式无法正常显示。 * 最后的矛盾：md文件本地预览和在线预览，总有一个无法正常。因为在md语音中_有斜体的意义，而在mathjax语音中_表示小标。为了解决这个矛盾，在md文本中，可以采用_来表示斜体，但是这个规定似乎并没有被mathjax接受。因此，当采用_表示斜体时，md文件本地预览(F6)正常；当采用_表示斜体时，md文件在线预览正常。</p>
 
       
     </div>
