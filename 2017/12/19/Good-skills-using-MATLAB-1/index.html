@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Intro This article inclues some useful skills that I would like to use when plotting figures in Matlab, including Legend, Axis, Color of plot, etc.">
+<meta name="description" content="Intro This article inclues some useful skills that I would like to use when plotting figures in Matlab, including Legend, Axis, Color of plot, etc.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Good skills using MATLAB (1)">
 <meta property="og:url" content="http://yoursite.com/2017/12/19/Good-skills-using-MATLAB-1/index.html">
 <meta property="og:site_name" content="Laisuo Su">
-<meta property="og:description" content="Intro This article inclues some useful skills that I would like to use when plotting figures in Matlab, including Legend, Axis, Color of plot, etc.">
+<meta property="og:description" content="Intro This article inclues some useful skills that I would like to use when plotting figures in Matlab, including Legend, Axis, Color of plot, etc.">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2017-12-21T19:10:54.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Good skills using MATLAB (1)">
-<meta name="twitter:description" content="Intro This article inclues some useful skills that I would like to use when plotting figures in Matlab, including Legend, Axis, Color of plot, etc.">
+<meta name="twitter:description" content="Intro This article inclues some useful skills that I would like to use when plotting figures in Matlab, including Legend, Axis, Color of plot, etc.">
 
 
 
@@ -381,30 +381,24 @@ y2=2:2:20;<br>
 y3=3:3:30;<br>
 y4=4:4:40;<br>
 hold on;<br>
-f1=plot(x,y1,’-’,‘LineWidth’,2,‘Color’,‘k’);<br>
-f2=plot(x,y2,’-’,‘LineWidth’,2,‘Color’,‘b’);<br>
-f3=plot(x,y3,’-’,‘LineWidth’,2,‘Color’,‘g’);<br>
-f4=plot(x,y4,’-’,‘LineWidth’,2,‘Color’,‘r’);<br>
+f1=plot(x,y1,‘-’,‘LineWidth’,2,‘Color’,‘k’);<br>
+f2=plot(x,y2,‘-’,‘LineWidth’,2,‘Color’,‘b’);<br>
+f3=plot(x,y3,‘-’,‘LineWidth’,2,‘Color’,‘g’);<br>
+f4=plot(x,y4,‘-’,‘LineWidth’,2,‘Color’,‘r’);<br>
 name={‘y1’,‘y2’,‘y3’,‘y4’};<br>
 Leg=columnlegend(2,name);<br>
 set(Leg,‘Fontsize’,16,‘Fontname’, ‘Cambria’,‘FontWeight’,‘Bold’);</p>
 </blockquote>
 <h2 id="axis-setting">Axis setting</h2>
-<p>Here are some setting I would like to use for Axis setting</p>
-<blockquote>
-<p>Example<br>
+<p>Here are some setting I would like to use for Axis setting<br>
+&gt; Example<br>
 set(gca,‘FontSize’,18,‘Fontname’, ‘Cambria’,‘FontWeight’,‘Bold’);<br>
 xlabel(‘xlabel’,‘Fontsize’,18,‘Fontname’, ‘Cambria’,‘FontWeight’,‘Bold’);<br>
-ylabel(‘ylabel’,‘Fontsize’,18,‘Fontname’, ‘Cambria’,‘FontWeight’,‘Bold’);<br>
-axis([0 120 3.5 4.3]);<br>
+ylabel(‘ylabel’,‘Fontsize’,18,‘Fontname’, ‘Cambria’,‘FontWeight’,‘Bold’); axis([0 120 3.5 4.3]);<br>
 set(gca,‘YTick’,[3.5 3.7 3.9 4.1 4.3]);</p>
-</blockquote>
 <h2 id="plot-color">Plot Color</h2>
-<p>Besides k b g m r, we can also use RGB value to define a color.</p>
-<blockquote>
-<p>For example, grey can be defined as below<br>
-f01=plot(x,y,’-’,‘LineWidth’,2,‘Color’,[96 96 96]/255);</p>
-</blockquote>
+<p>Besides k b g m r, we can also use RGB value to define a color. &gt;For example, grey can be defined as below<br>
+f01=plot(x,y,‘-’,‘LineWidth’,2,‘Color’,[96 96 96]/255);</p>
 
       
     </div>
