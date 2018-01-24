@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Material,Themodynamics," />
+  <meta name="keywords" content="Themodynamics,Material," />
 
 
 
@@ -90,17 +90,22 @@
 </script>
 
 <meta name="description" content="I am talking “Phase Transition in Solids” in MSE taught by Prof. David E. Laughlin. There are some concepts that confuse me, and I talked with my friends. One of them told me that the contents are fro">
-<meta name="keywords" content="Material,Themodynamics">
+<meta name="keywords" content="Themodynamics,Material">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Themodynamics of Materials">
 <meta property="og:url" content="http://yoursite.com/2018/01/24/Themodynamics-of-Materials/index.html">
 <meta property="og:site_name" content="Laisuo Su">
 <meta property="og:description" content="I am talking “Phase Transition in Solids” in MSE taught by Prof. David E. Laughlin. There are some concepts that confuse me, and I talked with my friends. One of them told me that the contents are fro">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-24T19:08:57.944Z">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/JosephBlack.png">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/1stLawScientists.png">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/2ndLawScientists.png">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/3rdLawScientists.png">
+<meta property="og:updated_time" content="2018-01-24T22:43:40.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Themodynamics of Materials">
 <meta name="twitter:description" content="I am talking “Phase Transition in Solids” in MSE taught by Prof. David E. Laughlin. There are some concepts that confuse me, and I talked with my friends. One of them told me that the contents are fro">
+<meta name="twitter:image" content="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/JosephBlack.png">
 
 
 
@@ -399,6 +404,7 @@
 
       
         <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><p>I am talking “Phase Transition in Solids” in MSE taught by Prof. David E. Laughlin. There are some concepts that confuse me, and I talked with my friends. One of them told me that the contents are from “Themodynamics of Materials” taught by him in the fall semester. Although I know Themodynamics pretty well becasue I chose it as my Quals Subject, the Themo I learnt is in general. Thus, I feel it is necessary to study his lectures by myself. So, here I am (1/24/2018 1:40:03 PM )</p>
+<a id="more"></a>
 <h1 id="lecture-1-intro.-and-laws-of-classical-thermodynamics">Lecture 1: Intro. and Laws of Classical Thermodynamics</h1>
 <h2 id="stories-time">Stories time</h2>
 <blockquote>
@@ -406,6 +412,39 @@
 </blockquote>
 <h2 id="defination">Defination</h2>
 <p>Thermodynamics is a branch of physics dealing with the transformation of heat into or from other forms of energy such as mechanical, magnetic, electrical etc. as well as the laws which govern such transformations. Gibbs added chemical work, so that thermodynamics is also applied to chemcial reactions etc.</p>
+<h2 id="system">System</h2>
+<p>Any two of the intensive variables of a system may be used to define its state. For example, we may fix the state of the water by saying that its heat capacity is <span class="math inline">\(C_1\)</span> and its viscosity is <span class="math inline">\(v_1\)</span> It is best to use as the defining intensive variable those which we can readily control such as Pressure (P) and temperature (T).</p>
+<h2 id="thermodynamic-variables">Thermodynamic Variables</h2>
+<ul>
+<li>Intensive variable: does not depend on size of system. Or, does not relate to (micro)structure of material. Like P, T</li>
+<li>Extensive variable: depends on the size of the system. Or, relates to (micro)structure of material. Like V.<br>
+In materials science we often differentiate between intrinsic properties and extrinsic properties. In a sense, thermodynamic state variables are intrinsic properties, independent of history.</li>
+</ul>
+<h3 id="processes">Processes</h3>
+<p>Processes are path dependent. They change the state of a system. In thermodynamics, work and thermal energy are the main process we deal with.<br>
+Names of severial constraint processes: Isobaric(dP=1), Isothermal(dT=0), Isochoric(dV=0), Adiabatic(<span class="math inline">\(\delta q\)</span>=0), Cyclic (all state variables <span class="math inline">\(Delat\)</span>=0). * Work: the line integral of the force times the displacement. Note that being a line integral it is by defination path dependent! <span class="math display">\[w=\int F(x)·dx\]</span><br>
+The relationship between heat and work &gt; The relation between heat (thermal energy) and work was suggested in 1798 by Count Rumford (aka Sir Benjamin Thomson, 1753-1814), who, during the boring of cannons at the Munich Arsenal, noticed that the heat, q, produced during the boring was roughly proportional to the work, w, performed during the boring.</p>
+<h2 id="laws-of-thermodynamics">Laws of Thermodynamics</h2>
+<p>Sometimes thermodynamics is summarized by stating its laws, which can be treated as experimentally determined facts of nature, or can be considered as axioms from which other thermodynamic relationships can be derived.</p>
+<h3 id="zeroth-law-temperature">Zeroth Law (Temperature)</h3>
+<p>Law: If A is in thermal equilibrium with C, B is in thermal equilibrium with C, then A is in thermal equilibrium with B.<br>
+This law is fundamental to our understanding of energy, heat, work and entropy and since it was stated after the first law, is was named the Zeroth Law.<br>
+Joseph Black was the founder of this Law. It was he who emphasized that there is a difference between Temperature and Heat content. He was a “father” of calorimetry and measured latent heats for the first time. James Watt (1736-1819) was his student.<br>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/JosephBlack.png"></p>
+<h3 id="first-law-energy">First Law (Energy)</h3>
+<p>Law: Energy is conserved. The first law not only states that the energy of the universe is conserved, but it also posits that any form of energy (such as electrical, magnetic, mechanical etc.) can be converted into other forms of energy.<br>
+<span class="math display">\[dU=\delta Q-\delta W\]</span> where U is internal energy, which is an important extensive thermodynamic state variable. This equation says heat can be transformed into work!<br>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/1stLawScientists.png"></p>
+<h3 id="second-law-entropy">Second Law (Entropy)</h3>
+<p>Law: The state of entropy of the entire universe, as an isolated system, will always increase over time.<br>
+This law allows us to make important predictions of the direction that a system will evolve with time during spontaneous processes, if other important caveats are taken into account. It gives time a direction!<br>
+&gt; Comment: This law is the one that often gets attention in popular discussions of science. Indeed C. P. Snow once stated to the effect that a person not knowing the second law of thermodynamics was equivalent to a person who had never read a play by Shakespeare!<br>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/2ndLawScientists.png"></p>
+<h3 id="third-law-absolute-0-k">Third Law (Absolute 0 K)</h3>
+<p>Law: when a system which is in equilibrium approaches the absolute zero in temperature, its entropy approaches zero as well. Another (and equivalent statement) of the law is sometimes called the unattainability law: a system can never be be taken to the absolute zero in temperature.<br>
+&gt; Nernst Statement: <span class="math inline">\(\Delta S\)</span> approaches 0 at T approaches 0<br>
+&gt; Planck Statement: S approaches to 0 as T approaches 0<br>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/Thermodynamics-In-Materials/3rdLawScientists.png"></p>
 
       
     </div>
@@ -423,9 +462,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Material/" rel="tag"># Material</a>
-          
             <a href="/tags/Themodynamics/" rel="tag"># Themodynamics</a>
+          
+            <a href="/tags/Material/" rel="tag"># Material</a>
           
         </div>
       
@@ -616,7 +655,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#lecture-1-intro.-and-laws-of-classical-thermodynamics"><span class="nav-number">1.</span> <span class="nav-text">Lecture 1: Intro. and Laws of Classical Thermodynamics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#stories-time"><span class="nav-number">1.1.</span> <span class="nav-text">Stories time</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#defination"><span class="nav-number">1.2.</span> <span class="nav-text">Defination</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#lecture-1-intro.-and-laws-of-classical-thermodynamics"><span class="nav-number">1.</span> <span class="nav-text">Lecture 1: Intro. and Laws of Classical Thermodynamics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#stories-time"><span class="nav-number">1.1.</span> <span class="nav-text">Stories time</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#defination"><span class="nav-number">1.2.</span> <span class="nav-text">Defination</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#system"><span class="nav-number">1.3.</span> <span class="nav-text">System</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#thermodynamic-variables"><span class="nav-number">1.4.</span> <span class="nav-text">Thermodynamic Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#processes"><span class="nav-number">1.4.1.</span> <span class="nav-text">Processes</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#laws-of-thermodynamics"><span class="nav-number">1.5.</span> <span class="nav-text">Laws of Thermodynamics</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#zeroth-law-temperature"><span class="nav-number">1.5.1.</span> <span class="nav-text">Zeroth Law (Temperature)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#first-law-energy"><span class="nav-number">1.5.2.</span> <span class="nav-text">First Law (Energy)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#second-law-entropy"><span class="nav-number">1.5.3.</span> <span class="nav-text">Second Law (Entropy)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#third-law-absolute-0-k"><span class="nav-number">1.5.4.</span> <span class="nav-text">Third Law (Absolute 0 K)</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
