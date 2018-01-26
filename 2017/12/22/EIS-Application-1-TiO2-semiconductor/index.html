@@ -78,7 +78,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Alegreya Sans:300,300italic,400,400italic,700,700italic|Noto Serif:300,300italic,400,400italic,700,700italic|Lobster:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|EB Garamond:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -127,18 +127,18 @@
 	})();
 </script>
 
-<meta name="description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining">
+<meta name="description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining w">
 <meta name="keywords" content="EIS,Semiconductor,TiO2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EIS Application (1) TiO2 (semiconductor)">
 <meta property="og:url" content="http://yoursite.com/2017/12/22/EIS-Application-1-TiO2-semiconductor/index.html">
 <meta property="og:site_name" content="Laisuo Su">
-<meta property="og:description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining">
+<meta property="og:description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining w">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2018-01-26T12:03:34.493Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EIS Application (1) TiO2 (semiconductor)">
-<meta name="twitter:description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining">
+<meta name="twitter:description" content="Intro Electrochemical Impedance Spectroscopy (EIS) has been applied in various fields. It is very powerful since it can seperate/decouple different processes with different time constants. Combining w">
 
 
 
@@ -457,13 +457,15 @@ creates gs, a GlobalSearch solver with its properties set to the defaults.<br>
 (2) <a href="https://www.mathworks.com/help/gads/createoptimproblem.html" target="_blank" rel="noopener">problem = createOptimProblem(‘solverName’,‘ParameterName’,ParameterValue,…)</a><br>
 creates an empty optimization problem structure for the solverName solver.<br>
 (3) <a href="https://www.mathworks.com/help/gads/globalsearch.run.html" target="_blank" rel="noopener">x = run(gs,problem)</a><br>
-runs GlobalSearch to find a solution or multiple local solutions to problem<br>
-&gt; Here is a quick example<br>
+runs GlobalSearch to find a solution or multiple local solutions to problem</p>
+<blockquote>
+<p>Here is a quick example<br>
 rng default % For reproducibility<br>
 gs = GlobalSearch;<br>
 sixmin = @(x)(4<em>x(1)^2 - 2.1</em>x(1)^4 + x(1)^6/3 + x(1)<em>x(2) - 4</em>x(2)^2 + 4*x(2)^4);<br>
 problem = createOptimProblem(‘fmincon’,‘x0’,[-1,2],‘objective’,sixmin,‘lb’,[-3,-3],‘ub’,[3,3]);<br>
 x = run(gs,problem)</p>
+</blockquote>
 
       
     </div>
