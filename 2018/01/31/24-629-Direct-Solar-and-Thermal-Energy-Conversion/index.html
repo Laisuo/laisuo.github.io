@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|EB Garamond:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Quantum Mechanics,Solar Cell,Energy Conversion,Class Notes," />
+
+
+
+
+
+
+
+
+
+<script>
+	(function(){
+		if(''){
+			if (prompt('请输入文章密码','') !== ''){
+				alert('密码错误！');
+				history.back();
+			}
+		}
+	})();
+</script>
+
+<meta name="description" content="Instructors: Prof. Sheng Shen Course Description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first">
+<meta name="keywords" content="Quantum Mechanics,Solar Cell,Energy Conversion,Class Notes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="24-629 Direct Solar and Thermal Energy Conversion ">
+<meta property="og:url" content="http://yoursite.com/2018/01/31/24-629-Direct-Solar-and-Thermal-Energy-Conversion/index.html">
+<meta property="og:site_name" content="Laisuo Su">
+<meta property="og:description" content="Instructors: Prof. Sheng Shen Course Description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Infinite_potential_well.png">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/square2.xy.E.gif">
+<meta property="og:updated_time" content="2018-02-01T16:07:57.143Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="24-629 Direct Solar and Thermal Energy Conversion ">
+<meta name="twitter:description" content="Instructors: Prof. Sheng Shen Course Description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first">
+<meta name="twitter:image" content="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Infinite_potential_well.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/31/24-629-Direct-Solar-and-Thermal-Energy-Conversion/"/>
+
+
+
+
+
+  <title>24-629 Direct Solar and Thermal Energy Conversion  | Laisuo Su</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Laisuo Su</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Personal Blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resume">
+          <a href="http://laisuosu.com/vitae/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-id-card"></i> <br />
+            
+            Resume
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jlab">
+          <a href="http://jayanlab.com/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br />
+            
+            JLab
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-reading-time">
+          <a href="http://laisuosu.com/WebCollection/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            Reading Time
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/31/24-629-Direct-Solar-and-Thermal-Energy-Conversion/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Laisuo Su">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Laisuo Su">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">24-629 Direct Solar and Thermal Energy Conversion </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-31T22:21:58-05:00">
+                2018-01-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Subject-Course/" itemprop="url" rel="index">
+                    <span itemprop="name">Subject/Course</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/31/24-629-Direct-Solar-and-Thermal-Energy-Conversion/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/01/31/24-629-Direct-Solar-and-Thermal-Energy-Conversion/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><p>Instructors: Prof. Sheng Shen</p>
+<h1 id="course-description">Course Description</h1>
+<p>This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first part of the course reviews for understanding quantum mechanics, solid state physics and semiconductor device physics for understanding solid-state energy conversion. The second part discusses the underlying principles of thermoelectric energy conversion, and photovoltaics. Various solar thermal technologies will be reviewed, following by an introduction to the principles of solar thermophotovoltaics and solar thermoelectrics. Spectral control techniques which are critical for solar thermal systems will also be discussed.<br>
+<a id="more"></a></p>
+<h1 id="particles">Particles</h1>
+<h2 id="microscopic-particles-energy-carriers">Microscopic Particles (Energy Carriers)</h2>
+<ol type="1">
+<li>electron <span class="math inline">\(\longrightarrow\)</span> electricity</li>
+<li>Photon <span class="math inline">\(\longrightarrow\)</span> solar energy</li>
+<li>Phono <span class="math inline">\(\longrightarrow\)</span> thermal energy (heat)
+<ul>
+<li>Both phonon and electron can carry heat</li>
+</ul></li>
+</ol>
+<h2 id="classical-particles-and-waves">Classical particles and waves</h2>
+<ol type="1">
+<li>Particles
+<ul>
+<li>States: position (<span class="math inline">\(\overrightarrow{F}=m\overrightarrow{a}\)</span>), monentum (<span class="math inline">\(P=mV\)</span>)</li>
+</ul></li>
+<li>Waves
+<ul>
+<li>States: wave amplitude, frequency</li>
+<li>How to tell a wave is a wave? (Answer: diffraction (single slit experiment), or interference (double slit experiment))</li>
+<li>The solution of wave function <span class="math display">\[\overrightarrow{\Phi}=Acos(kx-wt) \overrightarrow{y}\]</span> where <span class="math inline">\(k=\frac{2\pi}{\lambda}\)</span> called wavevector, <span class="math inline">\(\lambda\)</span> called wavelength, <span class="math inline">\(1/\lambda\)</span> called wavenumber.</li>
+<li>Wave in 3D space <span class="math display">\[\overrightarrow{\Phi}=Acos(\overrightarrow{k} \overrightarrow{x}-wt) \overrightarrow{r}\]</span> where <span class="math inline">\(\overrightarrow{k}=k_x\widehat{x}+k_y\widehat{y}+k_z\widehat{z}\)</span> is wave vector in 3D, <span class="math inline">\(\overrightarrow{r}=x\widehat{x}+y\widehat{y}+z\widehat{z}\)</span></li>
+</ul></li>
+<li>Wave-particle duality
+<ul>
+<li><strong>Planck-Einstein relations</strong>: <span class="math display">\[E=\hbar \omega\]</span> <span class="math display">\[\overrightarrow{P}=\hbar \overrightarrow{k}\]</span> The left side describes particle properties, while the right side wave properties. <span class="math inline">\(\hbar=h/{2 \pi}\)</span></li>
+</ul></li>
+<li>Material waves
+<ul>
+<li>de Broglie waves <span class="math display">\[\lambda=\frac{h}{p}\]</span> where <span class="math inline">\(h\)</span> is <a href="https://en.wikipedia.org/wiki/Planck_constant" target="_blank" rel="noopener">planck constant</a> that is <span class="math inline">\(6.6*10^{-34} Js\)</span>, p is momentum.</li>
+</ul></li>
+</ol>
+<h1 id="quantum-mechanics">Quantum mechanics</h1>
+<h2 id="schrodinger-equation-wave-equation">Schrodinger equation (wave equation)</h2>
+<ol type="1">
+<li>Governing equation <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=i\hbar \frac{\partial}{\partial t}\psi\]</span> where m is mass, U is potential and <span class="math inline">\(U=U(\overrightarrow{r},t)\)</span>, <span class="math inline">\(i\)</span> is imaginary unit, and<strong><span class="math inline">\(\psi=\psi(\overrightarrow{r},t)\)</span> is wave function</strong>.
+<ul>
+<li>The meaning of <span class="math inline">\(\psi\)</span> itself does not have any physical meaning, but it can be used to calculated all properties of a particle.</li>
+</ul></li>
+<li>Normalization of wave function: if <span class="math inline">\(\psi\)</span> is the solution of schrodinger equation, the <span class="math inline">\(5\psi\)</span>, <span class="math inline">\(10\psi\)</span>,…, <span class="math inline">\(n\psi\)</span> will also be it’s solution. To obtain a unique solution, we need to normalization it by defining the totally probability to find a particle is 1. <span class="math display">\[\int_{-\infty}^\infty \psi^* \cdot \psi d\forall\]</span> where <span class="math inline">\(d\forall=dxdydz\)</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Born_rule" target="_blank" rel="noopener">Born rule</a>: The simplest form it states that the probability density of finding the particle at a given point is proportional to the square of the magnitude of the particle’s wavefunction at that point. <span class="math display">\[P=|\psi|^2=\psi^*(\overrightarrow{r},t)\cdot \psi(\overrightarrow{r},t)\]</span></li>
+<li><strong><a href="https://en.wikipedia.org/wiki/Expectation_value_(quantum_mechanics)" target="_blank" rel="noopener">Expectation value</a></strong>: In quantum mechanics, the expectation value is the probabilistic expected value of the result (measurement) of an experiment. It is not the most probable value of a measurement. <span class="math display">\[&lt;q&gt;=\int_{-\infty}^\infty \psi^* \Omega \psi\]</span> where <span class="math inline">\(\Omega\)</span> is called operator. In quantum mechanics, any obserable or measureable quantity has one corresponding operator.
+<ul>
+<li>Position: <span class="math inline">\(\Omega=\overrightarrow{r}\)</span></li>
+<li>Momentum: <span class="math inline">\(\Omega=-i\hbar \nabla\)</span></li>
+<li>Energy: <span class="math inline">\(\Omega=H=-\frac{\hbar^2}{2m} \nabla^2+U\)</span>, where H is called Hamiltonian</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Uncertainty_principle" target="_blank" rel="noopener">Heisonberg Uncertainty Principle</a>: it asserting a fundamental limit to the precision with which certain pairs of physical properties of a particle, known as complementary variables, such as position x and momentum p, can be known. (although we cannot prove it from mathmatic yet, but it has been proved many times in experiment). <span class="math display">\[\Delta P_x \cdot \Delta x \geq \hbar/2\]</span> <span class="math display">\[\Delta E \cdot \Delta t \geq \hbar/2\]</span> These say that position (x) and momentum (P) or Energy (E) and time (t) cannot be accurately determined simultanously in the quantum mechanics world.
+<ul>
+<li><span class="math inline">\(\Delta x=\sqrt{(x-\bar{x})^2}\)</span></li>
+</ul></li>
+</ol>
+<h2 id="steady-state-schrodinger-equation-time-independent-schrodinger-equation">Steady-state Schrodinger equation (Time independent Schrodinger equation)</h2>
+<p>If the potential <span class="math inline">\(U=U(\overrightarrow{r},t)\)</span> is time independent, and <span class="math inline">\(U=U(\overrightarrow{r},t)\)</span>=<span class="math inline">\(U=U(\overrightarrow{r})\)</span>, we can assume <span class="math display">\[\psi(\overrightarrow{r},t)=\psi(\overrightarrow{r}) \cdot Y(t)\]</span> Substitute it into Schrodinger equation <span class="math inline">\(-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=i\hbar \frac{\partial}{\partial t}\psi\)</span>, we have <span class="math display">\[\frac{1}{\psi} (-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi)=i\hbar \frac{dY}{dt}\]</span> To make the equation correct, both side should equal to a constant E, which represent energy. <span class="math display">\[i\hbar \frac{dY}{dt}=E\]</span> <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=E \psi\]</span> Finally, we obtain the steady-state Schrodinger equation <strong><span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (U-E)\psi=0\]</span></strong><br>
+Here are some examples of steady-state Schrodinger equation.</p>
+<h3 id="free-particle">Free particle</h3>
+<p>The free partile does not have potential, thus <span class="math inline">\(U=0\)</span>. Then, Schrodinger equation becomes <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+ E\psi=0\]</span> The solution of this equation is <span class="math display">\[\psi(x)=Ae^{-ikx}+Be^{ikx}\]</span> where <span class="math inline">\(k=\sqrt{\frac{2Em}{\hbar^2}}\)</span></p>
+<h3 id="particle-in-a-one-dimensional-infinit-potential-well">Particle in a one-dimensional infinit potential well</h3>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Infinite_potential_well.png">
+<p>Schrodinger equation <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (U-E)\psi=0 \]</span> When <span class="math inline">\(x&lt;0\)</span> or <span class="math inline">\(x&gt;D\)</span>, <span class="math inline">\(\psi(x)=0\)</span><br>
+When <span class="math inline">\(0&lt;x&lt;D\)</span> <span class="math display">\[\psi(x)=Ae^{-ikx} + Be^{ikx} \tag{1}\]</span> where <span class="math inline">\(k=\sqrt{\frac{2Em}{\hbar^2}}\)</span><br>
+To solve the constants A and B, we need two boundary conditions.<br>
+&gt; Generally, boundary conditions are determined by the continuity of the wave function and their first-order derivations at boundaries.</p>
+<p>Here, we have <span class="math display">\[\psi(x=0)=0\]</span> <span class="math display">\[\psi(x=D)=0\]</span> Substitute them into equation (1), we have <span class="math display">\[A+B=0 \tag{2}\]</span> <span class="math display">\[Ae^{-ikD} + Be^{ikD}=0 \tag{3}\]</span> Solving equations (2) and (3), we have <span class="math inline">\(sin(kD)=0\)</span>, which means <span class="math inline">\(\sqrt{\frac{2Em}{\hbar^2}} \cdot D = n \cdot \pi\)</span><br>
+Therefore <span class="math display">\[E_n=\frac{\hbar^2}{2m}(\frac{n \pi}{D})^2 \tag{4}\]</span> Equation (4) tells us energy is quantized for a particle in a one-dimensional infinit potential well.<br>
+Wave function can also be obtained <span class="math display">\[\psi(x)=-2iAsin(\frac{n \pi x}{D})\]</span> The value of A can be calculated with normalization of the wave function and <span class="math inline">\(A=\frac{i}{sqrt{2D}}\)</span><br>
+Therefore, wave function is <span class="math display">\[\psi(x)=\sqrt{\frac{2}{D}}sin(\frac{n \pi x}{D}) \tag{5}\]</span> With wave function, all other properties can be calculated using corresponding operator.</p>
+<h3 id="particle-in-a-square-nanowire-2d-case">Particle in a square nanowire (2D case)</h3>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/square2.xy.E.gif">
+<p>As a square, we can define <span class="math inline">\(L_x=D\)</span> and <span class="math inline">\(L_y=D\)</span>. Schrodinger equation is <span class="math display">\[-\frac{\hbar^2}{2m} (\frac{\partial^2 \psi}{\partial x^2}+\frac{\partial^2 \psi}{\partial y^2})+ (U-E)\psi=0 \tag{1}\]</span> The potential within square is 0, that is <span class="math inline">\(U=0\)</span>.<br>
+Using a mathematic trick, separation of variable, that we define <span class="math inline">\(\psi(x,y)=X(x)Y(y)\)</span>, Schrodinger equation can be converted to <span class="math display">\[\frac{1}{X} \frac{d^2 X}{dx^2} + \frac{1}{Y} \frac{d^2 Y}{dy^2} + \frac{2mE}{\hbar^2}=0 \tag{2}\]</span> The only way to make equaiton (2) correct is that <span class="math display">\[\frac{1}{X} \frac{d^2 X}{dx^2}= - \alpha^2 \tag{3}\]</span> and <span class="math display">\[\frac{1}{Y} \frac{d^2 Y}{dy^2}= - \beta^2 \tag{4}\]</span> where <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are constants<br>
+Equation (3) gives solution <span class="math display">\[X(x)=Asin(\alpha x)+Bcos(\alpha x) \tag{5}\]</span> To solve parameters A and B, we can use boundary conditions that <span class="math inline">\(\psi = 0\)</span> at <span class="math inline">\(x=0\)</span> and <span class="math inline">\(x=D\)</span> as we did in the one-dimensional potential well, which gives <span class="math display">\[B=0 \tag{6}\]</span> <span class="math display">\[Asin(\alpha D)=0 \tag{7}\]</span> Equation (7) gives <span class="math inline">\(\alpha_n=\frac{n \pi}{D}\)</span> (<span class="math inline">\(n=1,2,...\)</span>)<br>
+Therefore, <span class="math display">\[X_n(x)=A_nsin(\frac{n \pi}{D} x) \tag{8}\]</span> Similarly, we also have <span class="math display">\[Y_l(y)=\beta_l sin(\frac{l \pi}{D}y) \tag{9}\]</span> Substitute equation (8) and (9) into (2), we have energy <span class="math display">\[E_{nl}=\frac{(l^2+n^2) \pi^2 \hbar^2}{2mD^2} \tag{10}\]</span> <span class="math display">\[\psi_{nl}(x,y)=C_{nl}sin(\frac{n \pi}{D}x)sin(\frac{l \pi}{D}y) \tag{10}\]</span> where <span class="math inline">\(n,l=1,2,...\)</span> and <span class="math inline">\(C_{nl}= \frac{2}{D}\)</span> based on normalization.</p>
+<p><strong>Degeneracy</strong>: many quantum states at the same energy level. In the above example, <span class="math inline">\(E_{21}=E_{12}\)</span>, but <span class="math inline">\(\psi_{21} \neq \psi_{12}\)</span>.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Quantum-Mechanics/" rel="tag"># Quantum Mechanics</a>
+          
+            <a href="/tags/Solar-Cell/" rel="tag"># Solar Cell</a>
+          
+            <a href="/tags/Energy-Conversion/" rel="tag"># Energy Conversion</a>
+          
+            <a href="/tags/Class-Notes/" rel="tag"># Class Notes</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/29/5th-week-reading-in-2018/" rel="next" title="5th week reading in 2018">
+                <i class="fa fa-chevron-left"></i> 5th week reading in 2018
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Laisuo Su</p>
+              <p class="site-description motion-element" itemprop="description">I am a Ph.D. student in Carnegie Mellon University</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/laisuo" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/LaisuoSu" target="_blank" title="Twitter">
+                    
+                      <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/su-lai-suo" target="_blank" title="Zhihu">
+                    
+                      <i class="fa fa-fw fa-user-o"></i>Zhihu</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://portal.qiniu.com/bucket/laisuoblog2018/index" target="_blank" title="Qiniuyun">
+                    
+                      <i class="fa fa-fw fa-window-restore"></i>Qiniuyun</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#course-description"><span class="nav-number">1.</span> <span class="nav-text">Course Description</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#particles"><span class="nav-number">2.</span> <span class="nav-text">Particles</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#microscopic-particles-energy-carriers"><span class="nav-number">2.1.</span> <span class="nav-text">Microscopic Particles (Energy Carriers)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#classical-particles-and-waves"><span class="nav-number">2.2.</span> <span class="nav-text">Classical particles and waves</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#quantum-mechanics"><span class="nav-number">3.</span> <span class="nav-text">Quantum mechanics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#schrodinger-equation-wave-equation"><span class="nav-number">3.1.</span> <span class="nav-text">Schrodinger equation (wave equation)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#steady-state-schrodinger-equation-time-independent-schrodinger-equation"><span class="nav-number">3.2.</span> <span class="nav-text">Steady-state Schrodinger equation (Time independent Schrodinger equation)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#free-particle"><span class="nav-number">3.2.1.</span> <span class="nav-text">Free particle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#particle-in-a-one-dimensional-infinit-potential-well"><span class="nav-number">3.2.2.</span> <span class="nav-text">Particle in a one-dimensional infinit potential well</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#particle-in-a-square-nanowire-2d-case"><span class="nav-number">3.2.3.</span> <span class="nav-text">Particle in a square nanowire (2D case)</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Laisuo Su</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://YixinsWorld.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2018/01/31/24-629-Direct-Solar-and-Thermal-Energy-Conversion/';
+          this.page.identifier = '2018/01/31/24-629-Direct-Solar-and-Thermal-Energy-Conversion/';
+          this.page.title = '24-629 Direct Solar and Thermal Energy Conversion ';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://YixinsWorld.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="custom_mathjax_source">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>
