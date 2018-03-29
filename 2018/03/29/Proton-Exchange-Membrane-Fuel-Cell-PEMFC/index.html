@@ -127,19 +127,22 @@
 	})();
 </script>
 
-<meta name="description" content="Components">
+<meta name="description" content="Basics Components The following figure shows the components of a proton exchange membrance fuel cell (PEMFC) [1].">
 <meta name="keywords" content="Fuel Cells,PEMFC">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Proton Exchange Membrane Fuel Cell (PEMFC)">
 <meta property="og:url" content="http://yoursite.com/2018/03/29/Proton-Exchange-Membrane-Fuel-Cell-PEMFC/index.html">
 <meta property="og:site_name" content="Laisuo Su">
-<meta property="og:description" content="Components">
+<meta property="og:description" content="Basics Components The following figure shows the components of a proton exchange membrance fuel cell (PEMFC) [1].">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/FuelCellComponents.png">
-<meta property="og:updated_time" content="2018-03-29T13:37:14.823Z">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/ORRmechanism.png">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/PolarizationCurveofPEMFC.png">
+<meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/PEMFCSpeciesDistribution.png?imageMogr2/thumbnail/300x300">
+<meta property="og:updated_time" content="2018-03-29T17:20:27.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Proton Exchange Membrane Fuel Cell (PEMFC)">
-<meta name="twitter:description" content="Components">
+<meta name="twitter:description" content="Basics Components The following figure shows the components of a proton exchange membrance fuel cell (PEMFC) [1].">
 <meta name="twitter:image" content="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/FuelCellComponents.png">
 
 
@@ -438,8 +441,63 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><h1 id="components">Components</h1>
-<img components](https="//www.nature.com/articles/nature11115)" src="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/FuelCellComponents.png">
+        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><h1 id="basics">Basics</h1>
+<h2 id="components">Components</h2>
+<p>The following figure shows the components of a proton exchange membrance fuel cell (PEMFC) <sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top-right hint--error hint--large" data-aria-label="[Electrocatalyst approaches and challenges for automotive fuel cells](https://www.nature.com/articles/nature11115)  
+">[1]</span></a></sup>.</p>
+<img title="Fig. Fuel-Cell components" src="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/FuelCellComponents.png">
+<a id="more"></a>
+<ul>
+<li>Bipolar plates: introduce gaseous reactants to the active heart of the cell, harvest the generated electric current, transport the by-produced water and permit controlling the cell temperature.<br>
+</li>
+<li>Gas diffusion layer (GDL): ensure effectively reactants diffusion, conduct electrons, and assist in proper water management.<br>
+</li>
+<li>Catalyst layer (CL)： help the electrochemical reactions<br>
+</li>
+<li>Proton exchange membrane (PEM): transports proton while prohibits electron conduction.<br>
+</li>
+<li>Microporous layer (MPL): aviod flooding. MPL is added in the GDL to build a dual-layer GDL.</li>
+</ul>
+<p>General. the PEM, CLs, and GDLs comprise an assembly that is usually called the membrane electrode assemble (MEA). The PEM is the core component of PEMFCs. In 1970s, a sulfonated poly-tetrafluoro-ethylene based cation-exchange membrane was first developed by DuPont, named as Nafion, which not only exhibited a two-fold increase in proton conductivity but also extended the lifetime by four orders of magnitued. Since then, this Nafion film soon became a standard for PEMFCs and remains so till today.</p>
+<h2 id="reactions-in-pemfcs">Reactions in PEMFCs</h2>
+<h3 id="hydrogen-oxidation-reaction-hor">Hydrogen oxidation reaction (HOR)</h3>
+<p>The overall half-cell reaction at the anode is hydrogen oxidation reaction (HOR): <span class="math display">\[H_2 \rightleftharpoons 2H^+ + 2e^- \tag{1}\]</span> The above equation occurs successive steps. Here, we use ‘M’ to represent an active Pt atom site, ‘<span class="math inline">\(e^-\)</span>’ to represent an electron. These steps are<br>
+Tafel step: <span class="math display">\[H_2+2M \rightleftharpoons H_{ad} + H_{ad} \tag{2}\]</span> Heyrovsky step: <span class="math display">\[H_2 \rightleftharpoons H^+ + H_{ad} + e^- \tag{3}\]</span> Volmer step: <span class="math display">\[H_{ad} \rightleftharpoons H^+ + e^- \tag{4}\]</span> It is worth noting that the Tafel step and the Heyrovsky step are in parallel and either ore or both of them may occur. However, the Volmer step must always occur for the successfully overal reaction.</p>
+<h3 id="oxygen-reduction-reaction-orr">Oxygen reduction reaction (ORR)</h3>
+<p>The overall reaction: <span class="math display">\[O_2 + 4H^+ + 4e^- \rightleftharpoons 2H_2O \tag{5}\]</span> The real reaction is composed by several series or direct steps, as shown below.</p>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/ORRmechanism.png">
+<p>The corresponding exchange current density of ORR can be six-order smaller than that of HOR. As a result, the ORR contribute the major part of activation loss in PEMFCs.</p>
+<h3 id="side-reactions">Side reactions</h3>
+<ol type="1">
+<li><p>Pt dissolution<br>
+Under certain conditions, such as high potential (&gt;0.9 V vs. RHE), the Pt particles can be oxidized to <span class="math inline">\(Pt^{2+}\)</span>: <span class="math display">\[Pt+H_2O \rightleftharpoons PtO + 2H^+ + 2e^- \tag{6}\]</span> <span class="math display">\[PtO + 2H^+ \rightleftharpoons H_2O + Pt^{2+} \tag{7}\]</span> Following the dissolution, migration and agglomeration of Pt ions may occur, resulting in a loss in the electrochemically active surface area (ECSA).</p></li>
+<li><p>Carbon corrosion <span class="math display">\[C + 2H_2O \rightleftharpoons CO_2 + 4H^+ + 4e^- \tag{8}\]</span> The equilibrium potential of the above reaction is 0.207 V (vs. RHE), indicating the carbon corrosion reaction is thermodynamically possible during PEMFC normal operating conditions. However, kinetically, the carbon corrosion rates at typical operating conditions are very slow. In some extrem condition, like start/stop cycles or open-circuit duration, the high voltage in the cathode will accelerate the rate significally.</p></li>
+</ol>
+<h2 id="thermodynamics-and-kinetics-in-pemfcs">Thermodynamics and kinetics in PEMFCs</h2>
+<p>Even though the OCV predicted from thermodynamics is 1.229 V (298 K), the actual voltage is much less than this value. Generally, the overpotential can be divided into four categories. (1) Voltage loss due to the fuel crossover and internal currents, <span class="math inline">\(\eta_{cro}\)</span>. (2) Activation loss at the three-phase boundary due to the sluggishness of the electrochemical reactions, <span class="math inline">\(\eta_{act}\)</span>. (3) Ohmic loss due to the transport of electrons and protons, <span class="math inline">\(\eta_ohm\)</span>. (4) Concentration loss due to the species transport, <span class="math inline">\(\eta_{con}\)</span>. The following figure illustrates the overpotential components in an operating PEMFC.<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top-right hint--error hint--large" data-aria-label="[Water transport in polymer electrolyte membrane fuel cells](https://www.sciencedirect.com/science/article/pii/S0360128510000511)">[2]</span></a></sup></p>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/PolarizationCurveofPEMFC.png">
+<h2 id="species-and-processes-in-pemfcs">Species and processes in PEMFCs</h2>
+<p>As shown below, multiple processes happen simultaneously duirng PEMFC operation.<br>
+- The transport of the gas reactants through gaseous pores from gas channel, GDL to the catalyst layer.<br>
+- The conduction of electrons through electronic path from current collectors, GDL to the three-phase boundary in the CL.<br>
+- The conduction of protons through protonic path from the membrane to the cathodic catalyst layer.<br>
+- The condensation, evaporation and transport of liquid water and vapor.<br>
+- The conduction of heat primarily through the solid matrix away from the reaction site in the CL.</p>
+<img title="Fig. Schematic of species and processes in PEMFCs." src="http://p2nx95frv.bkt.gdipper.com/images/FuelCell(PEMFC)/PEMFCSpeciesDistribution.png?imageMogr2/thumbnail/300x300">
+<hr>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.nature.com/articles/nature11115" target="_blank" rel="noopener">Electrocatalyst approaches and challenges for automotive fuel cells</a><a href="#fnref:1" rev="footnote"> ↩</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sciencedirect.com/science/article/pii/S0360128510000511" target="_blank" rel="noopener">Water transport in polymer electrolyte membrane fuel cells</a><a href="#fnref:2" rev="footnote"> ↩</a></span>
+</li>
+</ol>
+</div>
+</div>
 
       
     </div>
@@ -656,7 +714,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#components"><span class="nav-number">1.</span> <span class="nav-text">Components</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#basics"><span class="nav-number">1.</span> <span class="nav-text">Basics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#components"><span class="nav-number">1.1.</span> <span class="nav-text">Components</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reactions-in-pemfcs"><span class="nav-number">1.2.</span> <span class="nav-text">Reactions in PEMFCs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hydrogen-oxidation-reaction-hor"><span class="nav-number">1.2.1.</span> <span class="nav-text">Hydrogen oxidation reaction (HOR)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#oxygen-reduction-reaction-orr"><span class="nav-number">1.2.2.</span> <span class="nav-text">Oxygen reduction reaction (ORR)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#side-reactions"><span class="nav-number">1.2.3.</span> <span class="nav-text">Side reactions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#thermodynamics-and-kinetics-in-pemfcs"><span class="nav-number">1.3.</span> <span class="nav-text">Thermodynamics and kinetics in PEMFCs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#species-and-processes-in-pemfcs"><span class="nav-number">1.4.</span> <span class="nav-text">Species and processes in PEMFCs</span></a></li></ol></li></ol></div>
             
 
           </div>
