@@ -127,13 +127,13 @@
 	})();
 </script>
 
-<meta name="description" content="Instructors: Prof. Sheng Shen Course description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first p">
+<meta name="description" content="Instructors: Prof. Sheng Shen Course description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first">
 <meta name="keywords" content="Quantum Mechanics,Solar Cell,Energy Conversion,Class Notes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="24-629 Direct Solar and Thermal Energy Conversion ">
 <meta property="og:url" content="http://yoursite.com/2018/01/31/24-629-Direct-Solar-and-Thermal-Energy-Conversion/index.html">
 <meta property="og:site_name" content="Laisuo Su">
-<meta property="og:description" content="Instructors: Prof. Sheng Shen Course description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first p">
+<meta property="og:description" content="Instructors: Prof. Sheng Shen Course description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Infinite_potential_well.png">
 <meta property="og:image" content="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/square2.xy.E.gif">
@@ -147,7 +147,7 @@
 <meta property="og:updated_time" content="2018-04-08T13:36:55.771Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="24-629 Direct Solar and Thermal Energy Conversion ">
-<meta name="twitter:description" content="Instructors: Prof. Sheng Shen Course description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first p">
+<meta name="twitter:description" content="Instructors: Prof. Sheng Shen Course description This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first">
 <meta name="twitter:image" content="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Infinite_potential_well.png">
 
 
@@ -446,375 +446,228 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><p>Instructors: Prof. Sheng Shen</p>
-<h1>Course description</h1>
-<p>This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first part of the course reviews for understanding quantum mechanics, solid state physics and semiconductor device physics for understanding solid-state energy conversion. The second part discusses the underlying principles of thermoelectric energy conversion, and photovoltaics. Various solar thermal technologies will be reviewed, following by an introduction to the principles of solar thermophotovoltaics and solar thermoelectrics. Spectral control techniques which are critical for solar thermal systems will also be discussed.</p>
-<a id="more"></a>  
-<h1>Particles</h1>
+        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><p>Instructors: Prof. Sheng Shen</p>
+<h1 id="course-description">Course description</h1>
+<p>This course introduces principles and technologies for directly converting heat and solar light into electricity using solid-state devices. The first part of the course reviews for understanding quantum mechanics, solid state physics and semiconductor device physics for understanding solid-state energy conversion. The second part discusses the underlying principles of thermoelectric energy conversion, and photovoltaics. Various solar thermal technologies will be reviewed, following by an introduction to the principles of solar thermophotovoltaics and solar thermoelectrics. Spectral control techniques which are critical for solar thermal systems will also be discussed.<br>
+<a id="more"></a></p>
+<h1 id="particles">Particles</h1>
 <h2 id="microscopic-particles-energy-carriers">Microscopic Particles (Energy Carriers)</h2>
-<ol>
-<li>electron $\longrightarrow$ electricity</li>
-<li>Photon $\longrightarrow$ solar energy</li>
-<li>Phono $\longrightarrow$ thermal energy (heat)
+<ol type="1">
+<li>electron <span class="math inline">\(\longrightarrow\)</span> electricity</li>
+<li>Photon <span class="math inline">\(\longrightarrow\)</span> solar energy</li>
+<li>Phono <span class="math inline">\(\longrightarrow\)</span> thermal energy (heat)
 <ul>
 <li>Both phonon and electron can carry heat</li>
-</ul>
-</li>
+</ul></li>
 </ol>
 <h2 id="classical-particles-and-waves">Classical particles and waves</h2>
-<ol>
+<ol type="1">
 <li>Particles
 <ul>
-<li>States: position ($\overrightarrow{F}=m\overrightarrow{a}$), monentum ($P=mV$)</li>
-</ul>
-</li>
+<li>States: position (<span class="math inline">\(\overrightarrow{F}=m\overrightarrow{a}\)</span>), monentum (<span class="math inline">\(P=mV\)</span>)</li>
+</ul></li>
 <li>Waves
 <ul>
 <li>States: wave amplitude, frequency</li>
 <li>How to tell a wave is a wave? (Answer: diffraction (single slit experiment), or interference (double slit experiment))</li>
-<li>The solution of wave function $$\overrightarrow{\Phi}=Acos(kx-wt) \overrightarrow{y}$$ where $k=\frac{2\pi}{\lambda}$ called wavevector, $\lambda$ called wavelength, $1/\lambda$ called wavenumber.
+<li>The solution of wave function <span class="math display">\[\overrightarrow{\Phi}=Acos(kx-wt) \overrightarrow{y}\]</span> where <span class="math inline">\(k=\frac{2\pi}{\lambda}\)</span> called wavevector, <span class="math inline">\(\lambda\)</span> called wavelength, <span class="math inline">\(1/\lambda\)</span> called wavenumber.
 <ul>
 <li>The wave vector (or k vector) of a plane wave is a vector which points in the direction in which the wave propagates. It is always perpendicular to the wavefronts.</li>
-</ul>
-</li>
-<li>Wave in 3D space $$\overrightarrow{\Phi}=Acos(\overrightarrow{k} \overrightarrow{r}-wt) \overrightarrow{r}$$ where $\overrightarrow{k}=k_x\widehat{x}+k_y\widehat{y}+k_z\widehat{z}$ is wave vector in 3D, $\overrightarrow{r}=x\widehat{x}+y\widehat{y}+z\widehat{z}$</li>
-</ul>
-</li>
+</ul></li>
+<li>Wave in 3D space <span class="math display">\[\overrightarrow{\Phi}=Acos(\overrightarrow{k} \overrightarrow{r}-wt) \overrightarrow{r}\]</span> where <span class="math inline">\(\overrightarrow{k}=k_x\widehat{x}+k_y\widehat{y}+k_z\widehat{z}\)</span> is wave vector in 3D, <span class="math inline">\(\overrightarrow{r}=x\widehat{x}+y\widehat{y}+z\widehat{z}\)</span></li>
+</ul></li>
 <li>Wave-particle duality
 <ul>
-<li><strong>Planck-Einstein relations</strong>: $$E=\hbar \omega$$ $$\overrightarrow{P}=\hbar \overrightarrow{k}$$ The left side describes particle properties, while the right side wave properties. $\hbar=h/{2 \pi}$</li>
-</ul>
-</li>
+<li><strong>Planck-Einstein relations</strong>: <span class="math display">\[E=\hbar \omega\]</span> <span class="math display">\[\overrightarrow{P}=\hbar \overrightarrow{k}\]</span> The left side describes particle properties, while the right side wave properties. <span class="math inline">\(\hbar=h/{2 \pi}\)</span></li>
+</ul></li>
 <li>Material waves
 <ul>
-<li>de Broglie waves $$\lambda=\frac{h}{p}$$ where $h$ is <a href="https://en.wikipedia.org/wiki/Planck_constant" target="_blank" rel="noopener">planck constant</a> that is $6.6*10^{-34} Js$, p is momentum.</li>
-</ul>
-</li>
+<li>de Broglie waves <span class="math display">\[\lambda=\frac{h}{p}\]</span> where <span class="math inline">\(h\)</span> is <a href="https://en.wikipedia.org/wiki/Planck_constant" target="_blank" rel="noopener">planck constant</a> that is <span class="math inline">\(6.6*10^{-34} Js\)</span>, p is momentum.</li>
+</ul></li>
 </ol>
-<h1>Quantum mechanics</h1>
+<h1 id="quantum-mechanics">Quantum mechanics</h1>
 <h2 id="schrodinger-equation-wave-equation">Schrodinger equation (wave equation)</h2>
-<ol>
-<li>Governing equation $$-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=i\hbar \frac{\partial}{\partial t}\psi$$ where m is mass, U is potential and $U=U(\overrightarrow{r},t)$, $i$ is imaginary unit, and**$\psi=\psi(\overrightarrow{r},t)$ is wave function**.
+<ol type="1">
+<li>Governing equation <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=i\hbar \frac{\partial}{\partial t}\psi\]</span> where m is mass, U is potential and <span class="math inline">\(U=U(\overrightarrow{r},t)\)</span>, <span class="math inline">\(i\)</span> is imaginary unit, and<strong><span class="math inline">\(\psi=\psi(\overrightarrow{r},t)\)</span> is wave function</strong>.
 <ul>
-<li>The meaning of $\psi$ itself does not have any physical meaning, but it can be used to calculated all properties of a particle.</li>
-</ul>
-</li>
-<li>Normalization of wave function: if $\psi$ is the solution of schrodinger equation, the $5\psi$, $10\psi$,…, $n\psi$ will also be it’s solution. To obtain a unique solution, we need to normalization it by defining the totally probability to find a particle is 1. $$\int_{-\infty}^\infty \psi^* \cdot \psi d\forall$$ where $d\forall=dxdydz$</li>
-<li><a href="https://en.wikipedia.org/wiki/Born_rule" target="_blank" rel="noopener">Born rule</a>: The simplest form it states that the probability density of finding the particle at a given point is proportional to the square of the magnitude of the particle’s wavefunction at that point. $$P=|\psi|<sup>2=\psi</sup>*(\overrightarrow{r},t)\cdot \psi(\overrightarrow{r},t)$$</li>
-<li><strong><a href="https://en.wikipedia.org/wiki/Expectation_value_(quantum_mechanics)" target="_blank" rel="noopener">Expectation value</a></strong>: In quantum mechanics, the expectation value is the probabilistic expected value of the result (measurement) of an experiment. It is not the most probable value of a measurement. $$<q>=\int_{-\infty}^\infty \psi^* \Omega \psi$$ where $\Omega$ is called operator. In quantum mechanics, any obserable or measureable quantity has one corresponding operator.
+<li>The meaning of <span class="math inline">\(\psi\)</span> itself does not have any physical meaning, but it can be used to calculated all properties of a particle.</li>
+</ul></li>
+<li>Normalization of wave function: if <span class="math inline">\(\psi\)</span> is the solution of schrodinger equation, the <span class="math inline">\(5\psi\)</span>, <span class="math inline">\(10\psi\)</span>,…, <span class="math inline">\(n\psi\)</span> will also be it’s solution. To obtain a unique solution, we need to normalization it by defining the totally probability to find a particle is 1. <span class="math display">\[\int_{-\infty}^\infty \psi^* \cdot \psi d\forall\]</span> where <span class="math inline">\(d\forall=dxdydz\)</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Born_rule" target="_blank" rel="noopener">Born rule</a>: The simplest form it states that the probability density of finding the particle at a given point is proportional to the square of the magnitude of the particle’s wavefunction at that point. <span class="math display">\[P=|\psi|^2=\psi^*(\overrightarrow{r},t)\cdot \psi(\overrightarrow{r},t)\]</span></li>
+<li><strong><a href="https://en.wikipedia.org/wiki/Expectation_value_(quantum_mechanics)" target="_blank" rel="noopener">Expectation value</a></strong>: In quantum mechanics, the expectation value is the probabilistic expected value of the result (measurement) of an experiment. It is not the most probable value of a measurement. <span class="math display">\[&lt;q&gt;=\int_{-\infty}^\infty \psi^* \Omega \psi\]</span> where <span class="math inline">\(\Omega\)</span> is called operator. In quantum mechanics, any obserable or measureable quantity has one corresponding operator.
 <ul>
-<li>Position: $\Omega=\overrightarrow{r}$</li>
-<li>Momentum: $\Omega=-i\hbar \nabla$</li>
-<li>Energy: $\Omega=H=-\frac{\hbar^2}{2m} \nabla^2+U$, where H is called Hamiltonian</li>
-</ul>
-</q></li>
-<li><a href="https://en.wikipedia.org/wiki/Uncertainty_principle" target="_blank" rel="noopener">Heisonberg Uncertainty Principle</a>:  it asserting a fundamental limit to the precision with which certain pairs of physical properties of a particle, known as complementary variables, such as position x and momentum p, can be known. (although we cannot prove it from mathmatic yet, but it has been proved many times in experiment). $$\Delta P_x \cdot \Delta x \geq \hbar/2$$ $$\Delta E \cdot \Delta t \geq \hbar/2$$ These say that position (x) and momentum § or Energy (E) and time (t) cannot be accurately determined simultanously in the quantum mechanics world.
+<li>Position: <span class="math inline">\(\Omega=\overrightarrow{r}\)</span></li>
+<li>Momentum: <span class="math inline">\(\Omega=-i\hbar \nabla\)</span></li>
+<li>Energy: <span class="math inline">\(\Omega=H=-\frac{\hbar^2}{2m} \nabla^2+U\)</span>, where H is called Hamiltonian</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Uncertainty_principle" target="_blank" rel="noopener">Heisonberg Uncertainty Principle</a>: it asserting a fundamental limit to the precision with which certain pairs of physical properties of a particle, known as complementary variables, such as position x and momentum p, can be known. (although we cannot prove it from mathmatic yet, but it has been proved many times in experiment). <span class="math display">\[\Delta P_x \cdot \Delta x \geq \hbar/2\]</span> <span class="math display">\[\Delta E \cdot \Delta t \geq \hbar/2\]</span> These say that position (x) and momentum (P) or Energy (E) and time (t) cannot be accurately determined simultanously in the quantum mechanics world.
 <ul>
-<li>$\Delta x=\sqrt{(x-\bar{x})^2}$</li>
-</ul>
-</li>
+<li><span class="math inline">\(\Delta x=\sqrt{(x-\bar{x})^2}\)</span></li>
+</ul></li>
 </ol>
 <h2 id="steady-state-schrodinger-equation-time-independent-schrodinger-equation">Steady-state Schrodinger equation (Time independent Schrodinger equation)</h2>
-<p>If the potential $U=U(\overrightarrow{r},t)$ is time independent, and $U=U(\overrightarrow{r},t)$=$U(\overrightarrow{r})$, we can assume $$\psi(\overrightarrow{r},t)=\psi(\overrightarrow{r}) \cdot Y(t)$$ Substitute it into Schrodinger equation  $-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=i\hbar \frac{\partial}{\partial t}\psi$, we have $$\frac{1}{\psi} (-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi)=i\hbar \frac{dY}{dt}$$ To make the equation correct, both side should equal to a constant E, which represent energy. $$i\hbar \frac{dY}{dt}=E$$ $$-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=E \psi$$ Finally, we obtain the steady-state Schrodinger equation <strong>$$-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (U-E)\psi=0$$</strong><br>
+<p>If the potential <span class="math inline">\(U=U(\overrightarrow{r},t)\)</span> is time independent, and <span class="math inline">\(U=U(\overrightarrow{r},t)\)</span>=<span class="math inline">\(U(\overrightarrow{r})\)</span>, we can assume <span class="math display">\[\psi(\overrightarrow{r},t)=\psi(\overrightarrow{r}) \cdot Y(t)\]</span> Substitute it into Schrodinger equation <span class="math inline">\(-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=i\hbar \frac{\partial}{\partial t}\psi\)</span>, we have <span class="math display">\[\frac{1}{\psi} (-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi)=i\hbar \frac{dY}{dt}\]</span> To make the equation correct, both side should equal to a constant E, which represent energy. <span class="math display">\[i\hbar \frac{dY}{dt}=E\]</span> <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+U\psi=E \psi\]</span> Finally, we obtain the steady-state Schrodinger equation <strong><span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (U-E)\psi=0\]</span></strong><br>
 Here are some examples of steady-state Schrodinger equation.</p>
 <h3 id="free-particle">Free particle</h3>
-<p>The free partile does not have potential, thus $U=0$. Then, Schrodinger equation becomes $$-\frac{\hbar^2}{2m} \nabla ^2 \psi+ E\psi=0$$ The solution of this equation is $$\psi(x)=Ae<sup>{-ikx}+Be</sup>{ikx}$$ where $k=\sqrt{\frac{2Em}{\hbar^2}}$</p>
+<p>The free partile does not have potential, thus <span class="math inline">\(U=0\)</span>. Then, Schrodinger equation becomes <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+ E\psi=0\]</span> The solution of this equation is <span class="math display">\[\psi(x)=Ae^{-ikx}+Be^{ikx}\]</span> where <span class="math inline">\(k=\sqrt{\frac{2Em}{\hbar^2}}\)</span></p>
 <h3 id="particle-in-a-one-dimensional-infinit-potential-well">Particle in a one-dimensional infinit potential well</h3>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Infinite_potential_well.png">  
-<p>Schrodinger equation $$-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (U-E)\psi=0 $$  When $x&lt;0$ or $x&gt;D$, $\psi(x)=0$<br>
-When $0&lt;x&lt;D$ $$\psi(x)=Ae^{-ikx} + Be^{ikx} \tag{1}$$ where $k=\sqrt{\frac{2Em}{\hbar^2}}$<br>
-To solve the constants A and B, we need two boundary conditions.</p>
-<blockquote>
-<p>Generally, boundary conditions are determined by the continuity of the wave function and their first-order derivations at boundaries.</p>
-</blockquote>
-<p>Here, we have $$\psi(x=0)=0$$ $$\psi(x=D)=0$$ Substitute them into equation (1), we have $$A+B=0 \tag{2}$$ $$Ae^{-ikD} + Be^{ikD}=0 \tag{3}$$<br>
-Solving equations (2) and (3), we have $sin(kD)=0$, which means $\sqrt{\frac{2Em}{\hbar^2}} \cdot D = n \cdot \pi$<br>
-Therefore $$E_n=\frac{\hbar^2}{2m}(\frac{n \pi}{D})^2 \tag{4}$$<br>
-Equation (4) tells us energy is quantized for a particle in a one-dimensional infinit potential well.<br>
-Wave function can also be obtained $$\psi(x)=-2iAsin(\frac{n \pi x}{D})$$ The value of A can be calculated with normalization of the wave function and $A=\frac{i}{sqrt{2D}}$<br>
-Therefore, wave function is $$\psi(x)=\sqrt{\frac{2}{D}}sin(\frac{n \pi x}{D}) \tag{5}$$<br>
-With wave function, all other properties can be calculated using corresponding operator.</p>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Infinite_potential_well.png">
+<p>Schrodinger equation <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (U-E)\psi=0 \]</span> When <span class="math inline">\(x&lt;0\)</span> or <span class="math inline">\(x&gt;D\)</span>, <span class="math inline">\(\psi(x)=0\)</span><br>
+When <span class="math inline">\(0&lt;x&lt;D\)</span> <span class="math display">\[\psi(x)=Ae^{-ikx} + Be^{ikx} \tag{1}\]</span> where <span class="math inline">\(k=\sqrt{\frac{2Em}{\hbar^2}}\)</span><br>
+To solve the constants A and B, we need two boundary conditions.<br>
+&gt; Generally, boundary conditions are determined by the continuity of the wave function and their first-order derivations at boundaries.</p>
+<p>Here, we have <span class="math display">\[\psi(x=0)=0\]</span> <span class="math display">\[\psi(x=D)=0\]</span> Substitute them into equation (1), we have <span class="math display">\[A+B=0 \tag{2}\]</span> <span class="math display">\[Ae^{-ikD} + Be^{ikD}=0 \tag{3}\]</span> Solving equations (2) and (3), we have <span class="math inline">\(sin(kD)=0\)</span>, which means <span class="math inline">\(\sqrt{\frac{2Em}{\hbar^2}} \cdot D = n \cdot \pi\)</span><br>
+Therefore <span class="math display">\[E_n=\frac{\hbar^2}{2m}(\frac{n \pi}{D})^2 \tag{4}\]</span> Equation (4) tells us energy is quantized for a particle in a one-dimensional infinit potential well.<br>
+Wave function can also be obtained <span class="math display">\[\psi(x)=-2iAsin(\frac{n \pi x}{D})\]</span> The value of A can be calculated with normalization of the wave function and <span class="math inline">\(A=\frac{i}{sqrt{2D}}\)</span><br>
+Therefore, wave function is <span class="math display">\[\psi(x)=\sqrt{\frac{2}{D}}sin(\frac{n \pi x}{D}) \tag{5}\]</span> With wave function, all other properties can be calculated using corresponding operator.</p>
 <h3 id="particle-in-a-square-nanowire-2d-case">Particle in a square nanowire (2D case)</h3>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/square2.xy.E.gif">  
-<p>As a square, we can define $L_x=D$ and $L_y=D$. Schrodinger equation is $$-\frac{\hbar^2}{2m} (\frac{\partial^2 \psi}{\partial x<sup>2}+\frac{\partial</sup>2 \psi}{\partial y^2})+ (U-E)\psi=0 \tag{1}$$<br>
-The potential within square is 0, that is $U=0$.<br>
-Using a mathematic trick, separation of variable, that we define $\psi(x,y)=X(x)Y(y)$, Schrodinger equation can be converted to  $$\frac{1}{X} \frac{d^2 X}{dx^2} + \frac{1}{Y} \frac{d^2 Y}{dy^2} + \frac{2mE}{\hbar^2}=0 \tag{2}$$<br>
-The only way to make equaiton (2) correct is that $$\frac{1}{X} \frac{d^2 X}{dx^2}= - \alpha^2 \tag{3}$$ and $$\frac{1}{Y} \frac{d^2 Y}{dy^2}= - \beta^2 \tag{4}$$ where $\alpha$ and $\beta$ are constants<br>
-Equation (3) gives solution $$X(x)=Asin(\alpha x)+Bcos(\alpha x) \tag{5}$$<br>
-To solve parameters A and B, we can use boundary conditions that $\psi = 0$ at $x=0$ and $x=D$ as we did in the one-dimensional potential well, which gives<br>
-$$B=0 \tag{6}$$ $$Asin(\alpha D)=0 \tag{7}$$<br>
-Equation (7) gives $\alpha_n=\frac{n \pi}{D}$ ($n=1,2,…$)<br>
-Therefore, $$X_n(x)=A_nsin(\frac{n \pi}{D} x) \tag{8}$$<br>
-Similarly, we also have $$Y_l(y)=\beta_l sin(\frac{l \pi}{D}y) \tag{9}$$<br>
-Substitute equation (8) and (9) into (2), we have energy $$E_{nl}=\frac{(l<sup>2+n</sup>2) \pi^2 \hbar<sup>2}{2mD</sup>2} \tag{10}$$<br>
-$$\psi_{nl}(x,y)=C_{nl}sin(\frac{n \pi}{D}x)sin(\frac{l \pi}{D}y) \tag{11}$$ where $n,l=1,2,…$ and $C_{nl}= \frac{2}{D}$ based on normalization.</p>
-<p><strong>Degeneracy</strong>: many quantum states at the same energy level. In the above example, $E_{21}=E_{12}$, but $\psi_{21} \neq \psi_{12}$.</p>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/square2.xy.E.gif">
+<p>As a square, we can define <span class="math inline">\(L_x=D\)</span> and <span class="math inline">\(L_y=D\)</span>. Schrodinger equation is <span class="math display">\[-\frac{\hbar^2}{2m} (\frac{\partial^2 \psi}{\partial x^2}+\frac{\partial^2 \psi}{\partial y^2})+ (U-E)\psi=0 \tag{1}\]</span> The potential within square is 0, that is <span class="math inline">\(U=0\)</span>.<br>
+Using a mathematic trick, separation of variable, that we define <span class="math inline">\(\psi(x,y)=X(x)Y(y)\)</span>, Schrodinger equation can be converted to <span class="math display">\[\frac{1}{X} \frac{d^2 X}{dx^2} + \frac{1}{Y} \frac{d^2 Y}{dy^2} + \frac{2mE}{\hbar^2}=0 \tag{2}\]</span> The only way to make equaiton (2) correct is that <span class="math display">\[\frac{1}{X} \frac{d^2 X}{dx^2}= - \alpha^2 \tag{3}\]</span> and <span class="math display">\[\frac{1}{Y} \frac{d^2 Y}{dy^2}= - \beta^2 \tag{4}\]</span> where <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are constants<br>
+Equation (3) gives solution <span class="math display">\[X(x)=Asin(\alpha x)+Bcos(\alpha x) \tag{5}\]</span> To solve parameters A and B, we can use boundary conditions that <span class="math inline">\(\psi = 0\)</span> at <span class="math inline">\(x=0\)</span> and <span class="math inline">\(x=D\)</span> as we did in the one-dimensional potential well, which gives <span class="math display">\[B=0 \tag{6}\]</span> <span class="math display">\[Asin(\alpha D)=0 \tag{7}\]</span> Equation (7) gives <span class="math inline">\(\alpha_n=\frac{n \pi}{D}\)</span> (<span class="math inline">\(n=1,2,...\)</span>)<br>
+Therefore, <span class="math display">\[X_n(x)=A_nsin(\frac{n \pi}{D} x) \tag{8}\]</span> Similarly, we also have <span class="math display">\[Y_l(y)=\beta_l sin(\frac{l \pi}{D}y) \tag{9}\]</span> Substitute equation (8) and (9) into (2), we have energy <span class="math display">\[E_{nl}=\frac{(l^2+n^2) \pi^2 \hbar^2}{2mD^2} \tag{10}\]</span> <span class="math display">\[\psi_{nl}(x,y)=C_{nl}sin(\frac{n \pi}{D}x)sin(\frac{l \pi}{D}y) \tag{11}\]</span> where <span class="math inline">\(n,l=1,2,...\)</span> and <span class="math inline">\(C_{nl}= \frac{2}{D}\)</span> based on normalization.</p>
+<p><strong>Degeneracy</strong>: many quantum states at the same energy level. In the above example, <span class="math inline">\(E_{21}=E_{12}\)</span>, but <span class="math inline">\(\psi_{21} \neq \psi_{12}\)</span>.</p>
 <h3 id="harmonic-oscillator">Harmonic oscillator</h3>
 <p>A simple <a href="https://en.wikipedia.org/wiki/Harmonic_oscillator" target="_blank" rel="noopener">harmonic oscillator</a> is an oscillator that is neither driven nor damped. It consists of a mass m, which experiences a single force, F, which pulls the mass in the direction of the point x=0 and depends only on the mass’s position x and a constant k.<br>
-The energy expression for Harmonic oscillator is  $U(x)=\frac{1}{2}kx^2$<br>
-Therefore, Schrodinger equation for Harmonic oscillator is $$-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (\frac{1}{2}kx^2-E)\psi=0$$<br>
-Applying boundary conditions that $\psi=0$ at $x \rightarrow \infty$ and $x \rightarrow -\infty$, we can solve the energy $$E_n=(n+1/2) \hbar \omega$$<br>
-where $n=0, 1, 2, …$<br>
-When $n=0$, $E_0=\frac{1}{2}\hbar \omega$ that is called zero point energy, which is the lowest energy for any Harmonic oscillator. It needs to be mentioned that when $T=0 K$, $E=E_0$ rather than 0.</p>
-<ul>
-<li>The harmonic oscillator model represents quantized electromagnetic field (photons) and atomic vibration in solid (phonos).</li>
-</ul>
+The energy expression for Harmonic oscillator is <span class="math inline">\(U(x)=\frac{1}{2}kx^2\)</span><br>
+Therefore, Schrodinger equation for Harmonic oscillator is <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (\frac{1}{2}kx^2-E)\psi=0\]</span> Applying boundary conditions that <span class="math inline">\(\psi=0\)</span> at <span class="math inline">\(x \rightarrow \infty\)</span> and <span class="math inline">\(x \rightarrow -\infty\)</span>, we can solve the energy <span class="math display">\[E_n=(n+1/2) \hbar \omega\]</span> where <span class="math inline">\(n=0, 1, 2, ...\)</span><br>
+When <span class="math inline">\(n=0\)</span>, <span class="math inline">\(E_0=\frac{1}{2}\hbar \omega\)</span> that is called zero point energy, which is the lowest energy for any Harmonic oscillator. It needs to be mentioned that when <span class="math inline">\(T=0 K\)</span>, <span class="math inline">\(E=E_0\)</span> rather than 0.<br>
+* The harmonic oscillator model represents quantized electromagnetic field (photons) and atomic vibration in solid (phonos).</p>
 <h3 id="rigid-motor">Rigid motor</h3>
 <p>The <a href="https://en.wikipedia.org/wiki/Rigid_rotor#Quantum_mechanical_linear_rigid_rotor" target="_blank" rel="noopener">rigid rotor</a> is a mechanical model that is used to explain rotating systems.</p>
 <h3 id="electron-energy-levels-of-a-hydrogen-atom">Electron energy levels of a hydrogen atom</h3>
-<p>The coulombic electrostatic force $$F=\frac{1}{4 \pi \varepsilon_0} \cdot \frac{e<sup>2}{r</sup>2}=\frac{c_1}{r^2}$$<br>
-where $c_1=\frac{e^2}{4 \pi \varepsilon_0}$<br>
-This gives the potential of electron $$U®=-\int_{r}^\infty Fdr=-\frac{c_1}{r}$$<br>
-Therefore, Schrodinger equation of electron is $$-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (-\frac{c_1}{r}-E)\psi=0$$</p>
+<p>The coulombic electrostatic force <span class="math display">\[F=\frac{1}{4 \pi \varepsilon_0} \cdot \frac{e^2}{r^2}=\frac{c_1}{r^2}\]</span> where <span class="math inline">\(c_1=\frac{e^2}{4 \pi \varepsilon_0}\)</span><br>
+This gives the potential of electron <span class="math display">\[U(r)=-\int_{r}^\infty Fdr=-\frac{c_1}{r}\]</span> Therefore, Schrodinger equation of electron is <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi+ (-\frac{c_1}{r}-E)\psi=0\]</span></p>
 <h2 id="electron-spin-and-pauli-exclusive-principle">Electron spin and Pauli exclusive principle</h2>
 <h3 id="electron-spin">Electron spin</h3>
-<p>In quantum mechanics and particle physics, spin is an intrinsic form of angular momentum carried by elementary particles, composite particles (hadrons), and atomic nuclei. It can have two states, spin up $s=\frac{1}{2}$ and spin down $s=-\frac{1}{2}$</p>
+<p>In quantum mechanics and particle physics, spin is an intrinsic form of angular momentum carried by elementary particles, composite particles (hadrons), and atomic nuclei. It can have two states, spin up <span class="math inline">\(s=\frac{1}{2}\)</span> and spin down <span class="math inline">\(s=-\frac{1}{2}\)</span></p>
 <h3 id="pauli-exclusive-principle">Pauli exclusive principle</h3>
 <p>Each quantum state can be occupied by at most one electron.</p>
-<h1>Statistical mechanics</h1>
+<h1 id="statistical-mechanics">Statistical mechanics</h1>
 <p><a href="https://en.wikipedia.org/wiki/Statistical_mechanics" target="_blank" rel="noopener">Statistical mechanics</a> is a branch of theoretical physics that uses probability theory to study the average behaviour of a mechanical system whose exact state is uncertain.</p>
 <h2 id="ensembles">Ensembles</h2>
 <p>An ensemble is the collection of all the microscopic states of a system. Here, we are going to introduce three types of ensembles that would be useful to describe the distribution of electron, photon, and phonon.</p>
 <h3 id="microcanonical-ensemble">Microcanonical ensemble</h3>
 <p>This ensemble is an <strong>isolated system</strong> with fixed energy (U), volume (V), and number of particle (N).<br>
-Suppose there are $\Omega$ quantum states, the probability of each state is $P_1$, $P_2$, …, $P_\Omega$. We have <strong>Principle of equal probability for the Microcanonical ensemble that</strong> $$P_1=P_2=…=P_i=…=P_\Omega$$<br>
-Therefore, $P_i=\frac{1}{\Omega}$<br>
-The probability for any property $x$ of the ensemble is $$\langle x \rangle=\sum_\Omega P_ix_i=\frac{\sum_\Omega x_i}{\Omega}$$<br>
-<strong>Boltzman Principle</strong>: How to link microscopic world with macroscopic thermodynamic quantities? $$S=k_B ln\Omega$$ where $S$ is entropy (macroscopic quantity), $\Omega$ is the number of microscopic state (microscopic world), $k_B=1.38\times 10^{-23} J/K$ Boltzman constant.</p>
+Suppose there are <span class="math inline">\(\Omega\)</span> quantum states, the probability of each state is <span class="math inline">\(P_1\)</span>, <span class="math inline">\(P_2\)</span>, …, <span class="math inline">\(P_\Omega\)</span>. We have <strong>Principle of equal probability for the Microcanonical ensemble that</strong> <span class="math display">\[P_1=P_2=...=P_i=...=P_\Omega\]</span> Therefore, <span class="math inline">\(P_i=\frac{1}{\Omega}\)</span><br>
+The probability for any property <span class="math inline">\(x\)</span> of the ensemble is <span class="math display">\[\langle x \rangle=\sum_\Omega P_ix_i=\frac{\sum_\Omega x_i}{\Omega}\]</span><br>
+<strong>Boltzman Principle</strong>: How to link microscopic world with macroscopic thermodynamic quantities? <span class="math display">\[S=k_B ln\Omega\]</span> where <span class="math inline">\(S\)</span> is entropy (macroscopic quantity), <span class="math inline">\(\Omega\)</span> is the number of microscopic state (microscopic world), <span class="math inline">\(k_B=1.38\times 10^{-23} J/K\)</span> Boltzman constant.</p>
 <h3 id="canonical-ensemble">Canonical ensemble</h3>
 <p>This ensemble allows energy exchange with surroundings, while Temperature (T), volume (V) and number of particle (N) are fixed.<br>
-The probability of quantum state $$P(E_i)=\frac{exp(-\frac{E_i}{k_B T})}{Z}$$ where $Z=\sum_i exp(-\frac{E_i}{k_B T})$ that is called canonical partition function.</p>
+The probability of quantum state <span class="math display">\[P(E_i)=\frac{exp(-\frac{E_i}{k_B T})}{Z}\]</span> where <span class="math inline">\(Z=\sum_i exp(-\frac{E_i}{k_B T})\)</span> that is called canonical partition function.</p>
 <h3 id="grand-canonical-ensemble">Grand canonical ensemble</h3>
 <p>This ensemble not only allows energy exchange but also particle number exchange with surroundings, while Temperature (T) and volume (V) are fixed.<br>
-The probability of quantum state $$P(E_i, N_i)=\frac{exp(\frac{\mu_{N_i}-E_i}{k_B T})}{\Pi}$$ where $\Pi=\sum_{N_i} \sum_{E_i} exp(\frac{\mu_{N_i}-E_i}{k_B T})$ that is called Grand cannonical partition function.</p>
+The probability of quantum state <span class="math display">\[P(E_i, N_i)=\frac{exp(\frac{\mu_{N_i}-E_i}{k_B T})}{\Pi}\]</span> where <span class="math inline">\(\Pi=\sum_{N_i} \sum_{E_i} exp(\frac{\mu_{N_i}-E_i}{k_B T})\)</span> that is called Grand cannonical partition function.</p>
 <p><em>Note: These ensembles are the fundation of electron, photon, phonon distribution.</em></p>
 <h2 id="classic-distributions">Classic distributions</h2>
 <h3 id="fermi-dirac-distribution-electron">Fermi-Dirac distribution (Electron)</h3>
-<p>The distribution of electron follows Pauli exclusion principle, which means each quantum state can only have at most one electron. Assume there are $\Omega$ energy states, and we are study energy state $i$, which is our system. All other energy states except $i$ are reservor. In such case, this is a <strong>Grand canonical ensemble</strong> becasue electron can jump from state i to another state.<br>
-From Pauli exclusion principle, the number of electron at state $i$ can be 0 or 1. Therefore, the Grand cannonical partition function $$\Pi=\sum_{N_i} \sum_{E_i} exp(\frac{\mu_{N_i}-E_i}{k_B T})=1+exp(\frac{\mu-E_i}{k_B T})$$<br>
-The probability of state $i$ with energy E $$P(N_i=0, E_i=0)=\frac{1}{\Pi}=\frac{1}{1+exp(\frac{\mu-E}{k_B T})}$$ $$P(N_i=1, E_i=E)=\frac{exp(\frac{\mu-E}{k_B T})}{\Pi}=\frac{exp(\frac{\mu-E}{k_B T})}{1+exp(\frac{\mu-E}{k_B T})}$$<br>
-The particle number at quantum state $i$ $$\langle n \rangle=f(E)=\sum_i P_i N_i=\frac{1}{1+exp(\frac{E- \mu}{k_B T})}$$<br>
-<strong>Any particle that obey Fermi-Dirac distribution are called “Fermions”.</strong></p>
+<p>The distribution of electron follows Pauli exclusion principle, which means each quantum state can only have at most one electron. Assume there are <span class="math inline">\(\Omega\)</span> energy states, and we are study energy state <span class="math inline">\(i\)</span>, which is our system. All other energy states except <span class="math inline">\(i\)</span> are reservor. In such case, this is a <strong>Grand canonical ensemble</strong> becasue electron can jump from state i to another state.<br>
+From Pauli exclusion principle, the number of electron at state <span class="math inline">\(i\)</span> can be 0 or 1. Therefore, the Grand cannonical partition function <span class="math display">\[\Pi=\sum_{N_i} \sum_{E_i} exp(\frac{\mu_{N_i}-E_i}{k_B T})=1+exp(\frac{\mu-E_i}{k_B T})\]</span> The probability of state <span class="math inline">\(i\)</span> with energy E <span class="math display">\[P(N_i=0, E_i=0)=\frac{1}{\Pi}=\frac{1}{1+exp(\frac{\mu-E}{k_B T})}\]</span> <span class="math display">\[P(N_i=1, E_i=E)=\frac{exp(\frac{\mu-E}{k_B T})}{\Pi}=\frac{exp(\frac{\mu-E}{k_B T})}{1+exp(\frac{\mu-E}{k_B T})}\]</span><br>
+The particle number at quantum state <span class="math inline">\(i\)</span> <span class="math display">\[\langle n \rangle=f(E)=\sum_i P_i N_i=\frac{1}{1+exp(\frac{E- \mu}{k_B T})}\]</span> <strong>Any particle that obey Fermi-Dirac distribution are called “Fermions”.</strong></p>
 <ul>
 <li>Here, we further introduce a concept “<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Solids/Fermi.html" target="_blank" rel="noopener">Fermi Level</a>”. “Fermi level” is the term used to describe the top of the collection of electron energy levels at absolute zero temperature. Electrons are fermions and by the Pauli exclusion principle cannot exist in identical energy states. So at absolute zero they pack into the lowest available energy states and build up a “Fermi sea” of electron energy states. The Fermi level is the surface of that sea at absolute zero where no electrons will have enough energy to rise above the surface.</li>
 </ul>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/FermiLevel.gif"> 
+<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/FermiLevel.gif">
 <h3 id="bose-einstein-distribution-phonons-photons">Bose-Einstein distribution (Phonons, Photons)</h3>
 <p>Compared to electron, phonon and photon (1) does not follow Pauli exclusion principle, and (2) particle number is not conserved that means they can be created or vanished. Since the number of particle is not conserved, we can assume there is no particle change between system and reservior. Therefore, canonical ensemble can discribe their distribution.<br>
-Both photon and phonon are quantum oscillators. From previous lecture, we now oscillator has quantized energy level $E_n=(n+\frac{1}{2}) \hbar \omega$ where $n=0, 1, 2, …$.<br>
-Note, the value $n$ here not only stand for quantum state, but also represents the number of phonon or photon because energy is proportional with the number when frequency is constant ($\omega$).<br>
-Therefore, canonical partition function $$Z=\sum_{n=0}^\infty exp(-\frac{(n+\frac{1}{2})\hbar \omega}{k_B T})=\frac{exp(-\frac{\hbar \omega}{2k_B T})}{1-exp(\frac{- \hbar \omega}{k_B T})}$$<br>
-Probability $$P=\frac{exp(-\frac{(n+\frac{1}{2})\hbar \omega}{k_B T})}{Z}=exp(-\frac{n\hbar \omega}{k_B T})[1-exp(-\frac{-\hbar \omega}{k_B T})]$$<br>
-Average particle number $$\langle n \rangle=f(E)=\sum_{n=0}^\infty nP=\frac{1}{exp(\frac{\hbar \omega}{k_B T})-1}$$<br>
-<strong>Any particle that obey “Bose-Einstein” distribution are called “Bosons”.</strong> Photon and phonon are both Bosons.</p>
+Both photon and phonon are quantum oscillators. From previous lecture, we now oscillator has quantized energy level <span class="math inline">\(E_n=(n+\frac{1}{2}) \hbar \omega\)</span> where <span class="math inline">\(n=0, 1, 2, ...\)</span>.<br>
+Note, the value <span class="math inline">\(n\)</span> here not only stand for quantum state, but also represents the number of phonon or photon because energy is proportional with the number when frequency is constant (<span class="math inline">\(\omega\)</span>).<br>
+Therefore, canonical partition function <span class="math display">\[Z=\sum_{n=0}^\infty exp(-\frac{(n+\frac{1}{2})\hbar \omega}{k_B T})=\frac{exp(-\frac{\hbar \omega}{2k_B T})}{1-exp(\frac{- \hbar \omega}{k_B T})}\]</span> Probability <span class="math display">\[P=\frac{exp(-\frac{(n+\frac{1}{2})\hbar \omega}{k_B T})}{Z}=exp(-\frac{n\hbar \omega}{k_B T})[1-exp(-\frac{-\hbar \omega}{k_B T})]\]</span> Average particle number <span class="math display">\[\langle n \rangle=f(E)=\sum_{n=0}^\infty nP=\frac{1}{exp(\frac{\hbar \omega}{k_B T})-1}\]</span> <strong>Any particle that obey “Bose-Einstein” distribution are called “Bosons”.</strong> Photon and phonon are both Bosons.</p>
 <h3 id="quick-summary">Quick summary</h3>
 <p>The following two conclusions are extremely important.<br>
-	* Distribution of Fermions like electron: $$\langle n \rangle=f(E)=\sum_i P_i N_i=\frac{1}{1+exp(\frac{E- \mu}{k_B T})}$$<br>
-	* Distribution of Bosons like photons and phonons: $$\langle n \rangle=f(E)=\sum_{n=0}^\infty nP=\frac{1}{exp(\frac{\hbar \omega}{k_B T})-1}$$</p>
-<h1>Electron</h1>
+* Distribution of Fermions like electron: <span class="math display">\[\langle n \rangle=f(E)=\sum_i P_i N_i=\frac{1}{1+exp(\frac{E- \mu}{k_B T})}\]</span> * Distribution of Bosons like photons and phonons: <span class="math display">\[\langle n \rangle=f(E)=\sum_{n=0}^\infty nP=\frac{1}{exp(\frac{\hbar \omega}{k_B T})-1}\]</span></p>
+<h1 id="electron">Electron</h1>
 <h2 id="classic-model-drude-theory">Classic model: <a href="https://en.wikipedia.org/wiki/Drude_model" target="_blank" rel="noopener">Drude theory</a></h2>
-<p>Assumption: Electrons have a scattering/collision time $/tau$, which refers to the average time of electron travelling with collision. The momentu of electron becomes zero after collision.</p>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Electrona_in_crystallo_fluentia.svg.png"> 
-<p>With some derivation, we have $$\overrightarrow{v}=\frac{-e \tau \overrightarrow{E}}{m}$$ where $\overrightarrow{v}$ is velocity of the electron, $\overrightarrow{E}$ is electrical field, m is electron mass.<br>
-With the velocity, we can further derive current, electrical conductivity, electron mobility.<br>
-$$\overrightarrow{J}=-ne\overrightarrow{v}=\frac{e^2 n \tau}{m} \overrightarrow{E}$$<br>
-$$\sigma=\frac{\overrightarrow{J}}{\overrightarrow{E}}=\frac{e^2 n \tau}{m}$$<br>
-$$\mu=\frac{\overrightarrow{v}}{\overrightarrow{E}}=\frac{-e \tau}{m}$$<br>
-Classic picture can tell us some physics, but cannot tell all of them. For example, it cannot correctly predict specific heat of a material. Drude model gives $c_v=\frac{3}{2}k_B$, but the actural $c_v$ is a function of temperature.</p>
+<p>Assumption: Electrons have a scattering/collision time <span class="math inline">\(/tau\)</span>, which refers to the average time of electron travelling with collision. The momentu of electron becomes zero after collision. <img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Electrona_in_crystallo_fluentia.svg.png"></p>
+<p>With some derivation, we have <span class="math display">\[\overrightarrow{v}=\frac{-e \tau \overrightarrow{E}}{m}\]</span> where <span class="math inline">\(\overrightarrow{v}\)</span> is velocity of the electron, <span class="math inline">\(\overrightarrow{E}\)</span> is electrical field, m is electron mass.<br>
+With the velocity, we can further derive current, electrical conductivity, electron mobility. <span class="math display">\[\overrightarrow{J}=-ne\overrightarrow{v}=\frac{e^2 n \tau}{m} \overrightarrow{E}\]</span> <span class="math display">\[\sigma=\frac{\overrightarrow{J}}{\overrightarrow{E}}=\frac{e^2 n \tau}{m}\]</span> <span class="math display">\[\mu=\frac{\overrightarrow{v}}{\overrightarrow{E}}=\frac{-e \tau}{m}\]</span> Classic picture can tell us some physics, but cannot tell all of them. For example, it cannot correctly predict specific heat of a material. Drude model gives <span class="math inline">\(c_v=\frac{3}{2}k_B\)</span>, but the actural <span class="math inline">\(c_v\)</span> is a function of temperature.</p>
 <h2 id="quantum-free-electron-gas-theory-sommerfeld-theory">Quantum free electron gas theory: Sommerfeld theory</h2>
 <p>Assumptions: (1)single particle approximation; (2) no interaction with nuclei (free electrons U=0); (3) Born-Von Kaman Boundary condition.<br>
-With the free electron assumption, we have $U=0$. Then, we can solve stady-state Schrodinger equation<br>
-$$-\frac{\hbar^2}{2m} \nabla ^2 \psi(\overrightarrow{r})=E(\psi(\overrightarrow{r})$$<br>
-The solution is $\psi(\overrightarrow{r})=A \times e^{i \overrightarrow{k} \overrightarrow{r}}$, where $\overrightarrow{k}=k_x\overrightarrow{x}+k_y\overrightarrow{y}+k_z\overrightarrow{z}$.</p>
-<p>Boundary conditions: the wave functions at two end points are equal.<br>
-$$\psi(x+L,y,z)=\psi(x,y,z)$$ where L is the size of the crystal<br>
-$$\psi(x+L,y,z)=A e^{ik_x(x+L) e^{ik_yy} e<sup>{ik_zz}}=e</sup>{ik_xL}\psi(x,y,z)$$<br>
-Therefore, $e^{ik_xL}=1$, which means $k_xL=2 \pi n_x$, where $n_x=0, \pm 1, \pm 2, …$<br>
-Hence, $k_x=\frac{2 \pi n_x}{L}$, similarly, we have $k_y=\frac{2 \pi n_y}{L}$, $k_z=\frac{2 \pi n_z}{L}$</p>
+With the free electron assumption, we have <span class="math inline">\(U=0\)</span>. Then, we can solve stady-state Schrodinger equation <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi(\overrightarrow{r})=E(\psi(\overrightarrow{r})\]</span> The solution is <span class="math inline">\(\psi(\overrightarrow{r})=A \times e^{i \overrightarrow{k} \overrightarrow{r}}\)</span>, where <span class="math inline">\(\overrightarrow{k}=k_x\overrightarrow{x}+k_y\overrightarrow{y}+k_z\overrightarrow{z}\)</span>.</p>
+<p>Boundary conditions: the wave functions at two end points are equal. <span class="math display">\[\psi(x+L,y,z)=\psi(x,y,z)\]</span> where L is the size of the crystal<br>
+<span class="math display">\[\psi(x+L,y,z)=A e^{ik_x(x+L) e^{ik_yy} e^{ik_zz}}=e^{ik_xL}\psi(x,y,z)\]</span> Therefore, <span class="math inline">\(e^{ik_xL}=1\)</span>, which means <span class="math inline">\(k_xL=2 \pi n_x\)</span>, where <span class="math inline">\(n_x=0, \pm 1, \pm 2, ...\)</span> Hence, <span class="math inline">\(k_x=\frac{2 \pi n_x}{L}\)</span>, similarly, we have <span class="math inline">\(k_y=\frac{2 \pi n_y}{L}\)</span>, <span class="math inline">\(k_z=\frac{2 \pi n_z}{L}\)</span></p>
 <p>With the wave vector, we have<br>
-Energy: $$E(\overrightarrow{k})=\frac{\hbar^2}{2m} |\overrightarrow{k}|^2 = \frac{\hbar^2}{2m} (\frac{2\pi}{L})^2 (n_x<sup>2+n_y</sup>2+n_z^2)$$<br>
-Electron number: $$n=\sum_{status} f(E)=2\sum_{k_x,K_y,k_z} f(E)$$<br>
-Total internal energy: $$U=\sum_{status} Ef(E)=2\sum_{k_x,k_y,k_z}Ef(E)$$<br>
-Specific heat: $$c_v=\frac{\partial U}{\partial T}$$</p>
+Energy: <span class="math display">\[E(\overrightarrow{k})=\frac{\hbar^2}{2m} |\overrightarrow{k}|^2 = \frac{\hbar^2}{2m} (\frac{2\pi}{L})^2 (n_x^2+n_y^2+n_z^2)\]</span><br>
+Electron number: <span class="math display">\[n=\sum_{status} f(E)=2\sum_{k_x,K_y,k_z} f(E)\]</span><br>
+Total internal energy: <span class="math display">\[U=\sum_{status} Ef(E)=2\sum_{k_x,k_y,k_z}Ef(E)\]</span><br>
+Specific heat: <span class="math display">\[c_v=\frac{\partial U}{\partial T}\]</span></p>
 <h2 id="electronic-band-theory">Electronic band theory</h2>
-<p>Basic concepts:</p>
-<ol>
-<li>lattice vector: $\overrightarrow{R}=n_1\overrightarrow{a_1}+n_2\overrightarrow{a_2}+n_3\overrightarrow{n_3}$<br>
-Choice of $\overrightarrow{a_1}, \overrightarrow{a_2}, \overrightarrow{a_3}$ is not unique, but they must be chosen so that can reach any other atom.</li>
-<li>Primitive lattice vector: a basic set of vectors that can be used to construct all other vectors.</li>
-<li>Periodic potential: $U(\overrightarrow{r}+\overrightarrow{R})=U(\overrightarrow{r})$</li>
-</ol>
-<p><strong>Bloch’s Theorem</strong>: wave fuction $\psi(\overrightarrow{r})$ under a periodic potential $$\psi(\overrightarrow{r}+\overrightarrow{R})=e^{i\overrightarrow{k}\overrightarrow{R}} \psi(\overrightarrow{r})$$<br>
-where $\overrightarrow{R}$ is lattice vector, $\overrightarrow{k}$ is crystal wavevector. And $\hbar \overrightarrow{k}$ is crystal momentum, which is combined momentum of crystal and electron.</p>
+<p>Basic concepts:<br>
+1. lattice vector: <span class="math inline">\(\overrightarrow{R}=n_1\overrightarrow{a_1}+n_2\overrightarrow{a_2}+n_3\overrightarrow{n_3}\)</span><br>
+Choice of <span class="math inline">\(\overrightarrow{a_1}, \overrightarrow{a_2}, \overrightarrow{a_3}\)</span> is not unique, but they must be chosen so that can reach any other atom. 2. Primitive lattice vector: a basic set of vectors that can be used to construct all other vectors. 3. Periodic potential: <span class="math inline">\(U(\overrightarrow{r}+\overrightarrow{R})=U(\overrightarrow{r})\)</span></p>
+<p><strong>Bloch’s Theorem</strong>: wave fuction <span class="math inline">\(\psi(\overrightarrow{r})\)</span> under a periodic potential <span class="math display">\[\psi(\overrightarrow{r}+\overrightarrow{R})=e^{i\overrightarrow{k}\overrightarrow{R}} \psi(\overrightarrow{r})\]</span> where <span class="math inline">\(\overrightarrow{R}\)</span> is lattice vector, <span class="math inline">\(\overrightarrow{k}\)</span> is crystal wavevector. And <span class="math inline">\(\hbar \overrightarrow{k}\)</span> is crystal momentum, which is combined momentum of crystal and electron.</p>
 <p><strong><a href="https://en.wikipedia.org/wiki/Particle_in_a_one-dimensional_lattice" target="_blank" rel="noopener">Kronig-Penney Model</a></strong> (electrons in a 1D lattice)</p>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/KrongPenneyModel.png">  
-<p>Schrodinger equation: $$-\frac{\hbar^2}{2m} \nabla ^2 \psi(\overrightarrow{r})+(U-E)\psi(\overrightarrow{r}=0$$<br>
-Periodic potential: $U(x+a+b)=U(x)$, $U(x)=0 (0&lt;x&lt;a)$, $U(x)=U_0 (-b&lt;x&lt;0)$<br>
-The solution to the Schrodinger equation is:<br>
-$$\psi(x)=Ae^{i\alpha x}+Be^{-i \alpha x} (0&lt;x&lt;a)$$<br>
-$$\psi(x)=Ce^{\beta x}+De^{-\beta x} (-b&lt;x&lt;0)$$<br>
-where $E=\frac{\hbar^2 \alpha^2}{2m}$, $U_0-E=\frac{\hbar^2 \beta^2}{2m}$<br>
-To solve the parameters $\alpha$ and $\beta$, we need boundary conditions at x=0 and x=a. The wave function and it’s derivitive continous.<br>
-The final nontrivial solution is: $$\frac{\beta<sup>2-\alpha</sup>2}{2\alpha \beta}sinh(\beta b)sinh(\alpha a)+cosh(\beta b)cos(\alpha a)=cos[k(a+b)]$$<br>
-Since both $\alpha$ and $\beta$ are a function of E, we can solve the above function and get $E=E(k)$</p>
-<p>It is not a easy job to solve the equation directly. To simplify the equation, we can assume $b \rightarrow 0$, $U_0 \rightarrow \infty$, and $U_0 b=constant$.<br>
-$$\frac{\beta^2 b}{2 \alpha}sin(\alpha a)+cos(\alpha a)=cos(ka)$$<br>
-Solving this equation using MATLAB gives following figure</p>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Solution1.png"> 
-<p>Note: (1) Discretized energy band; (2) Band gap at $ka=m\pi$; (3) From Bloch’s heorem, if the wavevector is seperated by $m(2\pi/a)$, the wave function are identical.<br>
-<em>The region in the above figure [$-\frac{\pi}{a},\frac{\pi}{a}$] is called First Brillouin Zone</em></p>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/KrongPenneyModel.png">
+<p>Schrodinger equation: <span class="math display">\[-\frac{\hbar^2}{2m} \nabla ^2 \psi(\overrightarrow{r})+(U-E)\psi(\overrightarrow{r}=0\]</span> Periodic potential: <span class="math inline">\(U(x+a+b)=U(x)\)</span>, <span class="math inline">\(U(x)=0 (0&lt;x&lt;a)\)</span>, <span class="math inline">\(U(x)=U_0 (-b&lt;x&lt;0)\)</span><br>
+The solution to the Schrodinger equation is: <span class="math display">\[\psi(x)=Ae^{i\alpha x}+Be^{-i \alpha x} (0&lt;x&lt;a)\]</span> <span class="math display">\[\psi(x)=Ce^{\beta x}+De^{-\beta x} (-b&lt;x&lt;0)\]</span> where <span class="math inline">\(E=\frac{\hbar^2 \alpha^2}{2m}\)</span>, <span class="math inline">\(U_0-E=\frac{\hbar^2 \beta^2}{2m}\)</span><br>
+To solve the parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, we need boundary conditions at x=0 and x=a. The wave function and it’s derivitive continous. The final nontrivial solution is: <span class="math display">\[\frac{\beta^2-\alpha^2}{2\alpha \beta}sinh(\beta b)sinh(\alpha a)+cosh(\beta b)cos(\alpha a)=cos[k(a+b)]\]</span> Since both <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are a function of E, we can solve the above function and get <span class="math inline">\(E=E(k)\)</span></p>
+<p>It is not a easy job to solve the equation directly. To simplify the equation, we can assume <span class="math inline">\(b \rightarrow 0\)</span>, <span class="math inline">\(U_0 \rightarrow \infty\)</span>, and <span class="math inline">\(U_0 b=constant\)</span>. <span class="math display">\[\frac{\beta^2 b}{2 \alpha}sin(\alpha a)+cos(\alpha a)=cos(ka)\]</span> Solving this equation using MATLAB gives following figure <img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/Solution1.png"> Note: (1) Discretized energy band; (2) Band gap at <span class="math inline">\(ka=m\pi\)</span>; (3) From Bloch’s heorem, if the wavevector is seperated by <span class="math inline">\(m(2\pi/a)\)</span>, the wave function are identical.<br>
+<em>The region in the above figure [<span class="math inline">\(-\frac{\pi}{a},\frac{\pi}{a}\)</span>] is called First Brillouin Zone</em></p>
 <p>Applying electrons in these bands, we can differentiate metal, semiconductor, and insulator.</p>
 <h2 id="semiconductor">Semiconductor</h2>
 <p>N-type semiconductor: electrons dominate, more electrons but less holes. Generally, Group V elements like P, As, Sb, are used for doping.<br>
-P-type semiconductor: holes dominate, more holes. Generally, Group III elements like B, are used for doping.</p>
-<ol>
-<li>Bandgap of semiconductor: the absolute minimum gap between conductive band and valence band.
-<ul>
-<li>Direct bandgap: the minimum conduction band has the same k value of the maximum valance band, eg. GaAs</li>
-<li>Indirect bandgap: k at different values, eg. Si.</li>
-</ul>
-</li>
-<li>Photovoltaic effect: sunlight can be divided into three regions during photovoltaic solar cell absorption
-<ul>
-<li>Usable spectram, for Si solar cell (27%)</li>
-<li>Loss because of the transpancy of Si</li>
-<li>Loss because of thermalization</li>
-</ul>
-</li>
-</ol>
-<h1>Electromagnetic Waves</h1>
-<h2 id="maxwell-s-equations">Maxwell’s equations</h2>
-<p>Two divergence euqations (Gauss’ law):<br>
-$$\nabla \cdot \overrightarrow{D}=\rho \tag{1}$$<br>
-$$\nabla \cdot \overrightarrow{B}=0 \tag{2}$$<br>
-Two curl equations:<br>
-$$\nabla \times \overrightarrow{E}=-\frac{\partial \overrightarrow{B}}{\partial t} \tag{3}$$<br>
-$$\nabla \times \overrightarrow{H}=\frac{\partial \overrightarrow{D}}{\partial t}+\overrightarrow{J} \tag{4}$$<br>
-where $\overrightarrow{D}$ is electric flux density or electric displacement, $\overrightarrow{B}$ is magnetic flux density, $\overrightarrow{E}$ is electric field, $\overrightarrow{H}$ is magnetic field, $\rho$ is charge density, $\overrightarrow{J}$ is current density.</p>
-<p>Two constitutive relations to correlate $\overrightarrow{D}$ with $\overrightarrow{E}$, and $\overrightarrow{B}$ with $\overrightarrow{H}$:<br>
-$$\overrightarrow{D}=\varepsilon \overrightarrow{E} \tag{5}$$<br>
-$$\overrightarrow{B}=\mu \overrightarrow{H} \tag{6}$$<br>
-where $\varepsilon$ is permittivity, while $\mu$ permeability. One of the major difference between the permittivity and the permeability is that the permittivity measures the obstruction generates by the material in the formation of an electric field. Whereas, the permeability measures the ability of the material to allow the magnetic lines of force to pass through it.</p>
-<h2 id="solve-maxwell-s-equations">Solve Maxwell’s equations</h2>
-<p>Plugging in two constitutive relation (5), (6) into Maxwell’s equations, we have<br>
-$$\nabla \cdot \overrightarrow{E}=0 \tag{7}$$<br>
-$$\nabla \cdot \overrightarrow{H}=0 \tag{8}$$<br>
-$$\nabla \times \overrightarrow{E}=- \mu \frac{\partial \overrightarrow{H}}{\partial t} \tag{9}$$<br>
-$$\nabla \times \overrightarrow{H}=\varepsilon \frac{\partial \overrightarrow{E}}{\partial t}+\overrightarrow{J} \tag{10}$$<br>
-This two equations mean: Time varying electric field ($\overrightarrow{E}$) gives rise to magnetic field ($\overrightarrow{H}$); time varying magnetic field ($\overrightarrow{H}$) gives rise to electric field ($\overrightarrow{E}$)<br>
-Solving the above two equtions, we have the Helmholtz wave equation for free space (vacuum):<br>
-$$\nabla^2 \overrightarrow{E}=\mu_0 \varepsilon_0 \frac{\partial^2 E}{\partial t^2} \tag{11}$$<br>
-where $\mu_0, \varepsilon_0$ are permittivity and prmeability in vacuum.<br>
-The speed of light in vacuum is: $c=\frac{1}{\sqrt{\mu_0 \varepsilon_0}}$<br>
-Assume<br>
-$$\overrightarrow{E}(\overrightarrow{r},t)=\widehat{n} E_0 cos(\overrightarrow{k} \overrightarrow{r}-\omega t) \tag{12}$$<br>
-where $\widehat{n}$ is normal to direction of propagation. Plug it into equation (11), we have<br>
-$$[-k<sup>2+\frac{\omega</sup>2}{c^2}] \cdot [cos(\overrightarrow{k} \cdot \overrightarrow{r}-\omega t)]=0 \tag{13}$$<br>
-To make this equation always true, we have<br>
-$$-k<sup>2+\frac{\omega</sup>2}{c^2}=0 \tag{14}$$<br>
-Therefore, <strong>$\omega = k c$</strong><br>
-Substitute equaiton (12) into (7), we have<br>
-$$\nabla \cdot \overrightarrow{E}=(\overrightarrow{k} \cdot \widehat{n})E_0 sin(\overrightarrow{k} \overrightarrow{r}-\omega t)=0$$<br>
-To make this euqaiton always true, we have $\overrightarrow{k} \cdot \widehat{n}=0$, which means $\overrightarrow{E} \bot \overrightarrow{k}$.<br>
-Plug equation (12) into equation (10), we have<br>
-$$\frac{\partial \overrightarrow{H}}{\partial t}=-\frac{\overrightarrow{k} \times \widehat{n}}{\mu_0} E_0 sin(\overrightarrow{k} \cdot \overrightarrow{r}-\omega t)$$<br>
-This gives<br>
-$$\overrightarrow{H}=\frac{\overrightarrow{k} \times \widehat{n} E_0}{\mu_0 \omega} cos(\overrightarrow{k} \cdot \overrightarrow{r}-\omega t)$$<br>
-Therefore, we obtain our final conclusion that $\overrightarrow{E} \bot \overrightarrow{k} \bot \overrightarrow{H}$</p>
-<h2 id="electromagnetic-waves">Electromagnetic waves</h2>
-<ol>
-<li>
-<p>Electromagnetic waves need to fulfill the condition that $\overrightarrow{E} \bot \overrightarrow{k} \bot \overrightarrow{H}$, otherwise, they are not EM wave. For example<br>
-$$\overrightarrow{E}=\widehat{z}cos(\omega t-kz)$$<br>
-This is not a EM wave becasue propagation direction $\overrightarrow{k}$ is in z drection, while the $\overrightarrow{E}$ is also in z direction.</p>
-</li>
-<li>
-<p>Given $\overrightarrow{E}$, find $\overrightarrow{H}$, for example<br>
-$$\overrightarrow{E}=\widehat{x} E_0 cos(kz-wt)$$<br>
-Applying equation $$\nabla \times \overrightarrow{E}=-\frac{\partial (\mu_0 \overrightarrow{H})}{\partial t}$$<br>
-We have $$\frac{\partial \overrightarrow{H}}{\partial t}=-\frac{1}{\mu_0} \nabla \times \overrightarrow{E}=-\widehat{y} \frac{1}{\mu_0} k E_0 sin(kz-wt)$$<br>
-Then, we get $$\overrightarrow{H}=\widehat{y} \frac{k}{\mu_0 \omega} E_0 cos(kz-\omega t)$$</p>
-</li>
-<li>
-<p>Given $\overrightarrow{H}$, find $\overrightarrow{E}$ (in HW3).<br>
-Applying Ampere’s law $$\overrightarrow{E}=\frac{1}{\varepsilon} \int \nabla \times \overrightarrow{H} dt$$</p>
-</li>
-<li>
-<p>Define reflection and transmission of EM waves<br>
-$$R=\frac{Reflected Energy Flux}{Incident Energy Flux}$$<br>
-The work done by external electromagnetic fields (\overrightarrow{E}, \overrightarrow{H}) can be expressed as<br>
-$$W=q \overrightarrow{v} \overrightarrow{E}=\overrightarrow{J} \overrightarrow{E}$$<br>
-With some derivations, we have<br>
-$$-\overrightarrow{J} \cdot \overrightarrow{E}=\nabla \cdot (\overrightarrow{E} \times \overrightarrow{H})+\frac{\partial}{\partial t} (\frac{1}{2}\varepsilon |\overrightarrow{E}|^2+\frac{1}{2} \mu |\overrightarrow{H}|^2)$$<br>
-Define<br>
-<strong>(1) energy flow (poynting Vector)</strong>: $\overrightarrow{S}=\overrightarrow{E} \times \overrightarrow{H}$<br>
-<strong>(2) energy density</strong>: $W=\frac{1}{2}\varepsilon |\overrightarrow{E}|^2+\frac{1}{2} \mu |\overrightarrow{H}|^2$<br>
-We have $$-\overrightarrow{J} \cdot \overrightarrow{E}=\nabla \cdot \overrightarrow{S} + \frac{\partial}{\partial t}W$$<br>
-Reflection: $R=\frac{\overrightarrow{S_R}}{\overrightarrow{S_I}}$<br>
-Transmission: $T=\frac{\overrightarrow{S_T}}{\overrightarrow{S_I}}$</p>
-</li>
-<li>
-<p>Example: Given electric field $\overrightarrow{E}=\widehat{n} E_0 cos(\overrightarrow{k}\overrightarrow{r}-\omega t)$<br>
-We can solve the magnetic field<br>
-$$\overrightarrow{H}=\frac{\overrightarrow{k} \times \widehat{n}}{\omega \mu_0} E_0 cos(\overrightarrow{k} \overrightarrow{r}-\omega t)=\frac{\widehat{k} \times \widehat{n}}{\eta_0} E_0 cos(\overrightarrow{k} \overrightarrow{r}-\omega t)$$<br>
-where $\widehat{k}$ is a unit wave vector, $\eta_0=\sqrt{\frac{\mu_0}{\varepsilon_0}}$ that is called Impedence in Vacuum.<br>
-So, Energy flow is $$\overrightarrow{S}=\overrightarrow{E} \times \overrightarrow{H}=\widehat{n} \times (\widehat{k} \times \widehat{n}) \frac{E_0<sup>2}{\eta_0}cos</sup>2(\overrightarrow{k} \overrightarrow{r}-\omega t)=\widehat{k} \frac{E_0<sup>2}{\eta_0}cos</sup>2(\overrightarrow{k} \overrightarrow{r}-\omega t)$$<br>
-Note: Energy flows along the wave propagation direction (except in metamaterials). $\overrightarrow{E} \bot \overrightarrow{H} \bot \overrightarrow{k}$, $\overrightarrow{E} \bot \overrightarrow{H} \bot \overrightarrow{S}$.<br>
-Time Averaged Energy Flux:<br>
-$$\langle \overrightarrow{S} \rangle=\widehat{k} \frac{E_0^2}{\eta_0} \langle cos^2 (\widehat{k} \cdot \widehat{r} - \omega t) \rangle =\widehat{k} \frac{E_0^2}{2 \eta_0} $$</p>
-</li>
+P-type semiconductor: holes dominate, more holes. Generally, Group III elements like B, are used for doping.<br>
+1. Bandgap of semiconductor: the absolute minimum gap between conductive band and valence band.<br>
+* Direct bandgap: the minimum conduction band has the same k value of the maximum valance band, eg. GaAs<br>
+* Indirect bandgap: k at different values, eg. Si.<br>
+2. Photovoltaic effect: sunlight can be divided into three regions during photovoltaic solar cell absorption<br>
+* Usable spectram, for Si solar cell (27%)<br>
+* Loss because of the transpancy of Si<br>
+* Loss because of thermalization</p>
+<h1 id="electromagnetic-waves">Electromagnetic Waves</h1>
+<h2 id="maxwells-equations">Maxwell’s equations</h2>
+<p>Two divergence euqations (Gauss’ law): <span class="math display">\[\nabla \cdot \overrightarrow{D}=\rho \tag{1}\]</span> <span class="math display">\[\nabla \cdot \overrightarrow{B}=0 \tag{2}\]</span> Two curl equations: <span class="math display">\[\nabla \times \overrightarrow{E}=-\frac{\partial \overrightarrow{B}}{\partial t} \tag{3}\]</span> <span class="math display">\[\nabla \times \overrightarrow{H}=\frac{\partial \overrightarrow{D}}{\partial t}+\overrightarrow{J} \tag{4}\]</span> where <span class="math inline">\(\overrightarrow{D}\)</span> is electric flux density or electric displacement, <span class="math inline">\(\overrightarrow{B}\)</span> is magnetic flux density, <span class="math inline">\(\overrightarrow{E}\)</span> is electric field, <span class="math inline">\(\overrightarrow{H}\)</span> is magnetic field, <span class="math inline">\(\rho\)</span> is charge density, <span class="math inline">\(\overrightarrow{J}\)</span> is current density.</p>
+<p>Two constitutive relations to correlate <span class="math inline">\(\overrightarrow{D}\)</span> with <span class="math inline">\(\overrightarrow{E}\)</span>, and <span class="math inline">\(\overrightarrow{B}\)</span> with <span class="math inline">\(\overrightarrow{H}\)</span>: <span class="math display">\[\overrightarrow{D}=\varepsilon \overrightarrow{E} \tag{5}\]</span> <span class="math display">\[\overrightarrow{B}=\mu \overrightarrow{H} \tag{6}\]</span> where <span class="math inline">\(\varepsilon\)</span> is permittivity, while <span class="math inline">\(\mu\)</span> permeability. One of the major difference between the permittivity and the permeability is that the permittivity measures the obstruction generates by the material in the formation of an electric field. Whereas, the permeability measures the ability of the material to allow the magnetic lines of force to pass through it.</p>
+<h2 id="solve-maxwells-equations">Solve Maxwell’s equations</h2>
+<p>Plugging in two constitutive relation (5), (6) into Maxwell’s equations, we have <span class="math display">\[\nabla \cdot \overrightarrow{E}=0 \tag{7}\]</span> <span class="math display">\[\nabla \cdot \overrightarrow{H}=0 \tag{8}\]</span> <span class="math display">\[\nabla \times \overrightarrow{E}=- \mu \frac{\partial \overrightarrow{H}}{\partial t} \tag{9}\]</span> <span class="math display">\[\nabla \times \overrightarrow{H}=\varepsilon \frac{\partial \overrightarrow{E}}{\partial t}+\overrightarrow{J} \tag{10}\]</span> This two equations mean: Time varying electric field (<span class="math inline">\(\overrightarrow{E}\)</span>) gives rise to magnetic field (<span class="math inline">\(\overrightarrow{H}\)</span>); time varying magnetic field (<span class="math inline">\(\overrightarrow{H}\)</span>) gives rise to electric field (<span class="math inline">\(\overrightarrow{E}\)</span>)<br>
+Solving the above two equtions, we have the Helmholtz wave equation for free space (vacuum): <span class="math display">\[\nabla^2 \overrightarrow{E}=\mu_0 \varepsilon_0 \frac{\partial^2 E}{\partial t^2} \tag{11}\]</span> where <span class="math inline">\(\mu_0, \varepsilon_0\)</span> are permittivity and prmeability in vacuum.<br>
+The speed of light in vacuum is: <span class="math inline">\(c=\frac{1}{\sqrt{\mu_0 \varepsilon_0}}\)</span><br>
+Assume <span class="math display">\[\overrightarrow{E}(\overrightarrow{r},t)=\widehat{n} E_0 cos(\overrightarrow{k} \overrightarrow{r}-\omega t) \tag{12}\]</span> where <span class="math inline">\(\widehat{n}\)</span> is normal to direction of propagation. Plug it into equation (11), we have <span class="math display">\[[-k^2+\frac{\omega^2}{c^2}] \cdot [cos(\overrightarrow{k} \cdot \overrightarrow{r}-\omega t)]=0 \tag{13}\]</span> To make this equation always true, we have <span class="math display">\[-k^2+\frac{\omega^2}{c^2}=0 \tag{14}\]</span> Therefore, <strong><span class="math inline">\(\omega = k c\)</span></strong><br>
+Substitute equaiton (12) into (7), we have <span class="math display">\[\nabla \cdot \overrightarrow{E}=(\overrightarrow{k} \cdot \widehat{n})E_0 sin(\overrightarrow{k} \overrightarrow{r}-\omega t)=0\]</span> To make this euqaiton always true, we have <span class="math inline">\(\overrightarrow{k} \cdot \widehat{n}=0\)</span>, which means <span class="math inline">\(\overrightarrow{E} \bot \overrightarrow{k}\)</span>.<br>
+Plug equation (12) into equation (10), we have <span class="math display">\[\frac{\partial \overrightarrow{H}}{\partial t}=-\frac{\overrightarrow{k} \times \widehat{n}}{\mu_0} E_0 sin(\overrightarrow{k} \cdot \overrightarrow{r}-\omega t)\]</span> This gives <span class="math display">\[\overrightarrow{H}=\frac{\overrightarrow{k} \times \widehat{n} E_0}{\mu_0 \omega} cos(\overrightarrow{k} \cdot \overrightarrow{r}-\omega t)\]</span> Therefore, we obtain our final conclusion that <span class="math inline">\(\overrightarrow{E} \bot \overrightarrow{k} \bot \overrightarrow{H}\)</span></p>
+<h2 id="electromagnetic-waves-1">Electromagnetic waves</h2>
+<ol type="1">
+<li><p>Electromagnetic waves need to fulfill the condition that <span class="math inline">\(\overrightarrow{E} \bot \overrightarrow{k} \bot \overrightarrow{H}\)</span>, otherwise, they are not EM wave. For example <span class="math display">\[\overrightarrow{E}=\widehat{z}cos(\omega t-kz)\]</span> This is not a EM wave becasue propagation direction <span class="math inline">\(\overrightarrow{k}\)</span> is in z drection, while the <span class="math inline">\(\overrightarrow{E}\)</span> is also in z direction.</p></li>
+<li><p>Given <span class="math inline">\(\overrightarrow{E}\)</span>, find <span class="math inline">\(\overrightarrow{H}\)</span>, for example <span class="math display">\[\overrightarrow{E}=\widehat{x} E_0 cos(kz-wt)\]</span> Applying equation <span class="math display">\[\nabla \times \overrightarrow{E}=-\frac{\partial (\mu_0 \overrightarrow{H})}{\partial t}\]</span> We have <span class="math display">\[\frac{\partial \overrightarrow{H}}{\partial t}=-\frac{1}{\mu_0} \nabla \times \overrightarrow{E}=-\widehat{y} \frac{1}{\mu_0} k E_0 sin(kz-wt)\]</span> Then, we get <span class="math display">\[\overrightarrow{H}=\widehat{y} \frac{k}{\mu_0 \omega} E_0 cos(kz-\omega t)\]</span></p></li>
+<li><p>Given <span class="math inline">\(\overrightarrow{H}\)</span>, find <span class="math inline">\(\overrightarrow{E}\)</span> (in HW3).<br>
+Applying Ampere’s law <span class="math display">\[\overrightarrow{E}=\frac{1}{\varepsilon} \int \nabla \times \overrightarrow{H} dt\]</span></p></li>
+<li><p>Define reflection and transmission of EM waves<br>
+<span class="math display">\[R=\frac{Reflected Energy Flux}{Incident Energy Flux}\]</span> The work done by external electromagnetic fields (, ) can be expressed as <span class="math display">\[W=q \overrightarrow{v} \overrightarrow{E}=\overrightarrow{J} \overrightarrow{E}\]</span> With some derivations, we have <span class="math display">\[-\overrightarrow{J} \cdot \overrightarrow{E}=\nabla \cdot (\overrightarrow{E} \times \overrightarrow{H})+\frac{\partial}{\partial t} (\frac{1}{2}\varepsilon |\overrightarrow{E}|^2+\frac{1}{2} \mu |\overrightarrow{H}|^2)\]</span> Define<br>
+<strong>(1) energy flow (poynting Vector)</strong>: <span class="math inline">\(\overrightarrow{S}=\overrightarrow{E} \times \overrightarrow{H}\)</span><br>
+<strong>(2) energy density</strong>: <span class="math inline">\(W=\frac{1}{2}\varepsilon |\overrightarrow{E}|^2+\frac{1}{2} \mu |\overrightarrow{H}|^2\)</span><br>
+We have <span class="math display">\[-\overrightarrow{J} \cdot \overrightarrow{E}=\nabla \cdot \overrightarrow{S} + \frac{\partial}{\partial t}W\]</span> Reflection: <span class="math inline">\(R=\frac{\overrightarrow{S_R}}{\overrightarrow{S_I}}\)</span><br>
+Transmission: <span class="math inline">\(T=\frac{\overrightarrow{S_T}}{\overrightarrow{S_I}}\)</span></p></li>
+<li><p>Example: Given electric field <span class="math inline">\(\overrightarrow{E}=\widehat{n} E_0 cos(\overrightarrow{k}\overrightarrow{r}-\omega t)\)</span><br>
+We can solve the magnetic field <span class="math display">\[\overrightarrow{H}=\frac{\overrightarrow{k} \times \widehat{n}}{\omega \mu_0} E_0 cos(\overrightarrow{k} \overrightarrow{r}-\omega t)=\frac{\widehat{k} \times \widehat{n}}{\eta_0} E_0 cos(\overrightarrow{k} \overrightarrow{r}-\omega t)\]</span> where <span class="math inline">\(\widehat{k}\)</span> is a unit wave vector, <span class="math inline">\(\eta_0=\sqrt{\frac{\mu_0}{\varepsilon_0}}\)</span> that is called Impedence in Vacuum.<br>
+So, Energy flow is <span class="math display">\[\overrightarrow{S}=\overrightarrow{E} \times \overrightarrow{H}=\widehat{n} \times (\widehat{k} \times \widehat{n}) \frac{E_0^2}{\eta_0}cos^2(\overrightarrow{k} \overrightarrow{r}-\omega t)=\widehat{k} \frac{E_0^2}{\eta_0}cos^2(\overrightarrow{k} \overrightarrow{r}-\omega t)\]</span> Note: Energy flows along the wave propagation direction (except in metamaterials). <span class="math inline">\(\overrightarrow{E} \bot \overrightarrow{H} \bot \overrightarrow{k}\)</span>, <span class="math inline">\(\overrightarrow{E} \bot \overrightarrow{H} \bot \overrightarrow{S}\)</span>.<br>
+Time Averaged Energy Flux: <span class="math display">\[\langle \overrightarrow{S} \rangle=\widehat{k} \frac{E_0^2}{\eta_0} \langle cos^2 (\widehat{k} \cdot \widehat{r} - \omega t) \rangle =\widehat{k} \frac{E_0^2}{2 \eta_0} \]</span></p></li>
 </ol>
 <h2 id="time-harmonic-field">Time Harmonic Field</h2>
 <p>Definition: fields for which time variation is sinusoidal.<br>
-$$\overrightarrow{E}(\overrightarrow{r},t)=\widehat{n} E_0 cos(\overrightarrow{k} \cdot \overrightarrow{r}-\omega t)=Re[\widehat{n} E_0 e^{i(\overrightarrow{k} \cdot \overrightarrow{r} - \omega t)}]=Re[\widehat{n} E_0 e^{i \overrightarrow{k} r} \cdot e^{-iwt}]=Re[\overrightarrow{E}(\overrightarrow{r}) \cdot e^{-i \omega t}]$$<br>
-If we can express $\overrightarrow{E}(\overrightarrow{r},t)$ as $\overrightarrow{E}(\overrightarrow{r},t)=Re[\overrightarrow{E}(\overrightarrow{r}) \cdot e^{-i \omega t}]$, we call that $\overrightarrow{E}(\overrightarrow{r},t)$ is a time harmonic field.<br>
-Similarly, we can express $\overrightarrow{H}$, $\overrightarrow{D}$, $\overrightarrow{B}$, $\overrightarrow{\rho}$, $\overrightarrow{J}$.</p>
-<p>Maxwell’s Equation in time harmonic field<br>
-$$\nabla \times \overrightarrow{E}(\overrightarrow{r})=i \omega \mu \overrightarrow{H}(\overrightarrow{r}) \tag{1}$$<br>
-$$\nabla \times \overrightarrow{H}(\overrightarrow{r})=-i \omega \varepsilon \overrightarrow{E}(\overrightarrow{r})+\overrightarrow{J}(\overrightarrow{r}) \tag{2}$$<br>
-$$\nabla \cdot \mu \overrightarrow{H}(\overrightarrow{r})=0 \tag{3}$$<br>
-$$\nabla \cdot \varepsilon \overrightarrow{E}(\overrightarrow{r})=\rho(\overrightarrow{r}) \tag{4}$$<br>
-Note: energy flux in time harmonic field is $S®=\frac{1}{2}Re[\overrightarrow{E}(\overrightarrow{r}) \cdot \overrightarrow{H}^*(\overrightarrow{r})]$</p>
+<span class="math display">\[\overrightarrow{E}(\overrightarrow{r},t)=\widehat{n} E_0 cos(\overrightarrow{k} \cdot \overrightarrow{r}-\omega t)=Re[\widehat{n} E_0 e^{i(\overrightarrow{k} \cdot \overrightarrow{r} - \omega t)}]=Re[\widehat{n} E_0 e^{i \overrightarrow{k} r} \cdot e^{-iwt}]=Re[\overrightarrow{E}(\overrightarrow{r}) \cdot e^{-i \omega t}]\]</span> If we can express <span class="math inline">\(\overrightarrow{E}(\overrightarrow{r},t)\)</span> as <span class="math inline">\(\overrightarrow{E}(\overrightarrow{r},t)=Re[\overrightarrow{E}(\overrightarrow{r}) \cdot e^{-i \omega t}]\)</span>, we call that <span class="math inline">\(\overrightarrow{E}(\overrightarrow{r},t)\)</span> is a time harmonic field.<br>
+Similarly, we can express <span class="math inline">\(\overrightarrow{H}\)</span>, <span class="math inline">\(\overrightarrow{D}\)</span>, <span class="math inline">\(\overrightarrow{B}\)</span>, <span class="math inline">\(\overrightarrow{\rho}\)</span>, <span class="math inline">\(\overrightarrow{J}\)</span>.</p>
+<p>Maxwell’s Equation in time harmonic field <span class="math display">\[\nabla \times \overrightarrow{E}(\overrightarrow{r})=i \omega \mu \overrightarrow{H}(\overrightarrow{r}) \tag{1}\]</span> <span class="math display">\[\nabla \times \overrightarrow{H}(\overrightarrow{r})=-i \omega \varepsilon \overrightarrow{E}(\overrightarrow{r})+\overrightarrow{J}(\overrightarrow{r}) \tag{2}\]</span> <span class="math display">\[\nabla \cdot \mu \overrightarrow{H}(\overrightarrow{r})=0 \tag{3}\]</span> <span class="math display">\[\nabla \cdot \varepsilon \overrightarrow{E}(\overrightarrow{r})=\rho(\overrightarrow{r}) \tag{4}\]</span> Note: energy flux in time harmonic field is <span class="math inline">\(S(r)=\frac{1}{2}Re[\overrightarrow{E}(\overrightarrow{r}) \cdot \overrightarrow{H}^*(\overrightarrow{r})]\)</span></p>
 <p>Boundary conditions for solving EM field:<br>
 (1) tangential components of electric field continuous<br>
 (2) tangential components of manganetic field continuous</p>
-<h2 id="waves-at-interfaces-te-and-tm-waves">Waves at Interfaces - TE and TM waves</h2>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/TEandTMwaves.png">  
+<h2 id="waves-at-interfaces---te-and-tm-waves">Waves at Interfaces - TE and TM waves</h2>
+<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/TEandTMwaves.png">
 <p>EM wave is polarized, and it can be divided into (1) TE wave or transverse electric field, whose electric field normal to plane of incidence; (2) TM wave or transverse magnetic field, whose magnetic field normal to plane of incidence.</p>
-<p>How to solve the reflection and transmission of a TE wave?</p>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/TEWave.png"> 
+<p>How to solve the reflection and transmission of a TE wave? <img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/TEWave.png"></p>
 <p>Electric field at the interface<br>
-$$\overrightarrow{E}(\overrightarrow{r})|<em>{z&lt;0}=\widehat{y}E_i e^{i \overrightarrow{k_i} \overrightarrow{r}}+\widehat{y}E_r e^{i \overrightarrow{k_r} \overrightarrow{r}} \tag{1}$$<br>
-$$\overrightarrow{E}(\overrightarrow{r})|</em>{z&gt;0}=\widehat{y}E_t e^{i \overrightarrow{k_t} \overrightarrow{r}} \tag{2}$$<br>
-Apply B.C. at z=0 that tangential components of E field continuous, we have<br>
-$$E_i e^{i k_i sin \Theta_i x}+E_r e^{i k_r sin \Theta_r x}=E_t e^{i k_t sin \Theta_t x} \tag{3}$$<br>
-For all the x, the above equation is always true, we have<br>
-$$k_i sin \Theta_i=k_r sin \Theta_r=k_t sin \Theta_t \tag{4}$$<br>
-$$E_i+E_r=E_t \tag{5}$$</p>
-<p>Manganetic field at the interface<br>
-$$\overrightarrow{H}(\overrightarrow{r})|<em>{z&lt;0}=(\widehat{k_i} \times \widehat{y}) \frac{E_i}{\eta_i} e^{i \overrightarrow{k_i} \overrightarrow{r}}+(\widehat{k_r} \times \widehat{y}) \frac{E_r}{\eta_r} e^{i \overrightarrow{k_r} \overrightarrow{r}} \tag{6}$$<br>
-$$\overrightarrow{H}(\overrightarrow{r})|</em>{z&gt;0}=(\widehat{k_t} \times \widehat{y}) \frac{E_t}{\eta_t} e^{i \overrightarrow{k_t} \overrightarrow{r}} \tag{7}$$<br>
-Apply B.C. at z=0 that tangential components of H field continuous, we have<br>
-$$-\widehat{x} cos \Theta_i \frac{E_i}{\eta_i} e^{i k_i sin \Theta_i x}+\widehat{x} cos \Theta_i \frac{E_r}{\eta_r} e^{i k_r sin \Theta_r x}=-\widehat{x} cos \Theta_t \frac{E_t}{\eta_t} e^{i k_t sin \Theta_t x} \tag{8}$$<br>
-For all the x, the above equation is always true, we have<br>
-$$cos \Theta_i (\frac{E_i}{\eta_i}-\frac{E_r}{\eta_i})=cos \Theta_t \frac{E_t}{\eta_t} \tag{9}$$</p>
-<p>Combine equation (5) and (9), we can solve $r=\frac{E_r}{E_i}$, and $t=\frac{E_t}{E_i}$</p>
-<p>Reflection coefficient<br>
-$$r^{TE}=\frac{E_r}{E_i}=\frac{\frac{\eta_t/cos\Theta_t}{\eta_i/\Theta_i}-1}{\frac{\eta_t/cos\Theta_t}{\eta_i/\Theta_i}+1}=\frac{k_{iz}/k_{tz}-1}{k_{iz}/k_{tz}+1}=\frac{\frac{n_i/cos\Theta_t}{n_t/cos\Theta_i}-1}{\frac{n_i/cos\Theta_t}{n_t/cos\Theta_i}+1} \tag{10}$$</p>
-<p>Transmission coefficient<br>
-$$t^{TE}=\frac{E_t}{E_i}=\frac{2\frac{\eta_t/cos\Theta_t}{\eta_i/\Theta_i}}{\frac{\eta_t/cos\Theta_t}{\eta_i/\Theta_i}+1}=\frac{2k_{iz}/k_{tz}}{k_{iz}/k_{tz}+1}=\frac{2\frac{n_i/cos\Theta_t}{n_t/cos\Theta_i}}{\frac{n_i/cos\Theta_t}{n_t/cos\Theta_i}+1} \tag{11}$$</p>
-<p>Poynting vector<br>
-$$\overrightarrow{E_i}(\overrightarrow{r})=\widehat{y} E_i e^{i \overrightarrow{k} \overrightarrow{r}}$$<br>
-$$\overrightarrow{H_i}(\overrightarrow{r})=(-\widehat{x}cos\Theta_i + \widehat{z}sin\Theta_i)\frac{E_i}{\eta_i}e^{i \widehat{k_r} \overrightarrow{r}}$$<br>
-$$\overrightarrow{S_i}(\overrightarrow{r})=\frac{1}{2}R_e[\overrightarrow{E_i} \times \overrightarrow{H_i}^*]$$<br>
-Similarly, we can find $\overrightarrow{S_r}(\overrightarrow{r})$ and $\overrightarrow{S_t}(\overrightarrow{r})$</p>
+<span class="math display">\[\overrightarrow{E}(\overrightarrow{r})|_{z&lt;0}=\widehat{y}E_i e^{i \overrightarrow{k_i} \overrightarrow{r}}+\widehat{y}E_r e^{i \overrightarrow{k_r} \overrightarrow{r}} \tag{1}\]</span> <span class="math display">\[\overrightarrow{E}(\overrightarrow{r})|_{z&gt;0}=\widehat{y}E_t e^{i \overrightarrow{k_t} \overrightarrow{r}} \tag{2}\]</span> Apply B.C. at z=0 that tangential components of E field continuous, we have <span class="math display">\[E_i e^{i k_i sin \Theta_i x}+E_r e^{i k_r sin \Theta_r x}=E_t e^{i k_t sin \Theta_t x} \tag{3}\]</span> For all the x, the above equation is always true, we have <span class="math display">\[k_i sin \Theta_i=k_r sin \Theta_r=k_t sin \Theta_t \tag{4}\]</span> <span class="math display">\[E_i+E_r=E_t \tag{5}\]</span></p>
+<p>Manganetic field at the interface <span class="math display">\[\overrightarrow{H}(\overrightarrow{r})|_{z&lt;0}=(\widehat{k_i} \times \widehat{y}) \frac{E_i}{\eta_i} e^{i \overrightarrow{k_i} \overrightarrow{r}}+(\widehat{k_r} \times \widehat{y}) \frac{E_r}{\eta_r} e^{i \overrightarrow{k_r} \overrightarrow{r}} \tag{6}\]</span> <span class="math display">\[\overrightarrow{H}(\overrightarrow{r})|_{z&gt;0}=(\widehat{k_t} \times \widehat{y}) \frac{E_t}{\eta_t} e^{i \overrightarrow{k_t} \overrightarrow{r}} \tag{7}\]</span> Apply B.C. at z=0 that tangential components of H field continuous, we have <span class="math display">\[-\widehat{x} cos \Theta_i \frac{E_i}{\eta_i} e^{i k_i sin \Theta_i x}+\widehat{x} cos \Theta_i \frac{E_r}{\eta_r} e^{i k_r sin \Theta_r x}=-\widehat{x} cos \Theta_t \frac{E_t}{\eta_t} e^{i k_t sin \Theta_t x} \tag{8}\]</span> For all the x, the above equation is always true, we have <span class="math display">\[cos \Theta_i (\frac{E_i}{\eta_i}-\frac{E_r}{\eta_i})=cos \Theta_t \frac{E_t}{\eta_t} \tag{9}\]</span></p>
+<p>Combine equation (5) and (9), we can solve <span class="math inline">\(r=\frac{E_r}{E_i}\)</span>, and <span class="math inline">\(t=\frac{E_t}{E_i}\)</span></p>
+<p>Reflection coefficient <span class="math display">\[r^{TE}=\frac{E_r}{E_i}=\frac{\frac{\eta_t/cos\Theta_t}{\eta_i/\Theta_i}-1}{\frac{\eta_t/cos\Theta_t}{\eta_i/\Theta_i}+1}=\frac{k_{iz}/k_{tz}-1}{k_{iz}/k_{tz}+1}=\frac{\frac{n_i/cos\Theta_t}{n_t/cos\Theta_i}-1}{\frac{n_i/cos\Theta_t}{n_t/cos\Theta_i}+1} \tag{10}\]</span></p>
+<p>Transmission coefficient <span class="math display">\[t^{TE}=\frac{E_t}{E_i}=\frac{2\frac{\eta_t/cos\Theta_t}{\eta_i/\Theta_i}}{\frac{\eta_t/cos\Theta_t}{\eta_i/\Theta_i}+1}=\frac{2k_{iz}/k_{tz}}{k_{iz}/k_{tz}+1}=\frac{2\frac{n_i/cos\Theta_t}{n_t/cos\Theta_i}}{\frac{n_i/cos\Theta_t}{n_t/cos\Theta_i}+1} \tag{11}\]</span></p>
+<p>Poynting vector <span class="math display">\[\overrightarrow{E_i}(\overrightarrow{r})=\widehat{y} E_i e^{i \overrightarrow{k} \overrightarrow{r}}\]</span> <span class="math display">\[\overrightarrow{H_i}(\overrightarrow{r})=(-\widehat{x}cos\Theta_i + \widehat{z}sin\Theta_i)\frac{E_i}{\eta_i}e^{i \widehat{k_r} \overrightarrow{r}}\]</span> <span class="math display">\[\overrightarrow{S_i}(\overrightarrow{r})=\frac{1}{2}R_e[\overrightarrow{E_i} \times \overrightarrow{H_i}^*]\]</span> Similarly, we can find <span class="math inline">\(\overrightarrow{S_r}(\overrightarrow{r})\)</span> and <span class="math inline">\(\overrightarrow{S_t}(\overrightarrow{r})\)</span></p>
 <p>Define<br>
-Reflectivity: $R<sup>{TE}=\frac{\overrightarrow{S_r}(\overrightarrow{r})}{\overrightarrow{S_i}(\overrightarrow{r})}=|r</sup>{TE}|^2$<br>
-Transmissivity: $T<sup>{TE}=\frac{\overrightarrow{S_t}(\overrightarrow{r})}{\overrightarrow{S_i}(\overrightarrow{r})}=\frac{Re(n_t</sup>*)cos\Theta_t}{Re(n_t<sup>*)cos\Theta_i}|t</sup>{TE}|^2$</p>
-<h1>Reading assignment</h1>
+Reflectivity: <span class="math inline">\(R^{TE}=\frac{\overrightarrow{S_r}(\overrightarrow{r})}{\overrightarrow{S_i}(\overrightarrow{r})}=|r^{TE}|^2\)</span><br>
+Transmissivity: <span class="math inline">\(T^{TE}=\frac{\overrightarrow{S_t}(\overrightarrow{r})}{\overrightarrow{S_i}(\overrightarrow{r})}=\frac{Re(n_t^*)cos\Theta_t}{Re(n_t^*)cos\Theta_i}|t^{TE}|^2\)</span></p>
+<h1 id="reading-assignment">Reading assignment</h1>
 <h2 id="solar-cell-efficiency-tables-version-51">Solar cell efficiency tables (version 51)</h2>
-<p>Figure 4 summaries the progress of photovoltaics cells and modules in the last 25 years. The development of cells is very intense. The efficiency of various types of cells and modules increase steadily in the past 25 years. Among them, the multi-junction (III-V MJ) cells always have the highest efficiency compared to other types. Recently, the multi-junction modules have been developed with efficiency as high as 31%. Silicon-based cells and modules does not show much improvements in the past, especially for that with concentrator. This is because its efficiency is close to the theoretical efficiency and there is not much room for the improvement. Another result that needs to be mentioned is the low efficiency dye sensitized solar cells. The extremely low cost attracts researcher’s attention on this topic, and the efficiency has already reached around 12%.</p>
-<img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/ProgressOfSolarCell.png"> 
+<p>Figure 4 summaries the progress of photovoltaics cells and modules in the last 25 years. The development of cells is very intense. The efficiency of various types of cells and modules increase steadily in the past 25 years. Among them, the multi-junction (III-V MJ) cells always have the highest efficiency compared to other types. Recently, the multi-junction modules have been developed with efficiency as high as 31%. Silicon-based cells and modules does not show much improvements in the past, especially for that with concentrator. This is because its efficiency is close to the theoretical efficiency and there is not much room for the improvement. Another result that needs to be mentioned is the low efficiency dye sensitized solar cells. The extremely low cost attracts researcher’s attention on this topic, and the efficiency has already reached around 12%. <img src="http://p2nx95frv.bkt.gdipper.com/images/24-629_DirectSolarAndThermalEnergyConversion/ProgressOfSolarCell.png"></p>
+
       
     </div>
     
@@ -949,7 +802,7 @@ Transmissivity: $T<sup>{TE}=\frac{\overrightarrow{S_t}(\overrightarrow{r})}{\ove
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">56</span>
+                  <span class="site-state-item-count">57</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1038,7 +891,7 @@ Transmissivity: $T<sup>{TE}=\frac{\overrightarrow{S_t}(\overrightarrow{r})}{\ove
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Course description</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Particles</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#microscopic-particles-energy-carriers"><span class="nav-number">2.1.</span> <span class="nav-text">Microscopic Particles (Energy Carriers)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#classical-particles-and-waves"><span class="nav-number">2.2.</span> <span class="nav-text">Classical particles and waves</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Quantum mechanics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#schrodinger-equation-wave-equation"><span class="nav-number">3.1.</span> <span class="nav-text">Schrodinger equation (wave equation)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#steady-state-schrodinger-equation-time-independent-schrodinger-equation"><span class="nav-number">3.2.</span> <span class="nav-text">Steady-state Schrodinger equation (Time independent Schrodinger equation)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#free-particle"><span class="nav-number">3.2.1.</span> <span class="nav-text">Free particle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#particle-in-a-one-dimensional-infinit-potential-well"><span class="nav-number">3.2.2.</span> <span class="nav-text">Particle in a one-dimensional infinit potential well</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#particle-in-a-square-nanowire-2d-case"><span class="nav-number">3.2.3.</span> <span class="nav-text">Particle in a square nanowire (2D case)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#harmonic-oscillator"><span class="nav-number">3.2.4.</span> <span class="nav-text">Harmonic oscillator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rigid-motor"><span class="nav-number">3.2.5.</span> <span class="nav-text">Rigid motor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#electron-energy-levels-of-a-hydrogen-atom"><span class="nav-number">3.2.6.</span> <span class="nav-text">Electron energy levels of a hydrogen atom</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#electron-spin-and-pauli-exclusive-principle"><span class="nav-number">3.3.</span> <span class="nav-text">Electron spin and Pauli exclusive principle</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#electron-spin"><span class="nav-number">3.3.1.</span> <span class="nav-text">Electron spin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pauli-exclusive-principle"><span class="nav-number">3.3.2.</span> <span class="nav-text">Pauli exclusive principle</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Statistical mechanics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ensembles"><span class="nav-number">4.1.</span> <span class="nav-text">Ensembles</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#microcanonical-ensemble"><span class="nav-number">4.1.1.</span> <span class="nav-text">Microcanonical ensemble</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#canonical-ensemble"><span class="nav-number">4.1.2.</span> <span class="nav-text">Canonical ensemble</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#grand-canonical-ensemble"><span class="nav-number">4.1.3.</span> <span class="nav-text">Grand canonical ensemble</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#classic-distributions"><span class="nav-number">4.2.</span> <span class="nav-text">Classic distributions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#fermi-dirac-distribution-electron"><span class="nav-number">4.2.1.</span> <span class="nav-text">Fermi-Dirac distribution (Electron)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bose-einstein-distribution-phonons-photons"><span class="nav-number">4.2.2.</span> <span class="nav-text">Bose-Einstein distribution (Phonons, Photons)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#quick-summary"><span class="nav-number">4.2.3.</span> <span class="nav-text">Quick summary</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">Electron</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#classic-model-drude-theory"><span class="nav-number">5.1.</span> <span class="nav-text">Classic model: <a href="https://en.wikipedia.org/wiki/Drude_model" target="_blank" rel="noopener">Drude theory</a></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#quantum-free-electron-gas-theory-sommerfeld-theory"><span class="nav-number">5.2.</span> <span class="nav-text">Quantum free electron gas theory: Sommerfeld theory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#electronic-band-theory"><span class="nav-number">5.3.</span> <span class="nav-text">Electronic band theory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#semiconductor"><span class="nav-number">5.4.</span> <span class="nav-text">Semiconductor</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">Electromagnetic Waves</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#maxwell-s-equations"><span class="nav-number">6.1.</span> <span class="nav-text">Maxwell&#x2019;s equations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#solve-maxwell-s-equations"><span class="nav-number">6.2.</span> <span class="nav-text">Solve Maxwell&#x2019;s equations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#electromagnetic-waves"><span class="nav-number">6.3.</span> <span class="nav-text">Electromagnetic waves</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#time-harmonic-field"><span class="nav-number">6.4.</span> <span class="nav-text">Time Harmonic Field</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#waves-at-interfaces-te-and-tm-waves"><span class="nav-number">6.5.</span> <span class="nav-text">Waves at Interfaces - TE and TM waves</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">Reading assignment</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#solar-cell-efficiency-tables-version-51"><span class="nav-number">7.1.</span> <span class="nav-text">Solar cell efficiency tables (version 51)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#course-description"><span class="nav-number">1.</span> <span class="nav-text">Course description</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#particles"><span class="nav-number">2.</span> <span class="nav-text">Particles</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#microscopic-particles-energy-carriers"><span class="nav-number">2.1.</span> <span class="nav-text">Microscopic Particles (Energy Carriers)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#classical-particles-and-waves"><span class="nav-number">2.2.</span> <span class="nav-text">Classical particles and waves</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#quantum-mechanics"><span class="nav-number">3.</span> <span class="nav-text">Quantum mechanics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#schrodinger-equation-wave-equation"><span class="nav-number">3.1.</span> <span class="nav-text">Schrodinger equation (wave equation)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#steady-state-schrodinger-equation-time-independent-schrodinger-equation"><span class="nav-number">3.2.</span> <span class="nav-text">Steady-state Schrodinger equation (Time independent Schrodinger equation)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#free-particle"><span class="nav-number">3.2.1.</span> <span class="nav-text">Free particle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#particle-in-a-one-dimensional-infinit-potential-well"><span class="nav-number">3.2.2.</span> <span class="nav-text">Particle in a one-dimensional infinit potential well</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#particle-in-a-square-nanowire-2d-case"><span class="nav-number">3.2.3.</span> <span class="nav-text">Particle in a square nanowire (2D case)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#harmonic-oscillator"><span class="nav-number">3.2.4.</span> <span class="nav-text">Harmonic oscillator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rigid-motor"><span class="nav-number">3.2.5.</span> <span class="nav-text">Rigid motor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#electron-energy-levels-of-a-hydrogen-atom"><span class="nav-number">3.2.6.</span> <span class="nav-text">Electron energy levels of a hydrogen atom</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#electron-spin-and-pauli-exclusive-principle"><span class="nav-number">3.3.</span> <span class="nav-text">Electron spin and Pauli exclusive principle</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#electron-spin"><span class="nav-number">3.3.1.</span> <span class="nav-text">Electron spin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pauli-exclusive-principle"><span class="nav-number">3.3.2.</span> <span class="nav-text">Pauli exclusive principle</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#statistical-mechanics"><span class="nav-number">4.</span> <span class="nav-text">Statistical mechanics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ensembles"><span class="nav-number">4.1.</span> <span class="nav-text">Ensembles</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#microcanonical-ensemble"><span class="nav-number">4.1.1.</span> <span class="nav-text">Microcanonical ensemble</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#canonical-ensemble"><span class="nav-number">4.1.2.</span> <span class="nav-text">Canonical ensemble</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#grand-canonical-ensemble"><span class="nav-number">4.1.3.</span> <span class="nav-text">Grand canonical ensemble</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#classic-distributions"><span class="nav-number">4.2.</span> <span class="nav-text">Classic distributions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#fermi-dirac-distribution-electron"><span class="nav-number">4.2.1.</span> <span class="nav-text">Fermi-Dirac distribution (Electron)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bose-einstein-distribution-phonons-photons"><span class="nav-number">4.2.2.</span> <span class="nav-text">Bose-Einstein distribution (Phonons, Photons)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#quick-summary"><span class="nav-number">4.2.3.</span> <span class="nav-text">Quick summary</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#electron"><span class="nav-number">5.</span> <span class="nav-text">Electron</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#classic-model-drude-theory"><span class="nav-number">5.1.</span> <span class="nav-text">Classic model: <a href="https://en.wikipedia.org/wiki/Drude_model" target="_blank" rel="noopener">Drude theory</a></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#quantum-free-electron-gas-theory-sommerfeld-theory"><span class="nav-number">5.2.</span> <span class="nav-text">Quantum free electron gas theory: Sommerfeld theory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#electronic-band-theory"><span class="nav-number">5.3.</span> <span class="nav-text">Electronic band theory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#semiconductor"><span class="nav-number">5.4.</span> <span class="nav-text">Semiconductor</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#electromagnetic-waves"><span class="nav-number">6.</span> <span class="nav-text">Electromagnetic Waves</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#maxwells-equations"><span class="nav-number">6.1.</span> <span class="nav-text">Maxwell&#x2019;s equations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#solve-maxwells-equations"><span class="nav-number">6.2.</span> <span class="nav-text">Solve Maxwell&#x2019;s equations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#electromagnetic-waves-1"><span class="nav-number">6.3.</span> <span class="nav-text">Electromagnetic waves</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#time-harmonic-field"><span class="nav-number">6.4.</span> <span class="nav-text">Time Harmonic Field</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#waves-at-interfaces---te-and-tm-waves"><span class="nav-number">6.5.</span> <span class="nav-text">Waves at Interfaces - TE and TM waves</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#reading-assignment"><span class="nav-number">7.</span> <span class="nav-text">Reading assignment</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#solar-cell-efficiency-tables-version-51"><span class="nav-number">7.1.</span> <span class="nav-text">Solar cell efficiency tables (version 51)</span></a></li></ol></li></ol></div>
             
 
           </div>
