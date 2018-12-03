@@ -106,7 +106,7 @@
 
 
 
-  <meta name="keywords" content="Math,Probability,Class Notes," />
+  <meta name="keywords" content="Class Notes,Math,Probability," />
 
 
 
@@ -127,18 +127,18 @@
 	})();
 </script>
 
-<meta name="description" content="Instructors: Prof. Irving J. Oppenheim Probability and Random Variables Basic concept  Outcomes: result of experiment Event: a collector of outcomes that are interested to us Sample space \(\Ome">
-<meta name="keywords" content="Math,Probability,Class Notes">
+<meta name="description" content="Instructors: Prof. Irving J. Oppenheim Probability and Random Variables Basic concept  Outcomes: result of experiment Event: a collector of outcomes that are interested to us Sample space $\Omega$: al">
+<meta name="keywords" content="Class Notes,Math,Probability">
 <meta property="og:type" content="article">
 <meta property="og:title" content="24-704 Probability and Estimation Methods for Engineering Systems">
 <meta property="og:url" content="http://yoursite.com/2018/10/10/24-704-Probability-and-Estimation-Methods-for-Engineering-Systems/index.html">
 <meta property="og:site_name" content="Laisuo Su">
-<meta property="og:description" content="Instructors: Prof. Irving J. Oppenheim Probability and Random Variables Basic concept  Outcomes: result of experiment Event: a collector of outcomes that are interested to us Sample space \(\Ome">
+<meta property="og:description" content="Instructors: Prof. Irving J. Oppenheim Probability and Random Variables Basic concept  Outcomes: result of experiment Event: a collector of outcomes that are interested to us Sample space $\Omega$: al">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2018-10-12T15:43:53.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="24-704 Probability and Estimation Methods for Engineering Systems">
-<meta name="twitter:description" content="Instructors: Prof. Irving J. Oppenheim Probability and Random Variables Basic concept  Outcomes: result of experiment Event: a collector of outcomes that are interested to us Sample space \(\Ome">
+<meta name="twitter:description" content="Instructors: Prof. Irving J. Oppenheim Probability and Random Variables Basic concept  Outcomes: result of experiment Event: a collector of outcomes that are interested to us Sample space $\Omega$: al">
 
 
 
@@ -436,134 +436,207 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><p>Instructors: Prof. Irving J. Oppenheim</p>
-<h1 id="probability-and-random-variables">Probability and Random Variables</h1>
+        <link rel="stylesheet" type="text/css" href="/css/lib/hint.min.css"><p>Instructors: Prof. Irving J. Oppenheim</p>
+<h1>Probability and Random Variables</h1>
 <h2 id="basic-concept">Basic concept</h2>
 <ul>
 <li>Outcomes: result of experiment</li>
 <li>Event: a collector of outcomes that are interested to us</li>
-<li>Sample space <span class="math inline">\(\Omega\)</span>: all possible sample points (all outcomes)</li>
+<li>Sample space $\Omega$: all possible sample points (all outcomes)</li>
 </ul>
 <a id="more"></a>
 <h2 id="rules-of-probability">Rules of probability</h2>
 <h3 id="axions">Axions</h3>
 <ul>
-<li>P{A}: Probability of envent A in one trail is always <span class="math inline">\(\geq\)</span> 0</li>
-<li>P{<span class="math inline">\(\Omega\)</span>} = 1</li>
-<li>For A and B mutually excluive, P{A <span class="math inline">\(\bigcup\)</span> B}=P{A}+P{B}</li>
+<li>P{A}: Probability of envent A in one trail is always $\geq$ 0</li>
+<li>P{$\Omega$} = 1</li>
+<li>For A and B mutually excluive, P{A $\bigcup$ B}=P{A}+P{B}</li>
 </ul>
 <h3 id="rules">Rules</h3>
 <ul>
-<li>P{<span class="math inline">\(\phi\)</span>} = 0</li>
-<li>P{<span class="math inline">\(\overline{A}\)</span>} = 1-P{A}</li>
-<li>P{A <span class="math inline">\(\bigcup\)</span> B} = P{A}+P{B}-P{A <span class="math inline">\(\bigcap\)</span> B}</li>
-<li>P{A <span class="math inline">\(\bigcap\)</span> B}=P{A}<span class="math inline">\(\cdot\)</span>P{B}, for A and B independent</li>
+<li>P{$\phi$} = 0</li>
+<li>P{$\overline{A}$} = 1-P{A}</li>
+<li>P{A $\bigcup$ B} = P{A}+P{B}-P{A $\bigcap$ B}</li>
+<li>P{A $\bigcap$ B}=P{A}$\cdot$P{B}, for A and B independent</li>
 </ul>
 <h2 id="combinatorics">Combinatorics</h2>
-<p>Combinations without replacement<br>
-- C(n,k)=<span class="math inline">\((_k^n)\)</span>=<span class="math inline">\(\frac{n!}{k!(n-k)!}\)</span></p>
+<p>Combinations without replacement</p>
+<ul>
+<li>C(n,k)=$(_k^n)$=$\frac{n!}{k!(n-k)!}$</li>
+</ul>
 <h2 id="conditional-probability">Conditional probability</h2>
-<p><span class="math display">\[P \lbrace A|B \rbrace=\frac{Number\ of\ outcomes\ in\ A \cup B}{number\ of\ outcomes\ in\ B}=\frac{P \lbrace A \cap B \rbrace}{P \lbrace B \rbrace}\]</span></p>
-<p>Thus, we have <span class="math display">\[P \lbrace A \cap B \rbrace =P \lbrace B \rbrace \cdot P \lbrace A|B \rbrace\]</span></p>
-<p>If A and B are independent, we have <span class="math display">\[P \lbrace A|B \rbrace=P \lbrace A \rbrace\]</span></p>
+<p>$$P \lbrace A|B \rbrace=\frac{Number\ of\ outcomes\ in\ A \cup B}{number\ of\ outcomes\ in\ B}=\frac{P \lbrace A \cap B \rbrace}{P \lbrace B \rbrace}$$</p>
+<p>Thus, we have $$P \lbrace A \cap B \rbrace =P \lbrace B \rbrace \cdot P \lbrace A|B \rbrace$$</p>
+<p>If A and B are independent, we have $$P \lbrace A|B \rbrace=P \lbrace A \rbrace$$</p>
 <h3 id="bayes-rule">Bayes rule</h3>
-<p>when we do not have <span class="math inline">\(P \lbrace A \cap B \rbrace\)</span> <span class="math display">\[P \lbrace B|A \rbrace=\frac{P \lbrace A|B \rbrace \cdot P \lbrace B \rbrace}{P \lbrace A \rbrace}\]</span></p>
+<p>when we do not have $P \lbrace A \cap B \rbrace$<br>
+$$P \lbrace B|A \rbrace=\frac{P \lbrace A|B \rbrace \cdot P \lbrace B \rbrace}{P \lbrace A \rbrace}$$</p>
 <h3 id="total-probability">Total probability</h3>
 <p>when we do not have P{A}<br>
-Consider mutually exclusive, collects exhaustive events <span class="math inline">\(B_1,\ B_2,\ B_3,\ ...,\ B_k\)</span> <span class="math display">\[P \lbrace A \rbrace=\sum_{j=1}^k [P \lbrace A|B_j \rbrace \cdot P \lbrace B_j \rbrace]\]</span> This gives us the Bayes rule <span class="math display">\[P \lbrace B|A \rbrace=\frac{P \lbrace A|B \rbrace \cdot P \lbrace B \rbrace}{\sum_{j=1}^k [P \lbrace A|B_j \rbrace \cdot P \lbrace B_j \rbrace]}\]</span></p>
-<h1 id="discrete-random-variables-and-their-distribution">Discrete Random Variables and Their Distribution</h1>
+Consider mutually exclusive, collects exhaustive events $B_1,\ B_2,\ B_3,\ …,\ B_k$<br>
+$$P \lbrace A \rbrace=\sum_{j=1}^k [P \lbrace A|B_j \rbrace \cdot P \lbrace B_j \rbrace]$$<br>
+This gives us the Bayes rule $$P \lbrace B|A \rbrace=\frac{P \lbrace A|B \rbrace \cdot P \lbrace B \rbrace}{\sum_{j=1}^k [P \lbrace A|B_j \rbrace \cdot P \lbrace B_j \rbrace]}$$</p>
+<h1>Discrete Random Variables and Their Distribution</h1>
 <h2 id="discrete-random-variables">Discrete Random Variables</h2>
-<p>Notation<br>
-- X: a random variable - x: any particule discrete value of X <span class="math display">\[P \lbrace X=x \rbrace=P(x)\]</span></p>
+<p>Notation</p>
+<ul>
+<li>X: a random variable</li>
+<li>x: any particule discrete value of X<br>
+$$P \lbrace X=x \rbrace=P(x)$$</li>
+</ul>
 <h3 id="probability-mass-function-pmf">Probability mass function (pmf)</h3>
 <p>The probability of x with respect of x</p>
 <h3 id="cumulative-distribution-function-pdf">Cumulative distribution function (pdf)</h3>
-<p><span class="math display">\[F(x)=P \lbrace X \leq x \rbrace =\sum_{y \leq x} P(y) \]</span></p>
+<p>$$F(x)=P \lbrace X \leq x \rbrace =\sum_{y \leq x} P(y) $$</p>
 <h2 id="random-vector">Random Vector</h2>
-<p>This refers to multiple random variables, like (x,y) <span class="math display">\[P \lbrace x,y \rbrace =P \lbrace X=x \cap Y=y \rbrace = P_{x,y}(x,y)\]</span></p>
+<p>This refers to multiple random variables, like (x,y)<br>
+$$P \lbrace x,y \rbrace =P \lbrace X=x \cap Y=y \rbrace = P_{x,y}(x,y)$$</p>
 <ul>
-<li><p>Marginal distribution P_X(x)= pmf of x for any possible value of y<br>
+<li>
+<p>Marginal distribution<br>
+P_X(x)= pmf of x for any possible value of y<br>
 P_Y(y)= pmf of y for any possible value of y<br>
-If X, Y are independent, <span class="math display">\[P_{X,Y}(x,y)=P_X(x) \cdot P_Y(y)\]</span></p></li>
-<li><p>Expectation <span class="math display">\[E(x)=\mu=\sum_{all\ x} x \cdot P(x)\]</span></p></li>
-<li><p>Variance<br>
-<span class="math display">\[Var(x) = \sigma ^2 = E[(x-E(x))^2] = \sum_{all\ x} (x-\mu)^2 \cdot P(x)\]</span></p></li>
-<li><p>Standard deviation <span class="math display">\[std.(x)=\sigma=\sqrt{Var(x)}\]</span></p></li>
-<li><p>Covariance <span class="math display">\[Cov(X,Y)=E(X \cdot Y)-E(x) \cdot E(Y)\]</span></p></li>
-<li><p>Correlation coefficient <span class="math display">\[\rho=\frac{cov(X,Y)}{std(x) \cdot std(Y)}\]</span></p></li>
+If X, Y are independent, $$P_{X,Y}(x,y)=P_X(x) \cdot P_Y(y)$$</p>
+</li>
+<li>
+<p>Expectation<br>
+$$E(x)=\mu=\sum_{all\ x} x \cdot P(x)$$</p>
+</li>
+<li>
+<p>Variance<br>
+$$Var(x) = \sigma ^2 = E[(x-E(x))^2] = \sum_{all\ x} (x-\mu)^2 \cdot P(x)$$</p>
+</li>
+<li>
+<p>Standard deviation<br>
+$$std.(x)=\sigma=\sqrt{Var(x)}$$</p>
+</li>
+<li>
+<p>Covariance<br>
+$$Cov(X,Y)=E(X \cdot Y)-E(x) \cdot E(Y)$$</p>
+</li>
+<li>
+<p>Correlation coefficient<br>
+$$\rho=\frac{cov(X,Y)}{std(x) \cdot std(Y)}$$</p>
+</li>
 </ul>
-<h2 id="chebyshevs-inequality">Chebyshev’s inequality</h2>
-<p><span class="math display">\[P \lbrace |x-\mu|&gt;\epsilon \rbrace \leq (\frac{\sigma}{\epsilon})^2\]</span> This Chebyshev’s inequality gives you an idea the distribution curve known <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>.</p>
+<h2 id="chebyshev-s-inequality">Chebyshev’s inequality</h2>
+<p>$$P \lbrace |x-\mu|&gt;\epsilon \rbrace \leq (\frac{\sigma}{\epsilon})^2$$<br>
+This Chebyshev’s inequality gives you an idea the distribution curve known $\mu$ and $\sigma$.</p>
 <h2 id="parameterized-discrete-random-variables-rv">Parameterized discrete random variables (RV)</h2>
 <h3 id="bernoulli-trial-bernoulli-distribution">Bernoulli trial (Bernoulli distribution)</h3>
 <p>RV X is binary 0, 1 (failure - success, false - true, No - Yes)<br>
-Parameter p<br>
-- P{x=1}=p - P{x=0}=1-p=q - E{x}=p - Var{x}=p(1-p)=pq</p>
+Parameter p</p>
+<ul>
+<li>P{x=1}=p</li>
+<li>P{x=0}=1-p=q</li>
+<li>E{x}=p</li>
+<li>Var{x}=p(1-p)=pq</li>
+</ul>
 <h3 id="binomial-distribution-binomial-distributed-rv">Binomial distribution (Binomial distributed RV)</h3>
-<p>Perform n independent Bernoulli trials, RV X stands for the number of “success” in the n trials, and X can be 0, 1, 2, …, n. We call this as Binomial (n,p). - Probability mass function (pmf)<br>
-<span class="math display">\[P(x) = P \lbrace X=x \rbrace = (_x^n) p^x q^{n-x}\]</span> The expectation and variance are<br>
-<span class="math inline">\(E(x)=\mu=np\)</span><br>
-<span class="math inline">\(Var(x) = \sigma^2 = npq\)</span></p>
+<p>Perform n independent Bernoulli trials, RV X stands for the number of “success” in the n trials, and X can be 0, 1, 2, …, n. We call this as Binomial (n,p).</p>
+<ul>
+<li>Probability mass function (pmf)<br>
+$$P(x) = P \lbrace X=x \rbrace = (_x^n) p^x q^{n-x}$$<br>
+The expectation and variance are<br>
+$E(x)=\mu=np$<br>
+$Var(x) = \sigma^2 = npq$</li>
+</ul>
 <h3 id="geometric-distribution">Geometric distribution</h3>
-<p>P{first success occurs on trial x} - pmf <span class="math display">\[P(x)=q^{x-1} \cdot p\]</span> The expectation and variance are<br>
-<span class="math inline">\(E(x)=\mu=\frac{1}{p}\)</span><br>
-<span class="math inline">\(Var(x) = \sigma ^2 = \frac{1-p}{p^2}\)</span></p>
+<p>P{first success occurs on trial x}</p>
+<ul>
+<li>pmf<br>
+$$P(x)=q^{x-1} \cdot p$$<br>
+The expectation and variance are<br>
+$E(x)=\mu=\frac{1}{p}$<br>
+$Var(x) = \sigma ^2 = \frac{1-p}{p^2}$</li>
+</ul>
 <h3 id="poisson-distribution-rare-events">Poisson distribution (rare events)</h3>
-<p><span class="math inline">\(\lambda\)</span>: average number of arrivals in a fixed time interval<br>
-X: number of arrivals in that time interval - pmf <span class="math display">\[P(x)=\frac{e^{-\lambda} \lambda^x}{x!}\]</span> E(x)=<span class="math inline">\(\lambda\)</span> Var(x)=<span class="math inline">\(\lambda\)</span></p>
+<p>$\lambda$: average number of arrivals in a fixed time interval<br>
+X: number of arrivals in that time interval</p>
+<ul>
+<li>pmf<br>
+$$P(x)=\frac{e^{-\lambda} \lambda^x}{x!}$$<br>
+E(x)=$\lambda$<br>
+Var(x)=$\lambda$</li>
+</ul>
 <h3 id="poisson-approximation-to-binomial">Poisson Approximation to Binomial</h3>
-<p>Binomial (n,p) = Poisson (<span class="math inline">\(\lambda\)</span>), where <span class="math inline">\(\lambda\)</span>=np (for large n and small p).</p>
-<h1 id="continuous-random-variable-and-distributions">Continuous Random Variable and Distributions</h1>
+<p>Binomial (n,p) = Poisson ($\lambda$), where $\lambda$=np (for large n and small p).</p>
+<h1>Continuous Random Variable and Distributions</h1>
 <h2 id="continuous-rv">Continuous RV</h2>
 <ul>
-<li><p>pdf: probability denstiy function. f(x) <span class="math display">\[P \lbrace a&lt;x&lt;b \rbrace = \int_a^b f(x)dx\]</span> Note: (1) f(x) is always positive, (2) the total area under f(x) is 1.0</p></li>
-<li><p>cdf: cumulative distribution function. F(x) <span class="math display">\[F(x)=P \lbrace X&lt;x \rbrace = \int_{lower\ limit\ of\ x}^x f(x)dx\]</span></p></li>
+<li>
+<p>pdf: probability denstiy function. f(x)<br>
+$$P \lbrace a&lt;x&lt;b \rbrace = \int_a^b f(x)dx$$<br>
+Note: (1) f(x) is always positive, (2) the total area under f(x) is 1.0</p>
+</li>
+<li>
+<p>cdf: cumulative distribution function. F(x)<br>
+$$F(x)=P \lbrace X&lt;x \rbrace = \int_{lower\ limit\ of\ x}^x f(x)dx$$</p>
+</li>
 </ul>
 <h2 id="uniform-distributed-rv">Uniform distributed RV</h2>
 <ul>
-<li>pdf <span class="math display">\[f(x)=a\]</span> where a is a costant</li>
+<li>pdf<br>
+$$f(x)=a$$<br>
+where a is a costant</li>
 </ul>
 <h2 id="exponential-distributed-rv">Exponential distributed RV</h2>
 <ul>
-<li>pdf <span class="math display">\[f(x)=\lambda e^{-\lambda x}\]</span></li>
-<li>cdf <span class="math display">\[F(x)=1-e^{-\lambda x}\]</span> where x is the time between each arrival (poisson arrivals).</li>
+<li>pdf<br>
+$$f(x)=\lambda e^{-\lambda x}$$</li>
+<li>cdf<br>
+$$F(x)=1-e^{-\lambda x}$$<br>
+where x is the time between each arrival (poisson arrivals).</li>
 </ul>
-<p>For exponential distributed RV <span class="math inline">\(\mu=E(x)=\frac{1}{\lambda}\)</span>, this stands for the mean time between arrivals.</p>
+<p>For exponential distributed RV<br>
+$\mu=E(x)=\frac{1}{\lambda}$, this stands for the mean time between arrivals.</p>
 <h2 id="gamma-distributed-rv">Gamma distributed RV</h2>
-<p>Random variable X: Time of the <span class="math inline">\(\alpha^{th}\)</span> arrival in a poisson process. <span class="math inline">\(Gamma(\alpha,\lambda)\)</span><br>
-- pdf <span class="math display">\[f(x)=\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha -1} \cdot e^{-\lambda x}\]</span> where the Gamma function <span class="math inline">\(\Gamma(n)=(n-1)!\)</span> - <span class="math inline">\(\alpha\)</span> would be an integer, if we are talking the sum of <span class="math inline">\(\alpha\)</span> exponentially distributed random variables with parameter <span class="math inline">\(\lambda\)</span><br>
-- <span class="math inline">\(\alpha\)</span> need not to be an integer, if we are discribing any random variable that can be modelled by a Gamma shapped pdf, which is a “general purpose” pdf over the range of [0, <span class="math inline">\(\infty\)</span>]<br>
-- Expectation value <span class="math display">\[\mu=\frac{\alpha}{\lambda}\]</span> - Variance: <span class="math display">\[\sigma ^2=\frac{\alpha}{\lambda^2}\]</span></p>
+<p>Random variable X: Time of the $\alpha^{th}$ arrival in a poisson process. $Gamma(\alpha,\lambda)$</p>
+<ul>
+<li>pdf<br>
+$$f(x)=\frac{\lambda^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha -1} \cdot e^{-\lambda x}$$<br>
+where the Gamma function $\Gamma(n)=(n-1)!$</li>
+<li>$\alpha$ would be an integer, if we are talking the sum of $\alpha$ exponentially distributed random variables with parameter $\lambda$</li>
+<li>$\alpha$ need not to be an integer, if we are discribing any random variable that can be modelled by a Gamma shapped pdf, which is a “general purpose” pdf over the range of [0, $\infty$]</li>
+<li>Expectation value $$\mu=\frac{\alpha}{\lambda}$$</li>
+<li>Variance: $$\sigma <sup>2=\frac{\alpha}{\lambda</sup>2}$$</li>
+</ul>
 <h2 id="gamma-poisson-formula">Gamma-Poisson Formula</h2>
-<p>Let T be the RV that described by the Gamma distribution with an integer parameter <span class="math inline">\(\alpha\)</span> and some positive <span class="math inline">\(\lambda\)</span>. This is a distribution of the time of the <span class="math inline">\(\alpha^{th}\)</span> rare event. Then, the event {T&gt;t} menas that the <span class="math inline">\(\alpha^{th}\)</span> rare event occurs after the moment t, and therefore, fewer than <span class="math inline">\(\alpha\)</span> rare events occur before the time t. <span class="math display">\[P \lbrace T&gt;t \rbrace = P \lbrace X&lt;\alpha \rbrace\]</span></p>
+<p>Let T be the RV that described by the Gamma distribution with an integer parameter $\alpha$ and some positive $\lambda$. This is a distribution of the time of the $\alpha^{th}$ rare event. Then, the event {T&gt;t} menas that the $\alpha^{th}$ rare event occurs after the moment t, and therefore, fewer than $\alpha$ rare events occur before the time t.<br>
+$$P \lbrace T&gt;t \rbrace = P \lbrace X&lt;\alpha \rbrace$$</p>
 <h2 id="normal-distribution-rv">Normal distribution RV</h2>
 <ul>
-<li>pdf <span class="math display">\[f(x)=\frac{1}{\sigma \sqrt{2 \pi}} exp{\frac{-(x-\mu)^2}{2 \sigma^2}}\]</span></li>
-<li>cdf <span class="math display">\[F(x)=\Phi(\frac{x-\mu}{\sigma})\]</span> where <span class="math inline">\(\Phi(z)\)</span> can be found from Table A4</li>
+<li>pdf $$f(x)=\frac{1}{\sigma \sqrt{2 \pi}} exp{\frac{-(x-\mu)^2}{2 \sigma^2}}$$</li>
+<li>cdf $$F(x)=\Phi(\frac{x-\mu}{\sigma})$$ where $\Phi(z)$ can be found from Table A4</li>
 </ul>
-<p>The expectation value <span class="math inline">\(E(x)=\mu\)</span> and variance <span class="math inline">\(Var(x)=\sigma^2\)</span></p>
+<p>The expectation value $E(x)=\mu$ and variance $Var(x)=\sigma^2$</p>
 <h2 id="central-limit-theorem">Central Limit Theorem</h2>
-<p>In probability theory, the central limit theorem (CLT) establishes that, in some situations, when independent random variables are added, their properly normalized sum tends toward a normal distribution (informally a “bell curve”) even if the original variables themselves are not normally distributed. <span class="math display">\[S_n=\sum_{i=1}^n X_i\]</span> As n becomes very large, the standardized sum coverges into a standard normal random variable. <span class="math display">\[Z_n=\frac{S_n-E(S_n)}{std(Sn)}=\frac{S_n-n\mu}{\sigma \sqrt{n}}\]</span> where <span class="math inline">\(E(S_n)=n\mu\)</span> and <span class="math inline">\(std(S_n)=\sqrt{n} \cdot \sigma\)</span></p>
+<p>In probability theory, the central limit theorem (CLT) establishes that, in some situations, when independent random variables are added, their properly normalized sum tends toward a normal distribution (informally a “bell curve”) even if the original variables themselves are not normally distributed.<br>
+$$S_n=\sum_{i=1}^n X_i$$<br>
+As n becomes very large, the standardized sum coverges into a standard normal random variable.<br>
+$$Z_n=\frac{S_n-E(S_n)}{std(Sn)}=\frac{S_n-n\mu}{\sigma \sqrt{n}}$$<br>
+where $E(S_n)=n\mu$ and $std(S_n)=\sqrt{n} \cdot \sigma$</p>
 <h2 id="continuity-correction">Continuity correction</h2>
 <p>This correction is needed when we approximate a discrete distribution (like Binomial) by a continuous distribution (Normal). When a continuous distribution (say, Gamma) is approximated by another continuous distribution (Normal), the continuity correction is not needed.</p>
-<h1 id="stochastic-procsses">Stochastic procsses</h1>
-<p>We have leant probability, random variables, random vectors, and their distributions. Are these enough for us to describe a situation involving uncertainty and be able to make good decisions? No. Becasue all what we have leant is the probability/uncertainty at a specific moment. However, many variables develop and change in real time: air temperatures, stock prices, interest rates, football scores, popularity of politicians, and also, the CPU usage, the speed of internet connection, the number of concurrent users, the number of running processes, available memory, and so on. Thus, we need to know <strong>stochastic processes</strong>, which are random variables that evolv and change in time.</p>
+<h1>Stochastic procsses</h1>
+<p>We have leant probability, random variables, random vectors, and their distributions. Are these enough for us to describe a situation involving uncertainty and be able to make good decisions? No. Becasue all what we have leant is the probability/uncertainty at a specific moment. However, many variables develop and change in real time: air temperatures, stock prices, interest rates, football scores, popularity of politicians, and also, the CPU usage, the speed of internet connection, the number of concurrent users, the number of running processes, available memory, and so on. Thus, we need to know <strong>stochastic processes</strong>, which are random variables that evolv and change in time.</p>
 <h2 id="markov-chain">Markov Chain</h2>
-<p>Stochastic process X(t) is Markov if for any <span class="math inline">\(t_1\ &lt;\ ...\ &lt;\ t_n\ &lt;\ t\)</span> and any sets A; <span class="math inline">\(A_1,...,A_n\)</span> <span class="math display">\[P \lbrace X(t) \in A|X(t_1)\in A_1,...,X(t_n)\in A_n \rbrace=P\lbrace X(t) \in A | X(t_n) \in A_n \rbrace\]</span> It means that the conditional distribution of X(t) only depends on the latest observation of X.<br>
-To be more straitforward, <span class="math inline">\(P\lbrace future|past,\ present \rbrace = P \lbrace future|present \rbrace\)</span>. This property makes a Markov chain a “memoryless” process.</p>
+<p>Stochastic process X(t) is Markov if for any $t_1\ &lt;\ …\ &lt;\ t_n\ &lt;\ t$ and any sets A; $A_1,…,A_n$ $$P \lbrace X(t) \in A|X(t_1)\in A_1,…,X(t_n)\in A_n \rbrace=P\lbrace X(t) \in A | X(t_n) \in A_n \rbrace$$<br>
+It means that the conditional distribution of X(t) only depends on the latest observation of X.<br>
+To be more straitforward, $P\lbrace future|past,\ present \rbrace = P \lbrace future|present \rbrace$. This property makes a Markov chain a “memoryless” process.</p>
 <p>A <strong>Markov chain</strong> is a discrete-time, discrete-state Markov stochastic process. In our study of this topic, the change in the pmf, from one step to the next, is modeled by a transition probability matrix. For example, the following shows a three-state transition probability matrix.</p>
-<p><span class="math display">\[
- \left[
- \begin{matrix}
-   P_{11} &amp; P_{12} &amp; P_{13} \\
-   P_{21} &amp; P_{22} &amp; P_{23} \\
-   P_{31} &amp; P_{32} &amp; P_{33}
-  \end{matrix}
-  \right] 
-\]</span></p>
+<p>$$<br>
+\left[<br>
+\begin{matrix}<br>
+P_{11} &amp; P_{12} &amp; P_{13} \<br>
+P_{21} &amp; P_{22} &amp; P_{23} \<br>
+P_{31} &amp; P_{32} &amp; P_{33}<br>
+\end{matrix}<br>
+\right]<br>
+$$</p>
 <ul>
-<li>Know the initial state <span class="math inline">\(P_0(x)\)</span>, the probability matrix for the state after n steps is <span class="math display">\[P_n(x)=P_0(x) \cdot [P_{ij}]^n\]</span></li>
-<li>Steady state distribution <span class="math inline">\(\Pi=[\pi_1\; \pi_2\; \pi_3\; ...]\)</span>, which is defined as <span class="math display">\[P \cdot [\Pi] = \Pi\]</span></li>
+<li>Know the initial state $P_0(x)$, the probability matrix for the state after n steps is $$P_n(x)=P_0(x) \cdot [P_{ij}]^n$$</li>
+<li>Steady state distribution $\Pi=[\pi_1; \pi_2; \pi_3; …]$, which is defined as $$P \cdot [\Pi] = \Pi$$</li>
 </ul>
 <h2 id="counting-processes">Counting processes</h2>
 <p>Defination: a stochastic process X is counting if X(t) is the number of items counted by the time t.</p>
@@ -573,16 +646,17 @@ Binomial process X(n) is the number of successes in the first n independent Bern
 It is a discrete-time discrete-space counting stochastic process. Moreover, it is Markov, and therefore, a Markov chain.<br>
 To solve Binomial process, we need some notations, as listed below</li>
 </ul>
-<ol type="1">
-<li><span class="math inline">\(\Delta\)</span> = frame size.</li>
-<li><span class="math inline">\(\lambda\)</span> = arrival rate. <span class="math inline">\(\lambda\)</span>=<span class="math inline">\(p/Delta\)</span>, this is the average number of successes per one unit of time.</li>
-<li><span class="math inline">\(p\)</span> = probability of arrival (success) during one frame (trial). <span class="math inline">\(p=\lambda \cdot \Delta\)</span></li>
-<li><span class="math inline">\(Y\)</span> = number of frames between successive arrivals</li>
-<li><span class="math inline">\(T\)</span> = interarrival time</li>
+<ol>
+<li>$\Delta$ = frame size.</li>
+<li>$\lambda$ = arrival rate. $\lambda$=$p/Delta$, this is the average number of successes per one unit of time.</li>
+<li>$p$ = probability of arrival (success) during one frame (trial). $p=\lambda \cdot \Delta$</li>
+<li>$Y$ = number of frames between successive arrivals</li>
+<li>$T$ = interarrival time</li>
 </ol>
 <ul>
-<li>Poisson process (continous-time) Going from discrete time to continuous time, Poisson process is the limiting case of a Binomial counting process as frame size <span class="math inline">\(\Delta\)</span> close to 0.<br>
-Poisson process is a continuous-time counting stochastic process obtained from a Binomial counting process when its frame size <span class="math inline">\(\Delta\)</span> decreases to 0 while the arrival rate λ remains constant.</li>
+<li>Poisson process (continous-time)<br>
+Going from discrete time to continuous time, Poisson process is the limiting case of a Binomial counting process as frame size $\Delta$ close to 0.<br>
+Poisson process is a continuous-time counting stochastic process obtained from a Binomial counting process when its frame size $\Delta$ decreases to 0 while the arrival rate λ remains constant.</li>
 </ul>
 
       
@@ -601,11 +675,11 @@ Poisson process is a continuous-time counting stochastic process obtained from a
       
         <div class="post-tags">
           
+            <a href="/tags/Class-Notes/" rel="tag"># Class Notes</a>
+          
             <a href="/tags/Math/" rel="tag"># Math</a>
           
             <a href="/tags/Probability/" rel="tag"># Probability</a>
-          
-            <a href="/tags/Class-Notes/" rel="tag"># Class Notes</a>
           
         </div>
       
@@ -806,7 +880,7 @@ Poisson process is a continuous-time counting stochastic process obtained from a
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#probability-and-random-variables"><span class="nav-number">1.</span> <span class="nav-text">Probability and Random Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#basic-concept"><span class="nav-number">1.1.</span> <span class="nav-text">Basic concept</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rules-of-probability"><span class="nav-number">1.2.</span> <span class="nav-text">Rules of probability</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#axions"><span class="nav-number">1.2.1.</span> <span class="nav-text">Axions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rules"><span class="nav-number">1.2.2.</span> <span class="nav-text">Rules</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#combinatorics"><span class="nav-number">1.3.</span> <span class="nav-text">Combinatorics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#conditional-probability"><span class="nav-number">1.4.</span> <span class="nav-text">Conditional probability</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#bayes-rule"><span class="nav-number">1.4.1.</span> <span class="nav-text">Bayes rule</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#total-probability"><span class="nav-number">1.4.2.</span> <span class="nav-text">Total probability</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#discrete-random-variables-and-their-distribution"><span class="nav-number">2.</span> <span class="nav-text">Discrete Random Variables and Their Distribution</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#discrete-random-variables"><span class="nav-number">2.1.</span> <span class="nav-text">Discrete Random Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#probability-mass-function-pmf"><span class="nav-number">2.1.1.</span> <span class="nav-text">Probability mass function (pmf)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cumulative-distribution-function-pdf"><span class="nav-number">2.1.2.</span> <span class="nav-text">Cumulative distribution function (pdf)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#random-vector"><span class="nav-number">2.2.</span> <span class="nav-text">Random Vector</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chebyshevs-inequality"><span class="nav-number">2.3.</span> <span class="nav-text">Chebyshev&#x2019;s inequality</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#parameterized-discrete-random-variables-rv"><span class="nav-number">2.4.</span> <span class="nav-text">Parameterized discrete random variables (RV)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#bernoulli-trial-bernoulli-distribution"><span class="nav-number">2.4.1.</span> <span class="nav-text">Bernoulli trial (Bernoulli distribution)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#binomial-distribution-binomial-distributed-rv"><span class="nav-number">2.4.2.</span> <span class="nav-text">Binomial distribution (Binomial distributed RV)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#geometric-distribution"><span class="nav-number">2.4.3.</span> <span class="nav-text">Geometric distribution</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#poisson-distribution-rare-events"><span class="nav-number">2.4.4.</span> <span class="nav-text">Poisson distribution (rare events)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#poisson-approximation-to-binomial"><span class="nav-number">2.4.5.</span> <span class="nav-text">Poisson Approximation to Binomial</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#continuous-random-variable-and-distributions"><span class="nav-number">3.</span> <span class="nav-text">Continuous Random Variable and Distributions</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#continuous-rv"><span class="nav-number">3.1.</span> <span class="nav-text">Continuous RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uniform-distributed-rv"><span class="nav-number">3.2.</span> <span class="nav-text">Uniform distributed RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#exponential-distributed-rv"><span class="nav-number">3.3.</span> <span class="nav-text">Exponential distributed RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gamma-distributed-rv"><span class="nav-number">3.4.</span> <span class="nav-text">Gamma distributed RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gamma-poisson-formula"><span class="nav-number">3.5.</span> <span class="nav-text">Gamma-Poisson Formula</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#normal-distribution-rv"><span class="nav-number">3.6.</span> <span class="nav-text">Normal distribution RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#central-limit-theorem"><span class="nav-number">3.7.</span> <span class="nav-text">Central Limit Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#continuity-correction"><span class="nav-number">3.8.</span> <span class="nav-text">Continuity correction</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#stochastic-procsses"><span class="nav-number">4.</span> <span class="nav-text">Stochastic procsses</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#markov-chain"><span class="nav-number">4.1.</span> <span class="nav-text">Markov Chain</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#counting-processes"><span class="nav-number">4.2.</span> <span class="nav-text">Counting processes</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Probability and Random Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#basic-concept"><span class="nav-number">1.1.</span> <span class="nav-text">Basic concept</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rules-of-probability"><span class="nav-number">1.2.</span> <span class="nav-text">Rules of probability</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#axions"><span class="nav-number">1.2.1.</span> <span class="nav-text">Axions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rules"><span class="nav-number">1.2.2.</span> <span class="nav-text">Rules</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#combinatorics"><span class="nav-number">1.3.</span> <span class="nav-text">Combinatorics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#conditional-probability"><span class="nav-number">1.4.</span> <span class="nav-text">Conditional probability</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#bayes-rule"><span class="nav-number">1.4.1.</span> <span class="nav-text">Bayes rule</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#total-probability"><span class="nav-number">1.4.2.</span> <span class="nav-text">Total probability</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Discrete Random Variables and Their Distribution</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#discrete-random-variables"><span class="nav-number">2.1.</span> <span class="nav-text">Discrete Random Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#probability-mass-function-pmf"><span class="nav-number">2.1.1.</span> <span class="nav-text">Probability mass function (pmf)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cumulative-distribution-function-pdf"><span class="nav-number">2.1.2.</span> <span class="nav-text">Cumulative distribution function (pdf)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#random-vector"><span class="nav-number">2.2.</span> <span class="nav-text">Random Vector</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chebyshev-s-inequality"><span class="nav-number">2.3.</span> <span class="nav-text">Chebyshev&#x2019;s inequality</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#parameterized-discrete-random-variables-rv"><span class="nav-number">2.4.</span> <span class="nav-text">Parameterized discrete random variables (RV)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#bernoulli-trial-bernoulli-distribution"><span class="nav-number">2.4.1.</span> <span class="nav-text">Bernoulli trial (Bernoulli distribution)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#binomial-distribution-binomial-distributed-rv"><span class="nav-number">2.4.2.</span> <span class="nav-text">Binomial distribution (Binomial distributed RV)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#geometric-distribution"><span class="nav-number">2.4.3.</span> <span class="nav-text">Geometric distribution</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#poisson-distribution-rare-events"><span class="nav-number">2.4.4.</span> <span class="nav-text">Poisson distribution (rare events)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#poisson-approximation-to-binomial"><span class="nav-number">2.4.5.</span> <span class="nav-text">Poisson Approximation to Binomial</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Continuous Random Variable and Distributions</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#continuous-rv"><span class="nav-number">3.1.</span> <span class="nav-text">Continuous RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uniform-distributed-rv"><span class="nav-number">3.2.</span> <span class="nav-text">Uniform distributed RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#exponential-distributed-rv"><span class="nav-number">3.3.</span> <span class="nav-text">Exponential distributed RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gamma-distributed-rv"><span class="nav-number">3.4.</span> <span class="nav-text">Gamma distributed RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gamma-poisson-formula"><span class="nav-number">3.5.</span> <span class="nav-text">Gamma-Poisson Formula</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#normal-distribution-rv"><span class="nav-number">3.6.</span> <span class="nav-text">Normal distribution RV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#central-limit-theorem"><span class="nav-number">3.7.</span> <span class="nav-text">Central Limit Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#continuity-correction"><span class="nav-number">3.8.</span> <span class="nav-text">Continuity correction</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Stochastic procsses</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#markov-chain"><span class="nav-number">4.1.</span> <span class="nav-text">Markov Chain</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#counting-processes"><span class="nav-number">4.2.</span> <span class="nav-text">Counting processes</span></a></li></ol></li></ol></div>
             
 
           </div>
